@@ -13,16 +13,6 @@ html {
 body {
   margin: 0;
 }
-
-.lgnhead {
-  background-color: #008B8B;
-  text-align: center;
-}
-
-.smbtbtn{
-  background-color: #008B8B;
-}
-
 article,
 aside,
 details,
@@ -5330,15 +5320,14 @@ a.list-group-item-danger.active:focus {
   border-bottom: 1px solid transparent;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  
 }
 
 .panel > .panel-heading {
     background-image: none;
     background-color: #008B8B;
     color: white;
-
 }
+
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
 }
