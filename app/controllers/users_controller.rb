@@ -13,8 +13,6 @@ class UsersController < ApplicationController
     @user = User.new(set_params)
     if @user.save
       redirect_to user_path(user.id)
-    else
-      render action: 'new'
     end
   end
   

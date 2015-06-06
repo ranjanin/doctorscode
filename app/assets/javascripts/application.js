@@ -10,11 +10,12 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require bootstrap.min
 //= require jquery
 //= require jquery_ujs
 //= require custom
 //= require jquery-1.11.0.min
 //= require jquery.easing.1.3
-//= require jquery.mobile-1.4.2.min
+
 //= require turbolinks
 //= require_tree .
