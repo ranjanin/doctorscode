@@ -25,7 +25,7 @@ class UsersController < ApplicationController
   end
   
   def update
-    @user = USer.find(params[:id])
+    @user = User.find(params[:id])
     if @user.update_attributes(set_params)
       redirect_to user_path(user.id)
     else
@@ -36,7 +36,7 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     @user.destroy
-    redirect_to users_path
+    
   end
   
   private
