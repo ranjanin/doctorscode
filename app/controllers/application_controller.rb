@@ -10,9 +10,9 @@ class ApplicationController < ActionController::Base
   
     protected
       def after_sign_in_path_for (user)
-        if user_signed_in? && current_user.sign_in_count > 1
+        if user_signed_in? && current_user.user_detail.present?
           return user_detail_path(current_user.user_detail)
-        elsif user_signed_in? && current_user.sign_in_count == 1
+        elsif user_signed_in? && current_user.user_detail.nil?
             return new_user_detail_path
           else
             return root_url

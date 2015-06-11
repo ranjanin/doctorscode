@@ -14,7 +14,7 @@
 
  
  
-<% if user_signed_in? %>
+  <% if user_signed_in? %>
  <div class="wrapper">
 
 	  <div class="container header headerBG">
@@ -31,17 +31,19 @@
             <li class="dropdown navbar-profile">
               
               <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
-                <span class="navbar-profile-label"><%= current_user.user_detail.first_name %> &nbsp;                 </span>
+                <span class="navbar-profile-label"><%= image_tag "profile-image.png", width: 40, height: 40 %> &nbsp;                 </span>
                 <i class="fa fa-caret-down"></i>
               </a>
               
               <ul class="dropdown-menu" role="menu">
+                <% if current_user.user_detail.present? %>
                  <li>
                    <%= link_to user_detail_path(current_user.user_detail) do %>
                       <i class="fa fa-user"></i> 
                         &nbsp;&nbsp;My Profile
                    <% end %>
                  </li>
+                <% end %>
                  <li class="divider"></li>
                  <li>
                    <%= link_to destroy_user_session_path do %>

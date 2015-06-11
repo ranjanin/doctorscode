@@ -1,8 +1,9 @@
-<div class="container">
+<div class="wrapper">
  
-  
-  
-   
+       </div>
+  <div class="container">
+    
+    
 <h3> User Details </h3>
 
 <%= form_for(@user_detail) do |f| %>
@@ -99,13 +100,13 @@
     <div class="col-md-4">
 <%= f.label :exercise %><br/>
       <%= f.label "Regularly" %>&nbsp;&nbsp;
-<%= f.radio_button :drinking, "Regularly"  %>&nbsp;&nbsp;&nbsp;
+      <%= f.radio_button :exercise, "Regularly"  %>&nbsp;&nbsp;&nbsp;
       
       <%= f.label "weekly Once" %>&nbsp;&nbsp;
-<%= f.radio_button  :drinking, "Weekly Once" %>&nbsp;&nbsp;&nbsp;
+      <%= f.radio_button  :exercise, "Weekly Once" %>&nbsp;&nbsp;&nbsp;
       
       <%= f.label "Never" %>&nbsp;&nbsp;
-<%= f.radio_button  :drinking, "Never" %>
+      <%= f.radio_button  :exercise, "Never" %>
 <br/><br/>
     </div>
 
@@ -118,8 +119,9 @@
   </div><!-- row ends here -->
 <br/><br/>
 <%= f.submit "Submit", class: "btn btn-success" %>
-  </div><!-- row ends here -->
+  
 <% end %>
   
 
   </div><!-- container ends here -->
+</div><!-- wrapper ends here -->

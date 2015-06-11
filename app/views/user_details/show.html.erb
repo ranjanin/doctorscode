@@ -8,7 +8,8 @@
 			<div class="contentLeft">
 			
         <div class="doctorImage">
-					<img src="assets/images/doctor.png" width="100%" alt="" />
+          <%= image_tag "profile-image.png", width: 100, height: 100 %>
+					<!-- <img src="assets/images/doctor.png" width="100%" alt="" /> -->
 				</div>
 				<div class="doctorImageHead">
           <%= current_user.user_detail.first_name %>
