@@ -1,6 +1,7 @@
  Rails.application.routes.draw do
   
-  devise_for :users, path_names:{sign_in: "login", sign_up: "cmon_let_me_in"}
+  devise_for :users, path_names:{sign_in: "login", sign_up: "cmon_let_me_in"},
+ :controllers => { :registrations => 'registrations' }
     
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -9,6 +10,9 @@
    root 'homepage#index'
    
    resources :users
+   resources :user_details
+   
+ 
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

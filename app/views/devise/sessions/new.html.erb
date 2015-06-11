@@ -12,13 +12,15 @@
     <div class="container">
       <div class="row">
             <div class="col-md-3"></div>
+        <div class="col-md-4">
+          <% if alert %>
+                <div class="alert alert-danger"><%= alert %>                       </div>
+            <% end %>
+        
+        <br/>
               
-             <div class="col-md-5">
-               <% if alert %>
-                 <div class="col-md-6">
-                    <div class="alert alert-danger"><%= alert %></div>
-                 </div>
-                <% end %>
+             
+             
               <div class="panel panel-default">
                   <div class="panel-heading"> 
                     <strong class="">LOGIN</strong>
@@ -28,23 +30,24 @@
                        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
                       
                           <div class="form-group">
-                              <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
-                                 <div class="col-sm-9">
-                                   <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "E-Mail ID" %>
-                                 </div>
+                              <label for="inputEmail3" class="col-sm-3 control-label">Email</label><br/>
+                        <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "E-Mail ID" %>
+                       
                             </div>
-                      <br/><br/>
+                      <br/>
                             <div class="form-group">
                                 <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
-                                <div class="col-sm-9">
-                                   <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Password" %>
-                                </div>
+                      
+                  <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Password" %>
+                  
                             </div>
-                        <br/><br/>
-                             <div class="form-group last">
-                               <div class="col-sm-offset-3 col-sm-9">
-                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.submit "SIGN IN", class: "btn smbtbtn" %>                      
+                        <br/>
+                          <div class="form-group last">
+                           <div class="col-sm-offset-3 col-sm-9">
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= f.submit "SIGN IN", class: "btn sbmbtn" %>                      
                                     <% end %>
+                             <br/><br/>
+                           <!--   <%= render "devise/shared/links" %> -->
                                 </div>
                              </div>
                     

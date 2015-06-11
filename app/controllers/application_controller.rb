@@ -10,8 +10,10 @@ class ApplicationController < ActionController::Base
   
     protected
       def after_sign_in_path_for (user)
-          if user_signed_in?
-            return user_path(user)
+        if user_signed_in? && current_user.sign_in_count > 1
+          return user_detail_path(current_user.user_detail)
+        elsif user_signed_in? && current_user.sign_in_count == 1
+            return new_user_detail_path
           else
             return root_url
            end
@@ -22,13 +24,13 @@ class ApplicationController < ActionController::Base
         return root_url
       end
   
-      def after_sign_up_path_for(user)
-          if user_signed_in?
-            return user_path(user)
-          else
-              return root_url
-          end
-      end
+     def after_sign_up_path_for(user)
+     #  if user_signed_in
+       return new_user_detail_path
+       # else
+        #  return root_url
+    end
+      #end
     
  def configure_permitted_parameters
    devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:email, :password) }

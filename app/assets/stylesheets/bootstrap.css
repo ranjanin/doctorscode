@@ -13,6 +13,14 @@ html {
 body {
   margin: 0;
 }
+
+.sbmbtn{
+  background-color: #0f9f8d;
+  color: #fff;
+  font-weight: bold;
+  padding: 2px 2px;
+  
+}
 article,
 aside,
 details,
@@ -5320,6 +5328,10 @@ a.list-group-item-danger.active:focus {
   border-bottom: 1px solid transparent;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  background-color: #008b8b !important;
+  text-align: center !important;
+  color: #fff !important;
+  line-height: 15px !important;
 }
 
 .panel > .panel-heading {

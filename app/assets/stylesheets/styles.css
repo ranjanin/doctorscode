@@ -1,3 +1,6 @@
+
+
+
 body 
 {
   margin:0px;
@@ -35,15 +38,15 @@ a
 .wrapper
 {
   height: auto;
-  min-width: 320px;
-  max-width: 2200px;
+  /*min-width: 320px;
+  max-width: 2200px; */
   margin-left: auto;
   margin-right: auto;  
   line-height: 24px;
 }
 .container
 {
-  width: 94%;
+  width: 100%;
   padding: 0 3% 0 3%;
   margin-left: auto;
   margin-right: auto;
@@ -192,7 +195,7 @@ a
   border-style: solid;
   background-color:  #004a91;
   width: 140px;
-  height: 25px;
+  height: 35px;
   text-align: center;
   color:  #ffffff;
   font-size: 18px; 
@@ -209,9 +212,10 @@ a
   width: 109%;
   height: auto;
   bottom: 0px;
-  left: -3%;
+  left: -3%; 
   z-index: -1;
   position: absolute;
+ 
 }
 .contentHomeImage img
 {
@@ -249,7 +253,7 @@ a
 .contentHomeRegisterLoginWrapperBottom
 {
   width: 90%;
-  height: 190px;
+  height: 210px;
   padding: 5%;
    
   background:url('blueOpacity.png');
@@ -286,8 +290,8 @@ a
   float: right;
   cursor: pointer;
   height: auto;
-  line-height: 20px;
-  padding: 8px;
+  line-height: 15px;
+  padding: 5px;
   background: #0f9f8d;
   color:  #ffffff;
   font-size: 15px; 

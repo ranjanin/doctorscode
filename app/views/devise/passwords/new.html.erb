@@ -1,16 +1,53 @@
-<h2>Forgot your password?</h2>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+<div class="wrapper">
+  
+  <div class="container header">
+			          <div class="logo">
+				            <a href="index.html" data-ajax="false">
+                      <%= image_tag "logo.png" %>
+					              <!-- <img src="images/Logo.png" width="100%" alt="" title="" /> -->
+				             </a>
+      		        </div>
+         </div><!-- container header ends here -->
+  
+<br/><br/><br/>
+  
+  <div class="container">
+    <div class="row">
+      
+       <div class="col-md-3"></div>
+      
+      <div class="col-md-6">
+          <% if alert %>
+                <div class="alert alert-danger"><%= alert %>                       </div>
+            <% end %>
+          
+           <div class="panel panel-default">
+                  <div class="panel-heading"> 
+                    <strong class="">Forgot Password</strong>
+                  </div>
+                
+      
+                  <div class="panel-body">
+
+                <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+                      <div class="form-group">
+                   <%= f.label :email %>&nbsp;&nbsp;&nbsp;
+                  <%= f.email_field :email, autofocus: true, class: "form-control" %>
+                      </div>
+                      <br/>
+                      
+                       <div class="actions">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <%= f.submit "Send me reset password instructions", class: "sbmbtn" %>
+                        </div>
+                      <% end %>
+                      <br/>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+        </div><!-- panel body ends here -->
+  </div><!-- panel panel-default ends here -->
+      </div><!-- row ends here -->
+      </div><!-- col md 6 ends here -->
+    </div><!-- container ends here -->
+  </div><!-- wrapper ends here -->

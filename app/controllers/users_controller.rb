@@ -12,7 +12,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(set_params)
     if @user.save
-      redirect_to user_path(user.id)
+      redirect_to new_user_detail_path
+    else
+      redirect_to root_url
     end
   end
   
@@ -38,6 +40,9 @@ class UsersController < ApplicationController
     @user.destroy
     
   end
+  
+  
+  
   
   private
   
