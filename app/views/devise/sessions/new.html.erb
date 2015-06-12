@@ -8,10 +8,12 @@
 				             </a>
       		        </div>
          </div>
-<br/><br/><br/>
+
+    <hr>
+    <br/><br/>
     <div class="container">
       <div class="row">
-            <div class="col-md-3"></div>
+            <div class="col-md-4"></div>
         <div class="col-md-4">
           <% if alert %>
                 <div class="alert alert-danger"><%= alert %>                       </div>
@@ -19,9 +21,7 @@
         
         <br/>
               
-             
-             
-              <div class="panel panel-default">
+                <div class="panel panel-default">
                   <div class="panel-heading"> 
                     <strong class="">LOGIN</strong>
                   </div>
@@ -36,7 +36,7 @@
                             </div>
                       <br/>
                             <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+                                <label for="inputPassword3" class="col-sm-3 control-label">Password</label><br/>
                       
                   <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Password" %>
                   
