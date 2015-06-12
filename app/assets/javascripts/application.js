@@ -15,6 +15,7 @@
 //= require jquery.turbolinks
 //= require turbolinks
 //= require bootstrap
+//= require bootstrap.min
 //= require custom
 //= require jquery-1.11.0.min
 //= require jquery.easing.1.3
