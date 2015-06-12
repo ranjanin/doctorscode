@@ -10,12 +10,15 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require bootstrap.min
 //= require jquery
 //= require jquery_ujs
+//= require turbolinks
+//= require bootstrap.min
 //= require custom
 //= require jquery-1.11.0.min
 //= require jquery.easing.1.3
-
-//= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
+});

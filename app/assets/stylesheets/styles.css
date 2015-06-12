@@ -242,6 +242,7 @@ a
   padding-top: 6px;
   cursor: pointer;
   border-bottom:3px solid transparent;
+  background:url('blueOpacity.png');
 }
 .contentHomeRegisterLoginWrapperheadActive
 {
