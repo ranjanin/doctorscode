@@ -28,7 +28,13 @@
               <ul class="nav pull-right">
                 <li class="dropdown">
                  <a class="dropdown-toggle" data-toggle="dropdown">
-                   <%= image_tag "profile-image.png", width: 40, heigth: 40 %>
+                  
+                   <% unless current_user.image_url.nil? %>
+                   <%= image_tag current_user.image_url, width: 40, height: 40 %>
+                   <% else %>
+                     <%= image_tag "profile-image.png", width: 40, heigth: 40 %>
+                   <% end %>
+                    <span class="caret"></span> 
                   </a>
                     <ul class="dropdown-menu">
                         <% if current_user.user_detail.present? %>
@@ -39,6 +45,13 @@
                                <% end %>
                            </li>
                         <% end %>
+                      
+                           <li>
+                             <%= link_to users_user_profile_picture_path do %>
+                              <i class="fa fa-user"></i> 
+                                &nbsp;&nbsp;Upload Profile Picture
+                               <% end %>
+                           </li>
                         <li class="divider"></li>
                         <li>
                           <%= link_to destroy_user_session_path do %>

@@ -9,9 +9,15 @@
   # You can have the root of your site routed with "root"
    root 'homepage#index'
    
-   resources :users
-   resources :user_details
+   get 'users/user_profile_picture' => 'users#user_profile_picture'
+   get 'user_details/doctor_visit' => 'user_details#doctor_visit'
+   post 'user_details/doctor_visit_update' => 'user_details#doctor_visit_update'
    
+     resources :users
+     resources :user_details
+     resources :doctor_visits
+    
+    
  
 
   # Example of regular route:

@@ -1,0 +1,34 @@
+<div class="wrapper">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-6">
+
+        <h3> Add Doctor Visit </h3>
+        <br/>
+        <%= form_for @doctor_visit do |f| %>
+
+          <%= f.label :date_of_visit %><br/>
+          <%= f.date_field :date_of_visit, class: "form-control" %>
+          <br/><br/>
+        
+          <%= f.label :doctor %><br/>
+          <%= f.text_field :doctor, class: "form-control" %><br/><br/>
+        
+          <%= f.label :hospital %><br/>
+          <%= f.text_field :hospital, class: "form-control" %><br/><br/>
+        
+          
+          <%= f.label :reasonfor_visit %><br/>
+          <%= f.text_field :reason_for_visit, class: "form-control" %><br/><br/>
+        
+          <%= f.label :details %><br/>
+          <%= f.text_field :details, class: "form-control" %><br/><br/>
+        
+        <%= f.submit "Submit", class: "btn btn-blue" %>
+        
+        <% end %>
+      </div><!-- col md ends here -->
+    </div><!-- row end shere -->
+  </div><!-- container ends here -->
+</div><!-- wrapper ends here -->

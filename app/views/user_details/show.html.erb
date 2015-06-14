@@ -1,123 +1,18 @@
+<%= render "profile" %>
 
-<body>
-	<div class="wrapper">
-
-	
-			
-		<div class="content">
-			<div class="contentLeft">
-			
-        <div class="doctorImage">
-          <%= image_tag "profile-image.png", width: 100, height: 100 %>
-					<!-- <img src="assets/images/doctor.png" width="100%" alt="" /> -->
-				</div>
-				<div class="doctorImageHead">
-          <%= current_user.user_detail.first_name %>
-				</div>
-				<div class="doctorImageText">
-					27 years, Male  <a><img src="images/doctorEdit.png" width="10" alt="" /></a>
-				</div>
-				<hr />
-				<div class="bloodDoctor">
-					<div class="bloodDoctorLeft">
-						<img src="images/blood.png" width="7" alt="" />
-					</div>
-					<div class="bloodDoctorRight">
-						BLOOD GROUP: O+
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="bloodDoctor">
-					<div class="bloodDoctorLeft">
-						<img src="images/height.png" width="12" alt="" />
-					</div>
-					<div class="bloodDoctorRight">
-						HEIGHT: 5' 7"
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="bloodDoctor">
-					<div class="bloodDoctorLeft">
-						<img src="images/weight.png" width="12" alt="" />
-					</div>
-					<div class="bloodDoctorRight">
-						WEIGHT: 85 KG
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<hr />
-
-				<div class="bloodDoctorBottom">
-					<div class="bloodDoctorLeftBottom">
-						<img src="images/aboutMe.png" width="18" alt="" />
-					</div>
-					<div class="bloodDoctorRightBottom">
-						ABOUT ME
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="bloodDoctorBottom">
-					<div class="bloodDoctorLeftBottom">
-						<img src="images/myHealth.png" width="21" alt="" />
-					</div>
-					<div class="bloodDoctorRightBottom">
-						MY HEALTH
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="bloodDoctorBottom">
-					<div class="bloodDoctorLeftBottom">
-						<img src="images/myFamily.png" width="20" alt="" />
-					</div>
-					<div class="bloodDoctorRightBottom">
-						MY FAMILY<div class="clearfix"></div>
-						<div class="bloodDoctorRightBottomInner">
-							<div class="bloodDoctorRightBottomInnerImage">+</div>
-							<div class="bloodDoctorRightBottomInnertext">Mother</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="bloodDoctorRightBottomInner">
-							<div class="bloodDoctorRightBottomInnerImage">+</div>
-							<div class="bloodDoctorRightBottomInnertext">Father</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="bloodDoctorRightBottomInner">
-							<div class="bloodDoctorRightBottomInnerImage">+</div>
-							<div class="bloodDoctorRightBottomInnertext">Son</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="bloodDoctorRightBottomInner">
-							<div class="bloodDoctorRightBottomInnerImage">+</div>
-							<div class="bloodDoctorRightBottomInnertext">Daughter</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="bloodDoctorRightBottomInner">
-							<div class="bloodDoctorRightBottomInnerImage">&nbsp;</div>
-							<div class="bloodDoctorRightBottomInnertextAdd">Add New</div>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="bloodDoctorBottom">
-					<div class="bloodDoctorLeftBottom">
-						<img src="images/myPhrama.png" width="22" alt="" />
-					</div>
-					<div class="bloodDoctorRightBottom">
-						MY PHARMA
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
 			<div class="contentRight">
-				<div class="contentRightTop">
-					<a href="" data-ajax="false">You are here - <img src="images/homeDark.png" width="21" alt="" /></a> / <a href="" data-ajax="false">About me</a>
+			
+        <div class="contentRightTop">
+          <a href="" data-ajax="false">You are here - <%= image_tag "homeDark.png" %></a> / <a href="" data-ajax="false">About me</a>
 				</div>
-				<div class="contentRightBottom">
+				
+        <div class="contentRightBottom">
 					<div class="contentRightBottomLeft">
-						<div class="contentRightBottomHead">
-							PERSONAL DETAILS <small>( MODIFY <img src="images/rightEdit.png" width="11" alt="" /> )</small>
+						
+            <div class="contentRightBottomHead">
+              PERSONAL DETAILS <small>( MODIFY <%= image_tag "rightEdit.png" %> )</small>
 						</div>
+            
 						<div class="contentRightBottomHeadLeft">First Name:  </div>
             <div class="contentRightBottomHeadRight"><%= current_user.user_detail.first_name %></div>
 						<div class="clearfix"></div>
@@ -154,7 +49,7 @@
 					</div>
 					<div class="contentRightBottomRight">
 						<div class="contentRightBottomHead">
-							FAMILY HISTORY OF ANY DISEASE <small>( MODIFY <img src="images/rightEdit.png" width="11" alt="" /> )</small>UserDetail
+              FAMILY HISTORY OF ANY DISEASE <small>( MODIFY <%= image_tag "rightEdit.png" %> )</small>UserDetail
 						</div>
 						<div class="contentRightBottomText">
 							A family medical history is a record of health information about a person and his or 
@@ -177,11 +72,5 @@
 
 	</div>
 
-	
-	<script src="script/jquery-1.11.0.min.js"></script>
-	<script src="script/jquery.easing.1.3.js"></script>
-	<script src="script/jquery.mobile-1.4.2.min.js"></script>
-	<script src="script/custom.js"></script>
-
-</body>
+	</body>
 </html>

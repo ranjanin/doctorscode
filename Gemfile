@@ -35,6 +35,8 @@ gem 'spring',        group: :development
 
 gem 'devise'
 gem 'jquery-turbolinks' # for dropdown not working
+gem 'carrierwave' # files upload
+gem 'cloudinary' # files storage
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -49,4 +51,4 @@ gem 'jquery-turbolinks' # for dropdown not working
 # gem 'debugger', group: [:development, :test]
 gem 'rails_12factor', group: :production
 
-ruby "2.0.0"
+#ruby "2.0.0"

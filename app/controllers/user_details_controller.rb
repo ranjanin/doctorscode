@@ -46,6 +46,7 @@ class UserDetailsController < ApplicationController
     redirect_to root_url
   end
   
+   
   private
   
   def set_params

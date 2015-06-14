@@ -5,4 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
  
   has_one :user_detail
+  has_many :doctor_visits
+  mount_uploader :image, ImageUploader
+
 end

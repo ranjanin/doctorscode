@@ -1,0 +1,39 @@
+  
+  <%= render 'user_details/profile' %>
+   
+  <div class="contentRight"> 
+  
+      <br/><br/><br/>
+
+      <h3> Doctor Visits </h3>
+    <br/><br/>
+      <table class="table table-bordered">
+        <tr>
+          
+          <th> Date </th>
+          <th> Doctor </th>
+          <th> Hospital </th>
+          <th> Reason for Visit </th>
+          <th> Details </th>
+        </tr>
+    
+        <% @doctor_visits.each_with_index do |visit| %>
+       
+        <tr>
+         
+          <td><%= visit.date_of_visit %></td>
+          <td><%= visit.doctor %></td>
+          <td><%= visit.hospital %></td>
+          <td><%= visit.reason_for_visit %></td>
+          <td><%= visit.details %></td>    
+        </tr>
+        <% end %>
+      </table>
+
+      <div class="text-right">
+        <%= link_to "Add Visit", new_doctor_visit_path, class:"contentRightBottomHeadBlueLink" %>
+        &nbsp;&nbsp;&nbsp;
+      </div>
+  
+   
+  </div><!-- content right ends here -->
