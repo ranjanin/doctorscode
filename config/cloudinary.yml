@@ -4,6 +4,6 @@ development:
   api_secret: "g-8Sd_I3OO7DCvFd51Hw-N7Lx1Q"
 
 production:
-  cloud_name: "dnjemohul"
+  cloud_name: "doctorscode"
   api_key: "961555916123658"
   api_secret: "g-8Sd_I3OO7DCvFd51Hw-N7Lx1Q"

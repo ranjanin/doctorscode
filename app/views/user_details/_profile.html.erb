@@ -6,9 +6,9 @@
 			
         <div class="doctorImage">
           <% unless current_user.image_url.nil? %>
-            <%= image_tag current_user.image_url, width: 100, height: 100 %>
+            <%= image_tag current_user.image_url, width: 225, height: 225 %>
           <% else %>
-            <%= image_tag "profile-image.png", width: 100, height: 100 %>
+            <%= image_tag "profile-image.png", width: 225, height: 225 %>
           <% end %>
 					<!-- <img src="assets/images/doctor.png" width="100%" alt="" /> -->
 				</div>
