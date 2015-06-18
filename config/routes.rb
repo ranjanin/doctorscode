@@ -16,6 +16,7 @@
      resources :users
      resources :user_details
      resources :doctor_visits
+     resources :health_records
     
     
  

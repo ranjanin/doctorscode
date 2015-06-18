@@ -39,7 +39,7 @@
                     <ul class="dropdown-menu">
                         <% if current_user.user_detail.present? %>
                            <li>
-                             <%= link_to user_detail_path(current_user.user_detail) do %>
+                             <%= link_to edit_user_detail_path(current_user.user_detail) do %>
                               <i class="fa fa-user"></i> 
                                 &nbsp;&nbsp;My Profile
                                <% end %>

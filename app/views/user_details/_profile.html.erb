@@ -18,8 +18,11 @@
 				</div>
         
 				<div class="doctorImageText">
-					27 years, Male 
-          <%= image_tag "doctorEdit.png" %>
+          <% dob = current_user.user_detail.date_of_birth.strftime("%Y").to_i %>
+          <% today = Date.today.strftime("%Y").to_i %>
+          <% age = today - dob %>
+          <%= age %> Years,  <%= current_user.user_detail.gender %>
+					<%= image_tag "doctorEdit.png" %>
         </div>
         
 				<hr />
@@ -31,7 +34,7 @@
            </div>
           
 			  		<div class="bloodDoctorRight">
-				  		BLOOD GROUP: O+
+              BLOOD GROUP: <%= current_user.user_detail.blood_group %>
 					  </div>
 					 <div class="clearfix"></div>
           
@@ -44,7 +47,7 @@
            </div>
 				
            <div class="bloodDoctorRight">
-					 	HEIGHT: 5' 7"
+					 	HEIGHT: <%= current_user.user_detail.height %>
 					 </div>
 					
            <div class="clearfix"></div>
@@ -57,7 +60,7 @@
            </div>
 					
            <div class="bloodDoctorRight">
-					 	WEIGHT: 85 KG
+             WEIGHT: <%= current_user.user_detail.weight %>
 					 </div>
 					
            <div class="clearfix"></div>
@@ -97,7 +100,9 @@
              
              <div class="bloodDoctorRightBottomInner">
 					     <div class="bloodDoctorRightBottomInnerImage">+</div>
-							 <div class="bloodDoctorRightBottomInnertext">Health Records</div>
+							 <div class="bloodDoctorRightBottomInnertext">
+                 <%= link_to "Health Records", health_records_path %>
+               </div>
 							 <div class="clearfix"></div>
 						 </div><!-- bloodDoctorRightBottomInner -->
              

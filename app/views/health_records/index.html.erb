@@ -1,0 +1,36 @@
+  
+  <%= render 'user_details/profile' %>
+   
+  <div class="contentRight"> 
+  
+      <br/><br/><br/>
+
+      <h3> Health Records </h3>
+    <br/><br/>
+      <table class="table table-bordered">
+        <tr>
+          <th> Record Type </th>
+          <th> Record Date </th>
+          <th> Record </th>
+        </tr>
+    
+        <% @health_records.each do |record| %>
+       
+        <tr>
+          <td><%= record.health_record_type %></td>
+          <td><%= record.health_record_date %></td>
+          <td>
+            <%= link_to "Download", record.health_record_url , :target => "blank", :flags => :attachment  %>
+           
+          </td>
+        </tr>
+        <% end %>
+      </table>
+
+      <div class="text-right">
+        <%= link_to "Add Record", new_health_record_path, class:"contentRightBottomHeadBlueLink" %>
+        &nbsp;&nbsp;&nbsp;
+      </div>
+  
+   
+  </div><!-- content right ends here -->
