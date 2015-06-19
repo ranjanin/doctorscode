@@ -1,149 +1,321 @@
 
+<div class="wrapper">
+ 
   <div class="container">
-    
-    
-    <h3> User Details </h3>
+  
+     
+      <h3> User Details </h3>
 
       <%= form_for(@user_detail) do |f| %>
+      
+   <div class="portlet">        
+      <div class="portlet-header">
+          <h3><i class="fa fa-tags"></i> User Details - 1</h3>
+      </div> <!-- /.portlet-header -->
 
+      <div class="portlet-content">
         <div class="row">
            <div class="col-md-3">
               <%= f.label :first_name %><br/>
               <%= f.text_field :first_name, class: "form-control" %>
-              <br/><br/>
             </div>
     
-           <div class="col-md-3">
+            <div class="col-md-3">
               <%= f.label :last_name %><br/>
               <%= f.text_field :last_name, class: "form-control" %>
-               <br/><br/>
-           </div>
+            </div>
     
             <div class="col-md-3">
               <%= f.label :date_of_birth %><br/>
               <%= f.date_field :date_of_birth, class: "form-control" %>
-              <br/><br/>
             </div>
           
-          <div class="col-md-3">
-            <%= f.label :blood_group %><br/>
-            <%= f.text_field :blood_group, class: "form-control" %>
-              <br/><br/>
+            <div class="col-md-3">
+              <%= f.label :blood_group %><br/>
+              <%= f.text_field :blood_group, class: "form-control" %>
             </div>
         </div><!-- row ends here -->
+      </div><!-- portlet content ends here -->
+   </div><!-- portlet ends here -->
   
-        <div class="row">
-          <div class="col-md-3">
-            <%= f.label :occupation %><br/>
-            <%= f.text_field :occupation, class: "form-control" %>
-            <br/><br/>
-          </div>
-    
-          <div class="col-md-3">
-            <%= f.label :profession %><br/>
-            <%= f.text_field :profession, class: "form-control" %>
-            <br/><br/>
-          </div>
+   <div class="portlet">        
+      <div class="portlet-header">
+          <h3><i class="fa fa-tags"></i> User Details - 2</h3>
+      </div> <!-- /.portlet-header -->
 
-          <div class="col-md-2">
-            <%= f.label :marital_status %><br/>
-            <%= f.label "Married" %>&nbsp;&nbsp;
-            <%= f.radio_button :marital_status, "Married" %>&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="portlet-content">   
+         <div class="row">
+            <div class="col-md-3">
+              <%= f.label :occupation %><br/>
+              <%= f.text_field :occupation, class: "form-control" %>
+            </div>
+    
+            <div class="col-md-3">
+               <%= f.label :profession %><br/>
+               <%= f.text_field :profession, class: "form-control" %>
+            </div>
+
+            <div class="col-md-3">
+               <%= f.label :marital_status %><br/>
+               <%= f.label "Married" %>&nbsp;&nbsp;
+               <%= f.radio_button :marital_status, "Married" %>&nbsp;&nbsp;&nbsp;&nbsp;
       
-             <%= f.label "Single" %>&nbsp;&nbsp;
-             <%= f.radio_button :marital_status, "Single" %>&nbsp;&nbsp;&nbsp;&nbsp;
-              <br/><br/>
-          </div>
+               <%= f.label "Single" %>&nbsp;&nbsp;
+               <%= f.radio_button :marital_status, "Single" %>&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
           
-          <div class="col-md-3">
-            <%= f.label :gender %><br/>
-            <%= f.label "Male" %>&nbsp;&nbsp;
-            <%= f.radio_button :gender, "Male" %>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-md-3">
+              <%= f.label :gender %><br/>
+              <%= f.label "Male" %>&nbsp;&nbsp;
+              <%= f.radio_button :gender, "Male" %>&nbsp;&nbsp;&nbsp;&nbsp;
       
-            <%= f.label "Female" %>&nbsp;&nbsp;
-            <%= f.radio_button :gender, "Female" %>&nbsp;&nbsp;&nbsp;&nbsp;
+              <%= f.label "Female" %>&nbsp;&nbsp;
+              <%= f.radio_button :gender, "Female" %>&nbsp;&nbsp;&nbsp;&nbsp;
             
-            <%= f.label "Others" %>&nbsp;&nbsp;
-            <%= f.radio_button :gender, "Others" %>&nbsp;&nbsp;&nbsp;&nbsp;
-            <br/><br/>
-          </div>
+              <%= f.label "Others" %>&nbsp;&nbsp;
+              <%= f.radio_button :gender, "Others" %>&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
         </div><!-- row ends here -->
+      </div><!-- portlet content ends here -->
+   </div><!-- portlet ends here -->
   
-        <div class="row">  
-          <div class="col-md-3">
-            <%= f.label :number_of_children %><br/>
-            <%= f.select :number_of_children, (0..10), {prompt: "Select"}, {class: "form-control"} %>
-            <br/><br/>
-          </div>
+   <div class="portlet">        
+      <div class="portlet-header">
+          <h3><i class="fa fa-tags"></i> User Details - 3</h3>
+      </div> <!-- /.portlet-header -->
 
-          <div class="col-md-3">
-            <%= f.label :smoking %><br/>
-      
-            <%= f.label "Yes" %>&nbsp;&nbsp;
-            <%= f.radio_button :smoking, "Yes"  %>&nbsp;&nbsp;&nbsp;
-      
-            <%= f.label "No" %>&nbsp;&nbsp;
-            <%= f.radio_button :smoking, "No" %>
-             <br/><br/>
-          </div>
+      <div class="portlet-content">   
+         <div class="row">  
+           <div class="col-md-3">
+              <%= f.label :number_of_children %><br/>
+              <%= f.select :number_of_children, (0..10), {prompt: "Select"}, {class: "form-control"} %>
+           </div>
 
-          <div class="col-md-3">
-            <%= f.label :drinking %><br/>
-            <%= f.label "Yes" %>&nbsp;&nbsp;
-            <%= f.radio_button  :drinking, "Yes"  %>&nbsp;&nbsp;&nbsp;
+           <div class="col-md-3">
+              <%= f.label :smoking %><br/>
       
-            <%= f.label "No" %>&nbsp;&nbsp;
-            <%= f.radio_button  :drinking, "No" %>
-            <br/><br/>
-          </div>
+              <%= f.label "Yes" %>&nbsp;&nbsp;
+              <%= f.radio_button :smoking, "Yes"  %>&nbsp;&nbsp;&nbsp;
+      
+              <%= f.label "No" %>&nbsp;&nbsp;
+              <%= f.radio_button :smoking, "No" %>
+           </div>
+
+           <div class="col-md-3">
+              <%= f.label :drinking %><br/>
+              <%= f.label "Yes" %>&nbsp;&nbsp;
+              <%= f.radio_button  :drinking, "Yes"  %>&nbsp;&nbsp;&nbsp;
+      
+              <%= f.label "No" %>&nbsp;&nbsp;
+              <%= f.radio_button  :drinking, "No" %>
+           </div>
     
-          <div class="col-md-3">
-            <%= f.label :diet %><br/>
-            <%= f.label "Vegetarian" %>&nbsp;&nbsp;
-            <%= f.radio_button  :diet, "Vegetarian"  %>&nbsp;&nbsp;&nbsp;
+           <div class="col-md-3">
+              <%= f.label :diet %><br/>
+              <%= f.label "Vegetarian" %>&nbsp;&nbsp;
+              <%= f.radio_button  :diet, "Vegetarian"  %>&nbsp;&nbsp;&nbsp;
       
-            <%= f.label "Non-Vegetarian" %>&nbsp;&nbsp;
-            <%= f.radio_button  :diet, "Non-Vegetarian"  %>&nbsp;&nbsp;&nbsp;
-            <br/><br/>
-          </div>
-        </div><!-- row ends here -->
+              <%= f.label "Non-Vegetarian" %>&nbsp;&nbsp;
+              <%= f.radio_button  :diet, "Non-Vegetarian"  %>&nbsp;&nbsp;&nbsp;
+           </div>
+         </div><!-- row ends here -->
+        </div><!-- portlet content ends here -->
+   </div><!-- portlet ends here -->
   
-        <div class="row>">
-          
-          <div class="col-md-3">
-            <%= f.label :height %><br/>
-            <%= f.text_field :height, class: "form-control" %>            
-          </div>
-          
-          <div class="col-md-3">
-            <%= f.label :weight %><br/>
-            <%= f.text_field :weight, class: "form-control" %>            
-          </div>
-          
-          <div class="col-md-3">
-          <%= f.label :exercise %><br/>
-          <%= f.label "Regularly" %>&nbsp;&nbsp;
-          <%= f.radio_button :exercise, "Regularly"  %>&nbsp;&nbsp;&nbsp;
-      
-          <%= f.label "weekly Once" %>&nbsp;&nbsp;
-          <%= f.radio_button  :exercise, "Weekly Once" %>&nbsp;&nbsp;&nbsp;
-      
-          <%= f.label "Never" %>&nbsp;&nbsp;
-          <%= f.radio_button  :exercise, "Never" %>
-           <br/><br/>
-         </div>
+   <div class="portlet">        
+      <div class="portlet-header">
+          <h3><i class="fa fa-tags"></i> User Details - 4</h3>
+      </div> <!-- /.portlet-header -->
 
-    
-         <div class="col-md-3">
-          <%= f.label :family_history %>
-          <%= f.text_area :family_history, :cols => 25, :rows => 5, class: "form-control" %>
-          <br/><br/>
-         </div>
+      <div class="portlet-content">   
+         <div class="row>">
+            <div class="col-md-4">
+              <%= f.label :height %><br/>
+              <%= f.text_field :height, class: "form-control" %>            
+            </div>
+          
+            <div class="col-md-4">
+              <%= f.label :weight %><br/>
+              <%= f.text_field :weight, class: "form-control" %>            
+            </div>
+          
+            <div class="col-md-4">
+              <%= f.label :exercise %><br/>
+              <%= f.label "Regularly" %>&nbsp;&nbsp;
+              <%= f.radio_button :exercise, "Regularly"  %>&nbsp;&nbsp;&nbsp;
+      
+              <%= f.label "weekly Once" %>&nbsp;&nbsp;
+              <%= f.radio_button  :exercise, "Weekly Once" %>&nbsp;&nbsp;&nbsp;
+      
+              <%= f.label "Never" %>&nbsp;&nbsp;
+              <%= f.radio_button  :exercise, "Never" %>
+            </div>
         </div><!-- row ends here -->
-        <br/>
-    <%= f.submit "Submit", class: "btn btn-blue" %>
-  
-      <% end %>
-  
-
+      <br/>
+      <div class="row">    
+           <div class="col-md-4">
+               <%= f.label :family_history %>
+              <%= f.text_area :family_history,  :rows => 2, class: "form-control" %>
+            </div>
+           
+            <div class="col-md-4">
+               <%= f.submit "Submit", class: "btn btn-blue" %>
+            </div>
+           
+         </div><!-- row ends here -->
+     </div><!-- portlet content ends here -->
+   </div><!-- portlet ends here -->
+   <% end %>
+      
    </div><!-- container ends here -->
+</div><!-- wrapper ends here -->
+
+<% if false %>
+---------
+<div class="container">
+  
+   
+      <h3> User Details </h3>
+ 
+        <%= form_for(@user_detail) do |f| %>
+           <div class="row">
+              
+                 <div class="col-md-3">
+                   <%= f.label :first_name %><br/>
+                   <%= f.text_field :first_name, class: "form-control" %>
+                   <br/><br/>
+                 </div>
+    
+                 <div class="col-md-3">
+                   <%= f.label :last_name %><br/>
+                   <%= f.text_field :last_name, class: "form-control" %>
+                    <br/><br/>
+                 </div>
+    
+                 <div class="col-md-3">
+                    <%= f.label :date_of_birth %><br/>
+                    <%= f.date_field :date_of_birth, class: "form-control" %>
+                    <br/><br/>
+                 </div>
+          
+                 <div class="col-md-3">
+                    <%= f.label :blood_group %><br/>
+                    <%= f.text_field :blood_group, class: "form-control" %>
+                    <br/><br/>
+                 </div>
+           </div><!-- row ends here -->
+  
+           <div class="row">
+                <div class="col-md-3">
+                  <%= f.label :occupation %><br/>
+                  <%= f.text_field :occupation, class: "form-control" %>
+                   <br/><br/>
+                </div>
+    
+                <div class="col-md-3">
+                   <%= f.label :profession %><br/>
+                   <%= f.text_field :profession, class: "form-control" %>
+                   <br/><br/>
+                </div>
+
+                <div class="col-md-2">
+                   <%= f.label :marital_status %><br/>
+                   <%= f.label "Married" %>&nbsp;&nbsp;
+                   <%= f.radio_button :marital_status, "Married" %>&nbsp;&nbsp;&nbsp;&nbsp;
+      
+                   <%= f.label "Single" %>&nbsp;&nbsp;
+                   <%= f.radio_button :marital_status, "Single" %>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br/><br/>
+                </div>
+          
+                <div class="col-md-3">
+                   <%= f.label :gender %><br/>
+                   <%= f.label "Male" %>&nbsp;&nbsp;
+                   <%= f.radio_button :gender, "Male" %>&nbsp;&nbsp;&nbsp;&nbsp;
+      
+                    <%= f.label "Female" %>&nbsp;&nbsp;
+                    <%= f.radio_button :gender, "Female" %>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+                     <%= f.label "Others" %>&nbsp;&nbsp;
+                     <%= f.radio_button :gender, "Others" %>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <br/><br/>
+                </div>
+           </div><!-- row ends here -->
+  
+           <div class="row">  
+             <div class="col-md-3">
+                <%= f.label :number_of_children %><br/>
+                <%= f.select :number_of_children, (0..10), {prompt: "Select"}, {class: "form-control"} %>
+                <br/><br/>
+             </div>
+
+             <div class="col-md-3">
+                <%= f.label :smoking %><br/>
+      
+                <%= f.label "Yes" %>&nbsp;&nbsp;
+                <%= f.radio_button :smoking, "Yes"  %>&nbsp;&nbsp;&nbsp;
+      
+                <%= f.label "No" %>&nbsp;&nbsp;
+                <%= f.radio_button :smoking, "No" %>
+                 <br/><br/>
+             </div>
+
+             <div class="col-md-3">
+                <%= f.label :drinking %><br/>
+                <%= f.label "Yes" %>&nbsp;&nbsp;
+                <%= f.radio_button  :drinking, "Yes"  %>&nbsp;&nbsp;&nbsp;
+      
+                <%= f.label "No" %>&nbsp;&nbsp;
+                <%= f.radio_button  :drinking, "No" %>
+                <br/><br/>
+             </div>
+    
+             <div class="col-md-3">
+                <%= f.label :diet %><br/>
+                <%= f.label "Vegetarian" %>&nbsp;&nbsp;
+                <%= f.radio_button  :diet, "Vegetarian"  %>&nbsp;&nbsp;&nbsp;
+      
+                <%= f.label "Non-Vegetarian" %>&nbsp;&nbsp;
+                <%= f.radio_button  :diet, "Non-Vegetarian"  %>&nbsp;&nbsp;&nbsp;
+                <br/><br/>
+             </div>
+           </div><!-- row ends here -->
+  
+           <div class="row>">
+              <div class="col-md-3">
+                 <%= f.label :height %><br/>
+                 <%= f.text_field :height, class: "form-control" %>            
+              </div>
+          
+              <div class="col-md-3">
+                <%= f.label :weight %><br/>
+                <%= f.text_field :weight, class: "form-control" %>            
+              </div>
+          
+              <div class="col-md-3">
+                 <%= f.label :exercise %><br/>
+                 <%= f.label "Regularly" %>&nbsp;&nbsp;
+                 <%= f.radio_button :exercise, "Regularly"  %>&nbsp;&nbsp;&nbsp;
+      
+                 <%= f.label "weekly Once" %>&nbsp;&nbsp;
+                 <%= f.radio_button  :exercise, "Weekly Once" %>&nbsp;&nbsp;&nbsp;
+      
+                  <%= f.label "Never" %>&nbsp;&nbsp;
+                  <%= f.radio_button  :exercise, "Never" %>
+                  <br/><br/>
+              </div>
+
+              <div class="col-md-3">
+                 <%= f.label :family_history %>
+                 <%= f.text_area :family_history, :cols => 25, :rows => 5, class: "form-control" %>
+                 <br/><br/>
+              </div>
+           </div><!-- row ends here -->
+           <br/>
+           <%= f.submit "Submit", class: "btn btn-blue" %>
+           <% end %>
+  
+
+
+</div><!-- container ends here -->
+<% end %>
