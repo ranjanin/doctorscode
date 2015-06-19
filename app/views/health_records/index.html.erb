@@ -20,7 +20,8 @@
           <td><%= record.health_record_type %></td>
           <td><%= record.health_record_date %></td>
           <td>
-            <%= link_to "Download", cloudinary_url(record.health_record.file.public_id, :flags => :attachment) %>
+           <!--  <%= link_to "Download", cloudinary_url(record.health_record.file.public_id, :flags => :attachment) %> -->
+            <%= link_to "Download", record.health_record_url, :target => "blank", :flags => "attachment" %>
            
           </td>
         </tr>
