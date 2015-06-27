@@ -1,29 +1,55 @@
+<%= render 'user_details/profile' %>
+   
+  <div class="contentRight"> 
+  
+      <br/><br/><br/>
+
 <div class="wrapper">
   <div class="container">
     
+     <script type="text/javascript">
+       $(document).ready(function(){
+       $("#visit_date").datepicker({ dateFormat: "dd/mm/yy" }).val()
+       });
+     </script>
+  
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
 
         <h3> Add Doctor Visit </h3>
         <br/>
-        <%= form_for @doctor_visit do |f| %>
+        <%= form_for @doctor_visit, :html => {:"data-ajax" => "false"} do |f| %>
 
-          <%= f.label :date_of_visit %><br/>
+          <div class="form-group">
+          <label>Family Member </label>
+        <%= f.collection_select :family_member_id, FamilyMember.where(:user_id => current_user.id), :id, :relation, {:prompt => "Select Member"}, {class: "form-control"}  %>
+          </div>
+        
+        <div class="form-group">  
+          <%= f.label :date_of_visit %>
           <%= f.date_field :date_of_visit, class: "form-control" %>
-          <br/><br/>
+        </div>
         
-          <%= f.label :doctor %><br/>
-          <%= f.text_field :doctor, class: "form-control" %><br/><br/>
+        <div class="form-group">    
+          <%= f.label :doctor %>
+          <%= f.text_field :doctor, class: "form-control" %>
+        </div>
         
-          <%= f.label :hospital %><br/>
-          <%= f.text_field :hospital, class: "form-control" %><br/><br/>
-        
+        <div class="form-group">  
+          <%= f.label :hospital %>
+          <%= f.text_field :hospital, class: "form-control" %>
+        </div>
           
-          <%= f.label :reasonfor_visit %><br/>
-          <%= f.text_field :reason_for_visit, class: "form-control" %><br/><br/>
+        <div class="form-group">  
+          <%= f.label :reasonfor_visit %>
+          <%= f.text_field :reason_for_visit, class: "form-control" %>
+        </div>
         
-          <%= f.label :details %><br/>
-          <%= f.text_field :details, class: "form-control" %><br/><br/>
+        <div class="form-group">  
+          <%= f.label :details %>
+          <%= f.text_field :details, class: "form-control" %>
+        </div>
         
         <%= f.submit "Submit", class: "btn btn-blue" %>
         
@@ -32,3 +58,4 @@
     </div><!-- row end shere -->
   </div><!-- container ends here -->
 </div><!-- wrapper ends here -->
+</div><!-- content right ends here -->

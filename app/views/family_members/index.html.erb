@@ -1,0 +1,36 @@
+  
+  <%= render 'user_details/profile' %>
+   
+  <div class="contentRight"> 
+  
+      <br/><br/><br/>
+
+      <h3> Family Members </h3>
+    <br/><br/>
+    
+      <table class="table table-bordered">
+        <tr>
+          <th> Relation </th>
+          <th> Name </th>
+          <th> Age </th>
+        </tr>
+    
+        <% @family_members.each do |member| %>
+       
+        <tr>
+          <td><%= member.relation %></td>
+          <td><%= member.name %></td>
+          <td><%=  member.age %></td>
+        </tr>
+        <% end %>
+      </table>
+
+      <div class="text-right">
+        <%= link_to "Add Member", new_family_member_path, class:"contentRightBottomHeadBlueLink", "data-ajax" => "false" %>
+        &nbsp;&nbsp;&nbsp;
+      </div>
+    
+  
+  
+   
+  </div><!-- content right ends here -->

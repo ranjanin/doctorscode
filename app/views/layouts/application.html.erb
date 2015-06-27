@@ -11,16 +11,17 @@
 <body>
 
  
- 
+ <!-- <div data-role="page" id="home" data-url="<%= request.path %>"> -->
   <% if user_signed_in? %>
+ <!--  <div data-role="page" id="home" data-url="<%= request.path %>">-->
  <div class="wrapper">
 
 	  <div class="container header headerBG">
  		    <div class="logo">
   				<a href="/" data-ajax="false">
 	  			<!-- 	<img src="images/logoInside.png" width="100%" alt="" title="" /> -->
-            <%= image_tag "logoInside.png" %>
-			   	</a>
+           <%= image_tag "logoInside.png" %>
+          </a>
 			  </div>
       
         <div class="navbar-collapse collapse">
@@ -39,7 +40,7 @@
                     <ul class="dropdown-menu">
                         <% if current_user.user_detail.present? %>
                            <li>
-                             <%= link_to edit_user_detail_path(current_user.user_detail) do %>
+                             <%= link_to edit_user_detail_path(current_user.user_detail), "data-ajax" => "false" do %>
                               <i class="fa fa-user"></i> 
                                 &nbsp;&nbsp;My Profile
                                <% end %>
@@ -47,14 +48,14 @@
                         <% end %>
                       
                            <li>
-                             <%= link_to users_user_profile_picture_path do %>
+                             <%= link_to users_user_profile_picture_path, "data-ajax" => "false" do %>
                               <i class="fa fa-user"></i> 
                                 &nbsp;&nbsp;Upload Profile Picture
                                <% end %>
                            </li>
                         <li class="divider"></li>
                         <li>
-                          <%= link_to destroy_user_session_path do %>
+                          <%= link_to destroy_user_session_path, :method => "get" , "data-ajax" => "false" do %>
                              <i class="fa fa-sign-out"></i> 
                               &nbsp;&nbsp;Logout
                           <% end %>

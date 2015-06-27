@@ -15,11 +15,14 @@
 //= require jquery.turbolinks
 //= require turbolinks
 //= require bootstrap.min
+//= require bootstrap-datepicker/core
 //= require cloudinary
 //= require custom
 //= require jquery-1.11.0.min
 //= require jquery.easing.1.3
+//= require jquery.mobile-1.4.2.min
 //= require_tree .
+
 
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();

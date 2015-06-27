@@ -1,11 +1,16 @@
 <div class="wrapper">
  
   <div class="container">
-  
-     
+   
+    <script type="text/javascript">
+      $(document).ready(function(){
+       $("#dob").datepicker()
+      });
+    </script>
+    
       <h3> User Details </h3>
 
-      <%= form_for(@user_detail) do |f| %>
+    <%= form_for(@user_detail, :html => {:"data-ajax" => "false"}) do |f| %>
       
    <div class="portlet">        
       <div class="portlet-header">
@@ -26,7 +31,7 @@
     
             <div class="col-md-3">
               <%= f.label :date_of_birth %><br/>
-              <%= f.date_field :date_of_birth, class: "form-control" %>
+              <%= f.date_field :date_of_birth , class: "form-control" %>
             </div>
           
             <div class="col-md-3">

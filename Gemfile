@@ -37,6 +37,10 @@ gem 'devise'
 gem 'jquery-turbolinks' # for dropdown not working
 gem 'carrierwave' # files upload
 gem 'cloudinary' # files storage
+gem 'bootstrap-datepicker-rails'
+
+gem 'will_paginate', '~>3.0'
+gem 'will_paginate-bootstrap'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

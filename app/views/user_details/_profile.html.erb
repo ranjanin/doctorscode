@@ -6,9 +6,9 @@
 			
         <div class="doctorImage">
           <% unless current_user.image_url.nil? %>
-            <%= image_tag current_user.image_url, width: 225, height: 225 %>
+          <%= image_tag current_user.image_url, width: 225, height: 225 %>
           <% else %>
-            <%= image_tag "profile-image.png", width: 225, height: 225 %>
+          <%= image_tag "profile-image.png", width: 225, height: 225 %>
           <% end %>
 					<!-- <img src="assets/images/doctor.png" width="100%" alt="" /> -->
 				</div>
@@ -73,7 +73,7 @@
             </div>
 					
             <div class="bloodDoctorRightBottom">
-             <%= link_to "ABOUT ME", user_detail_path(current_user.user_detail) %>
+              <%= link_to "ABOUT ME", user_detail_path(current_user.user_detail), "data-ajax" => "false" %>
 					  </div>
 					
             <div class="clearfix"></div>
@@ -93,7 +93,7 @@
              <div class="bloodDoctorRightBottomInner">
 					     <div class="bloodDoctorRightBottomInnerImage">+</div>
 							 <div class="bloodDoctorRightBottomInnertext">
-                 <%= link_to "Doctor Visits", doctor_visits_path %>
+                 <%= link_to "Doctor Visits", doctor_visits_path, "data-ajax" => "false" %>
                </div>
 							 <div class="clearfix"></div>
 						 </div><!-- bloodDoctorRightBottomInner -->
@@ -101,7 +101,7 @@
              <div class="bloodDoctorRightBottomInner">
 					     <div class="bloodDoctorRightBottomInnerImage">+</div>
 							 <div class="bloodDoctorRightBottomInnertext">
-                 <%= link_to "Health Records", health_records_path %>
+                 <%= link_to "Health Records", health_records_path, "data-ajax" => "false" %>
                </div>
 							 <div class="clearfix"></div>
 						 </div><!-- bloodDoctorRightBottomInner -->
@@ -118,41 +118,20 @@
            </div>
 				
            <div class="bloodDoctorRightBottom">
-				  		MY FAMILY
+             <%= link_to "MY FAMILY", family_members_path(current_user.family_members), "data-ajax" => 'false' %>
+             
              <div class="clearfix"></div>
 					   
              <div class="bloodDoctorRightBottomInner">
-					     <div class="bloodDoctorRightBottomInnerImage">+</div>
-							 <div class="bloodDoctorRightBottomInnertext">Mother</div>
-							 <div class="clearfix"></div>
-						 </div><!-- bloodDoctorRightBottomInner -->
-						 
-             <div class="bloodDoctorRightBottomInner">
-						   <div class="bloodDoctorRightBottomInnerImage">+</div>
-							 <div class="bloodDoctorRightBottomInnertext">Father</div>
-							 <div class="clearfix"></div>
-					 	 </div>
-						 
-             <div class="bloodDoctorRightBottomInner">
-						  	<div class="bloodDoctorRightBottomInnerImage">+</div>
-						  	<div class="bloodDoctorRightBottomInnertext">Son</div>
-							  <div class="clearfix"></div>
-						 </div>
-						 
-             <div class="bloodDoctorRightBottomInner">
-						  	<div class="bloodDoctorRightBottomInnerImage">+</div>
-							  <div class="bloodDoctorRightBottomInnertext">Daughter</div>
-							  <div class="clearfix"></div>
-						 </div>
-						 
-             <div class="bloodDoctorRightBottomInner">
-						  	<div class="bloodDoctorRightBottomInnerImage">&nbsp;</div>
-							  <div class="bloodDoctorRightBottomInnertextAdd">Add New</div>
-							  <div class="clearfix"></div>
-						 </div>
-					
-           </div><!-- blood doctor rightn bottom ends here -->
-					
+					       <% family = current_user.family_members %>
+                 <% family.each do |member| %>
+                   <ul style="list-style-type:none;">
+                     <li><%= link_to member.relation, doctor_visits_doctor_visit_member_path(:id => member.id), "data-ajax" => "false" %></li>
+                   </ul>
+                 <% end %>
+               &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <%= link_to " +  Add Member", new_family_member_path, "data-ajax" => "false" %>
+             </div>
+          
           <div class="clearfix"></div>
 				</div><!-- blood doctor bottom ends here -->
 				

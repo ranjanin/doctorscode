@@ -1,7 +1,7 @@
 class HealthRecordsController < ApplicationController
   
   def index
-    @health_records = HealthRecord.where(:user_id => current_user.id)
+    @health_records = HealthRecord.where(['user_id = ? AND family_member_id IS NULL', current_user.id])
   end
   
   def new
@@ -11,6 +11,7 @@ class HealthRecordsController < ApplicationController
   def create
     @health_record = HealthRecord.new(set_params)
     @health_record.user_id = current_user.id
+    @health_record.family_member_id = params[:health_record][:family_member_id]
     if @health_record.save
       redirect_to health_records_path
     else
@@ -40,10 +41,13 @@ class HealthRecordsController < ApplicationController
     @health_record.destroy
   end
   
+  
+  
+  
   private
   
   def set_params
-    params[:health_record].permit(:health_record, :health_record_type, :health_record_date, :user_id)
+    params[:health_record].permit(:health_record, :health_record_type, :health_record_date, :user_id, :family_member_id)
   end
   
 end

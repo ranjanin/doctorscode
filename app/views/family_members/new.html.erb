@@ -1,0 +1,40 @@
+<%= render 'user_details/profile' %>
+   
+  <div class="contentRight"> 
+  
+      <br/><br/><br/>
+
+<div class="wrapper">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+
+        <h3> Add Family Member </h3>
+        <br/>
+        <%= form_for @family_member, :html => {:"data-ajax" => "false"} do |f| %>
+        
+        <div class="form-group">
+          <%= f.label :relation %>
+          <%= f.text_field :relation, class: "form-control" %>
+        </div>
+        
+        <div class="form-group">
+          <%= f.label :name %>
+          <%= f.text_field :name, class: "form-control" %>
+        </div>
+        
+        <div class="form-group">
+          <%= f.label :age %>
+          <%= f.text_field :age, class: "form-control" %>
+        </div>
+        
+          <%= f.submit "Submit", class: "btn btn-blue" %>
+        
+        <% end %>
+      </div><!-- col md ends here -->
+    </div><!-- row end shere -->
+  </div><!-- container ends here -->
+</div><!-- wrapper ends here -->
+</div><!-- content right ends here -->

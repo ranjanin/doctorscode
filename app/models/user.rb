@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
   has_one :user_detail
   has_many :doctor_visits
   has_many :health_records
+  has_many :family_members
+  
   
   mount_uploader :image, ImageUploader
 

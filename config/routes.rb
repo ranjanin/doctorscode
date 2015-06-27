@@ -10,13 +10,15 @@
    root 'homepage#index'
    
    get 'users/user_profile_picture' => 'users#user_profile_picture'
-   get 'user_details/doctor_visit' => 'user_details#doctor_visit'
-   post 'user_details/doctor_visit_update' => 'user_details#doctor_visit_update'
+   get 'doctor_visits/doctor_visit_member' => 'doctor_visits#doctor_visit_member'
+   get 'health_records/health_record_member' => 'health_records#health_record_member'
+   #post 'user_details/doctor_visit_update' => 'user_details#doctor_visit_update'
    
      resources :users
      resources :user_details
      resources :doctor_visits
      resources :health_records
+     resources :family_members
     
     
  
