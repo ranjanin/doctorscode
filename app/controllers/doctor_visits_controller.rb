@@ -11,16 +11,11 @@ class DoctorVisitsController < ApplicationController
   def create
     @doctor_visit = DoctorVisit.new(set_params)
     @doctor_visit.user_id = current_user.id
-    @doctor_visit.family_member_id = params[:doctor_visit][:family_member_id]
-    if @doctor_visit.save
-      #if @doctor_visit.family_member_id = nil
-      redirect_to doctor_visits_path
-      #else
-       #redirect_to doctor_visits_doctor_visit_member_path
-      #end
-    else
-      render action: 'new'
-    end    
+      if @doctor_visit.save
+        redirect_to doctor_visits_path
+      else
+        render action: 'new'
+      end    
   end
   
   def show
@@ -48,9 +43,20 @@ class DoctorVisitsController < ApplicationController
     @health_records = HealthRecord.where(:family_member_id => params[:id]).paginate(:page => params[:page], :per_page => 5)
   end
     
+  def member_doctor_visit_new
+    @doctor_visit = DoctorVisit.new  
+  end
   
-  #def doctor_visit_update
-  #end
+  def member_doctor_visit_create
+    @doctor_visit = DoctorVisit.new
+    @doctor_visit.user_id = current_user.id
+    @doctor_visit.family_member_id = params[:doctor_visit][:family_member_id]
+    if @doctor_visit.update_attributes(set_params)
+      redirect_to doctor_visits_doctor_visit_member_path(:id => @doctor_visit.family_member_id)
+    end
+  end
+  
+ 
   
     
   

@@ -19,9 +19,13 @@
 
         <h3> Add Doctor Visit </h3>
         <br/>
-        <%= form_for @doctor_visit, :html => {:"data-ajax" => "false"} do |f| %>
+        <%= form_for @doctor_visit, :url => '/doctor_visits/member_doctor_visit_create', :html => {:"data-ajax" => "false"} do |f| %>
 
-            
+          <div class="form-group">
+          <label>Family Member </label>
+        <%= f.collection_select :family_member_id, FamilyMember.where(:user_id => current_user.id), :id, :relation, {:prompt => "Select Member"}, {class: "form-control"}  %>
+          </div>
+        
         <div class="form-group">  
           <%= f.label :date_of_visit %>
           <%= f.date_field :date_of_visit, class: "form-control" %>

@@ -11,7 +11,6 @@ class HealthRecordsController < ApplicationController
   def create
     @health_record = HealthRecord.new(set_params)
     @health_record.user_id = current_user.id
-    @health_record.family_member_id = params[:health_record][:family_member_id]
     if @health_record.save
       redirect_to health_records_path
     else
@@ -41,7 +40,18 @@ class HealthRecordsController < ApplicationController
     @health_record.destroy
   end
   
+  def member_health_record_new
+    @health_record = HealthRecord.new
+  end
   
+  def member_health_record_create
+    @health_record = HealthRecord.new
+    @health_record.user_id = current_user.id
+    @health_record.family_member_id = params[:health_record][:family_member_id]
+    if @health_record.update_attributes(set_params)
+      redirect_to doctor_visits_doctor_visit_member_path(:id => @health_record.family_member_id)
+    end
+  end
   
   
   private

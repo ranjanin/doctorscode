@@ -29,10 +29,10 @@
         </tr>
         <% end %>
       </table>
- <%=  will_paginate  @doctor_visits, renderer: BootstrapPagination::Rails , class: "apple_pagination" %>      
+        
     
       <div class="text-right">
-        <%= link_to "Add Visit", new_doctor_visit_path, class:"contentRightBottomHeadBlueLink", "data-ajax" => "false" %>
+        <%= link_to "Add Visit", doctor_visits_member_doctor_visit_new_path, class:"contentRightBottomHeadBlueLink", "data-ajax" => "false" %>
         <br/><br/>
       </div>
     
@@ -58,7 +58,7 @@
       </table>
 
       <div class="text-right">
-        <%= link_to "Add Record", new_health_record_path, class:"contentRightBottomHeadBlueLink", "data-ajax" => "false" %>
+        <%= link_to "Add Record", health_records_member_health_record_new_path, class:"contentRightBottomHeadBlueLink", "data-ajax" => "false" %>
         <br/><br/>
       </div>
     

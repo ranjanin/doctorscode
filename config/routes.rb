@@ -12,6 +12,10 @@
    get 'users/user_profile_picture' => 'users#user_profile_picture'
    get 'doctor_visits/doctor_visit_member' => 'doctor_visits#doctor_visit_member'
    get 'health_records/health_record_member' => 'health_records#health_record_member'
+   get 'doctor_visits/member_doctor_visit_new' => 'doctor_visits#member_doctor_visit_new'
+   post 'doctor_visits/member_doctor_visit_create' => 'doctor_visits#member_doctor_visit_create'
+   get 'health_records/member_health_record_new' => 'health_records#member_health_record_new'
+   post 'health_records/member_health_record_create' => 'health_records#member_health_record_create'
    #post 'user_details/doctor_visit_update' => 'user_details#doctor_visit_update'
    
      resources :users

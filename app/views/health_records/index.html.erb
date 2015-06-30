@@ -19,10 +19,12 @@
         <tr>
           <td><%= record.health_record_type %></td>
           <td><%= record.health_record_date %></td>
-          <td>          
-           <!-- <%= link_to "Download", record.health_record_url, :target => "blank", :flags => "attachment" %> -->
-            <%= link_to "Download", cloudinary_url(record.health_record, :flags => :attachment) %>
-          </td>
+          <!-- <%= link_to "Download", record.health_record_url, :target => "blank", :flags => "attachment" %> -->
+          <% if record.health_record != nil %>
+            <td><%= link_to "Download", cloudinary_url(record.health_record, :flags => :attachment) %></td>
+          <% elsif record.health_record = nil  %>
+          <td> NA </td>
+          <% end %>
         </tr>
         <% end %>
       </table>

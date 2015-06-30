@@ -46,14 +46,17 @@
                                <% end %>
                            </li>
                         <% end %>
-                      
+                        
+                        <% if current_user.user_detail.present? %>
                            <li>
                              <%= link_to users_user_profile_picture_path, "data-ajax" => "false" do %>
                               <i class="fa fa-user"></i> 
                                 &nbsp;&nbsp;Upload Profile Picture
                                <% end %>
                            </li>
+                     
                         <li class="divider"></li>
+                       <% end %>
                         <li>
                           <%= link_to destroy_user_session_path, :method => "get" , "data-ajax" => "false" do %>
                              <i class="fa fa-sign-out"></i> 
