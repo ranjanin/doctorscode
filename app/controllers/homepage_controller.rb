@@ -4,4 +4,7 @@ class HomepageController < ApplicationController
   end
   
   
+  def successful_registration
+  end
+  
 end

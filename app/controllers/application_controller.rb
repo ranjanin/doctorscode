@@ -24,12 +24,16 @@ class ApplicationController < ActionController::Base
         return root_url
       end
   
-     def after_sign_up_path_for(user)
-     #  if user_signed_in
-       return new_user_detail_path
+   # def after_inactive_sign_up_path_for(user)
+    #  return home_page_successful_registration_path
+   # end
+    
+    def after_sign_up_path_for(user)
+      return home_page_successful_registration_path
+    end
        # else
         #  return root_url
-    end
+    #end
       #end
     
  def configure_permitted_parameters
