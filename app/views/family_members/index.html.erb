@@ -18,9 +18,9 @@
         <% @family_members.each do |member| %>
        
         <tr>
-          <td><%= link_to member.relation.capitalize, family_member_path(:id => member.id), "data-ajax" => "false" %></td>
-          <td><%= member.first_name.capitalize %></td>
-          <td><%= member.last_name.capitalize %></td>
+          <td><%= link_to member.relation, family_member_path(:id => member.id), "data-ajax" => "false" %></td>
+          <td><%= member.first_name %></td>
+          <td><%= member.last_name %></td>
         </tr>
         <% end %>
       </table>
