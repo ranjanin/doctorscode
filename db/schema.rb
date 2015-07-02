@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20150701165920) do
   create_table "family_members", force: true do |t|
     t.string   "relation"
     t.string   "first_name"
-    t.date     "date_of_birth",  limit: 255
+    t.string   "date_of_birth"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
