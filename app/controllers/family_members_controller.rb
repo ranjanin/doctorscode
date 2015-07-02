@@ -40,7 +40,7 @@ class FamilyMembersController < ApplicationController
   private
   
   def set_params
-    params[:family_member].permit(:relation, :name, :age, :user_id)
+    params[:family_member].permit(:relation, :first_name, :last_name, :date_of_birth, :blood_group, :height, :weight, :known_ailments, :user_id)
   end
   
 end

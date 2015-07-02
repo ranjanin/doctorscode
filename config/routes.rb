@@ -1,13 +1,18 @@
  Rails.application.routes.draw do
   
-  devise_for :users, path_names:{sign_in: "login", sign_up: "cmon_let_me_in"},
- :controllers => { :registrations => 'registrations' }
+   devise_for :users, path_names:{sign_in: "login", sign_up: "new_user_registration"}
+ #,:controllers => { :registrations => 'registrations' }
+   
+   devise_scope :user do
+    root to: "devise/sessions#new"
+   end
     
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'homepage#index'
+   #root 'homepage#index'
+  # root 'devise/sessions#new'
    
    get 'users/user_profile_picture' => 'users#user_profile_picture'
    get 'doctor_visits/doctor_visit_member' => 'doctor_visits#doctor_visit_member'

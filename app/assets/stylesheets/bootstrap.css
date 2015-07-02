@@ -2794,7 +2794,7 @@ select[multiple].form-group-lg .form-control {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 2; 
   display: block;
   width: 34px;
   height: 34px;

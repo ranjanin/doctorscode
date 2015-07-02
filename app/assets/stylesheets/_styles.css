@@ -1,3 +1,6 @@
+
+
+
 body 
 {
   margin:0px;
@@ -13,6 +16,8 @@ img
   border:0px;
   display: inline-block;
 }
+
+
 a
 {
   outline: none;
@@ -33,15 +38,15 @@ a
 .wrapper
 {
   height: auto;
-  min-width: 320px;
-  max-width: 2200px;
+  /*min-width: 320px;
+  max-width: 2200px; */
   margin-left: auto;
   margin-right: auto;  
   line-height: 24px;
 }
 .container
 {
-  width: 94%;
+  width: 100%;
   padding: 0 3% 0 3%;
   margin-left: auto;
   margin-right: auto;
@@ -190,7 +195,7 @@ a
   border-style: solid;
   background-color:  #004a91;
   width: 140px;
-  height: 25px;
+  height: 40px;
   text-align: center;
   color:  #ffffff;
   font-size: 18px; 
@@ -204,12 +209,13 @@ a
 }
 .contentHomeImage
 {
-  width: 106%;
+  width: 109%;
   height: auto;
   bottom: 0px;
-  left: -3%;
+  left: -3%; 
   z-index: -1;
   position: absolute;
+ 
 }
 .contentHomeImage img
 {
@@ -236,19 +242,22 @@ a
   padding-top: 6px;
   cursor: pointer;
   border-bottom:3px solid transparent;
+  background:url('blueOpacity.png');
 }
 .contentHomeRegisterLoginWrapperheadActive
 {
-  background: url('blueOpacity.png');
+   
+  background:url('blueOpacity.png');
   border-bottom:3px solid #fff;
   cursor: inherit;
 }
 .contentHomeRegisterLoginWrapperBottom
 {
   width: 90%;
-  height: 190px;
+  height: 210px;
   padding: 5%;
-  background: url('blueOpacity.png');
+   
+  background:url('blueOpacity.png');
 }
 .contentHomeRegisterLoginWrapperBottomInput
 {
@@ -282,11 +291,11 @@ a
   float: right;
   cursor: pointer;
   height: auto;
-  line-height: 20px;
-  padding: 8px;
+  line-height: 15px;
+  padding: 5px;
   background: #0f9f8d;
   color:  #ffffff;
-  font-size: 18px; 
+  font-size: 15px; 
   font-weight: 700;
 }
 .headerBG
@@ -415,6 +424,8 @@ hr
   margin-top: 20px;
   margin-bottom: 20px;
   border:1px solid #0db7c4;
+  /* added by me */
+  box-shadow: 0px 5px 5px rgba(175,136,136,0.75);
 }
 .bloodDoctor
 {
@@ -515,7 +526,6 @@ hr
   color:  #666666;
   font-size: 12px; 
   font-weight: 600;
-  min-height: 25px;
   text-transform: uppercase;
 }
 .contentRightBottomHead small
@@ -615,7 +625,6 @@ hr
   font-weight: 400;
   line-height: 32px;
   border-top: 1px solid #ccc;
-  position: relative;
 }
 .contentRightBottomHeadBlueTable61
 {
@@ -653,27 +662,6 @@ hr
   width: 10%;
   float: left;
 }
-.contentRightBottomHeadBlueTable66 img
-{
-  cursor: pointer;
-}
-.contentRightBottomHeadBlueTable66More
-{
-  position: absolute;
-  width: 80%;
-  min-height: 100px;
-  max-height: 250px;
-  overflow-y: auto;
-  padding: 5px;
-  border:1px solid #ccc;
-  right: 8%;
-  top: 37px;
-  z-index: 99;
-  background: #fff;
-  font-size: 12px; 
-  font-family: 'Open Sans', sans-serif;
-  display: none;
-}
 .contentRightBottomHeadBlueLink
 {
   width: auto;
@@ -687,7 +675,6 @@ hr
   line-height: 21px; 
   text-transform: uppercase;
   margin-top: 15px;
-  position: relative;
 }
 .contentRightBottomHeadBlueLink a
 {
@@ -729,281 +716,4 @@ hr
   text-decoration: none;
   text-transform: uppercase;
   color: #0db7c4;
-}
-.contentRightBottomHeadBlueLinkAddVisit
-{
-  width: 100%;
-  height: auto;
-  padding: 20px 0px 20px 0px;
-  position: absolute;
-  top: 0px;
-  right: 10px;
-  z-index: 99;
-  background: #8ddde3;
-  font-size: 12px; 
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  line-height: 21px; 
-  color: #666;
-  text-transform: none;
-  display: none;
-  border:1px solid #666;
-}
-.contentRightBottomHeadBlueLinkAddVisitLeft
-{
-  padding-left: 2%;
-  width: 46%;
-  float: left;
-  margin-right: 2%;
-  height: auto;
-}
-.contentRightBottomHeadBlueLinkAddVisitLeft input
-{
-  width: 100%;
-  height: auto;
-  border:none;
-  outline: none;
-  border-bottom:1px solid #666;
-  background: transparent;
-  font-size: 12px; 
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  line-height: 21px; 
-  color: #666666;
-  margin-bottom: 10px;
-  margin-top: -10px;
-}
-.contentRightBottomHeadBlueLinkAddVisitRight
-{
-  width: 48%;
-  margin-right: 2%;
-  height: auto;
-  float: left;
-}
-.contentRightBottomHeadBlueLinkAddVisitRight textarea
-{
-  width: 96%;
-  padding: 5px 2% 5px 2%;
-  height: 280px !important;
-  border:1px solid ##666666;
-  outline: none;
-  background: #fff;
-  font-size: 12px; 
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  line-height: 21px; 
-  color: #666666;
-  margin-bottom: 10px;
-}
-.fileFeild
-{
-  width: 99%;
-  height: auto;
-  border:1px solid #666;
-  background: #fff;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  padding-top: 6px;
-  height: 20px;
-}
-.fileFeildFile
-{
-  display: none;
-}
-.fileFeild input
-{
-  width: 80%;
-  padding-left: 5%;
-  height: auto;
-  float: left;
-  border-bottom: 0px;
-  padding-top: 3px;
-}
-.fileFeild img
-{
-  width: 14px;
-  float: right;
-  margin-right: 1%;
-  cursor: pointer;
-}
-.fileFeildFile
-{
-  display: none;
-}
-.fileFeildAdd
-{
-  width: auto;
-  text-align: right;
-  cursor: pointer;
-}
-.contentRightBottomHeadBlueLinkAddVisitClick
-{
-  cursor: pointer;
-}
-.textTransformCapitalize
-{
-  text-transform: capitalize !important;
-  margin-bottom: 10px !important;
-}
-.textTransformUppercase
-{
-  text-transform: uppercase !important;
-  margin-bottom: 10px !important;
-}
-.contentRightBottomTextLeft
-{
-  width: 30%;
-  margin-right: 3%;
-  float: left;
-}
-.contentRightBottomTextRight
-{
-  width: 67%;
-  float: right;
-}
-.textLeft 
-{
-  text-align: left !important;
-  float: none;
-  margin-top: 30px;
-}
-.contentRightBottomtextNew
-{
-  color: #666;
-  margin-bottom: 20px;
-}
-.contentRightBottomHeadRight input, .contentRightBottomHeadLeft input
-{
-  width: 100%;
-  height: auto;
-  border:none;
-  outline: none;
-  background: transparent;
-  border-bottom: 1px solid #666;
-  font-size: 12px; 
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #666;
-}
-.contentRightBottomTextRight textarea
-{
-  width: 96%;
-  height: 195px !important;
-  padding: 5px 2% 5px 2%;
-  background: transparent;
-  outline: none;
-  font-size: 12px; 
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  color: #666;
-}
-.submitButton 
-{
-  width: 100px !important;
-  height: 35px !important;
-  float: right !important;
-  margin-top: 20px !important;
-  padding: 5px !important;
-  background: #0db7c4 !important;
-  outline: none !important;
-  border:none !important;
-  font-size: 16px !important; 
-  font-family: 'Open Sans', sans-serif !important;
-  font-weight: 400 !important;
-  color: #666 !important;
-  text-transform: uppercase !important;
-}
-.registerFormWrapperWrap
-{
-  width: 100%;
-  position: relative;
-  height: auto;
-}
-.registerFormWrapper
-{
-  width: 90%;
-  padding: 0 5% 0 5%;
-  position: absolute;
-  z-index: 99;
-  left: 0px;
-}
-.registerFormWrapperLogo
-{
-  width: 125px;
-  height: 33px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.registerFormWrapperText
-{
-  width: 100%;
-  text-align: center;
-  color:  #37383a;
-  font-size: 14px; 
-  font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 20px;
-  padding-bottom: 10px;
-}
-.registerFormWrapperLink
-{
-  width: 100%;
-  text-align: center;
-  color:  #009986;
-  font-size: 14px; 
-  font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
-}
-.registerFormWrapperLink a, .registerFormWrapperText a
-{
-  text-decoration: none;
-  color:  #009986;
-}
-.registerFormWrapperInput
-{
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 300px;
-  height: auto;
-}
-.registerFormWrapperInput input
-{
-  width: 100%;
-  height: auto;
-  border:none;
-  outline: none;
-  border-bottom:1px solid #2f6691;
-  background: transparent;
-  font-size: 14px; 
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  line-height: 21px; 
-  color: #37383a;
-  margin-bottom: 15px;
-}
-.registerFormWrapperInputButton
-{
-  width: 75px;
-  text-align: center;
-  text-transform: uppercase;
-  float: right;
-  cursor: pointer;
-  height: auto;
-  line-height: 20px;
-  padding: 5px;
-  background: #2f6691;
-  color:  #000;
-  font-size: 14px; 
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.registerFormWrapperInput a
-{
-  text-decoration: none;
-  color:  #009986;
-  font-size: 14px;
-  margin-left: 15px;
 }

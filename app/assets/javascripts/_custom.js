@@ -32,12 +32,6 @@ $(document).ready(function(){
 
 	//////////////
 
-	 $('.ui-shadow').each(function () {
-        $(this).first().text('');
-    });
-
-	 /////////////
-
 	if(screenWidth<960){		
 
 		$(".menuIconWrap").click(function(){
@@ -60,11 +54,6 @@ $(document).ready(function(){
 	}
 
 	/////////////////
-
-	var registerFormWrapperheight = $(".registerFormWrapper").height();
-	$(".registerFormWrapper").css('height', registerFormWrapperheight);
-	$(".registerFormWrapper").css('margin-top', -registerFormWrapperheight/2 +"px");
-	$(".registerFormWrapper").css('top', $(window).height()/2 +"px");
 
 	$(".contentHomeRegisterLoginWrapperhead").eq(0).addClass('contentHomeRegisterLoginWrapperheadActive');
 	$(".contentHomeRegisterLoginWrapperhead").eq(0).click(function(){
@@ -89,43 +78,6 @@ $(document).ready(function(){
 	$(".bloodDoctorRightBottomInnertextAdd").css('width', bloodDoctorWidthBottom - 22 +"px");
 	
 	//////////////
-
-	$( "#datepicker" ).datepicker();
-
-	/////////////
-
-	$(".contentRightBottomHeadBlueTable66 img").click(function(event){
-		$('.contentRightBottomHeadBlueTable66More').hide();
-		$(this).siblings('.contentRightBottomHeadBlueTable66More').show();
-		event.stopPropagation();
-	});
-	$(".contentRightBottomHeadBlueLinkAddVisit").click(function(event){
-		$(".contentRightBottomHeadBlueLinkAddVisit").show();
-		event.stopPropagation();
-	});
-
-	var contentRightBottomWidth = $(".contentRightBottom").width();
-	$(".contentRightBottomHeadBlueLinkAddVisit").css('width', contentRightBottomWidth +"px");
-
-	$(".fileFeild img").click(function(event){
-		$(this).parents().find(".fileFeildFile").click();		
-		event.stopPropagation();
-	});
-	$(".fileFeildFile").change(function(){
-		var url = $(this).val();
-		$(this).parents().find('.submitvalue').val(url);
-	});
-
-	$(".contentRightBottomHeadBlueLinkAddVisitClick").click(function(event){
-		$(".contentRightBottomHeadBlueLinkAddVisit").show();
-		event.stopPropagation();
-	});
-
-
-	$('body').click(function(event){
-		$('.contentRightBottomHeadBlueTable66More').hide();
-		$(".contentRightBottomHeadBlueLinkAddVisit").hide();
-	});
 
 
 });

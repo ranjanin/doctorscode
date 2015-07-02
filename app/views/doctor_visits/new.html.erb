@@ -1,57 +1,63 @@
 <%= render 'user_details/profile' %>
-   
-  <div class="contentRight"> 
+
+<div class="contentRight">
+			
+        <div class="contentRightTop">
+          You are here - <%= image_tag "homeDark.png", width: "21" %>
+				</div>
   
-      <br/><br/><br/>
-
-<div class="wrapper">
-  <div class="container">
-    
-     <script type="text/javascript">
-       $(document).ready(function(){
-       $("#visit_date").datepicker({ dateFormat: "dd/mm/yy" }).val()
-       });
-     </script>
-  
-    <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-5">
-
-        <h3> Add Doctor Visit </h3>
-        <br/>
-        <%= form_for @doctor_visit, :html => {:"data-ajax" => "false"} do |f| %>
-
-            
-        <div class="form-group">  
-          <%= f.label :date_of_visit %>
-          <%= f.date_field :date_of_visit, class: "form-control" %>
-        </div>
-        
-        <div class="form-group">    
-          <%= f.label :doctor %>
-          <%= f.text_field :doctor, class: "form-control" %>
-        </div>
-        
-        <div class="form-group">  
-          <%= f.label :hospital %>
-          <%= f.text_field :hospital, class: "form-control" %>
-        </div>
+				<div class="contentRightBottom">
           
-        <div class="form-group">  
-          <%= f.label :reasonfor_visit %>
-          <%= f.text_field :reason_for_visit, class: "form-control" %>
-        </div>
-        
-        <div class="form-group">  
-          <%= f.label :details %>
-          <%= f.text_field :details, class: "form-control" %>
-        </div>
-        
-        <%= f.submit "Submit", class: "btn btn-blue" %>
-        
-        <% end %>
-      </div><!-- col md ends here -->
-    </div><!-- row end shere -->
-  </div><!-- container ends here -->
-</div><!-- wrapper ends here -->
-</div><!-- content right ends here -->
+					<div class="contentRightBottomtextNew">
+						A family medical history is a record of health information about a person and his or her close relatives A family medical history is a record of health information about a person and his or her close relatives
+					</div>
+          
+					 <%= form_for @doctor_visit, :html => {:"data-ajax" => "false"} do |f| %>
+						
+          <div class="contentRightBottomLeft">
+					
+            <div class="contentRightBottomHead">
+							Add doctor visits for Family Member
+						</div>					
+
+						         
+							<div class="clearfix"></div>
+							<div class="contentRightBottomHeadLeft textTransformCapitalize">Date of Visit</div>
+							<div class="contentRightBottomHeadRight textTransformUppercase"> 
+								 <%= f.text_field :date_of_visit, :id => "datepicker" %>
+							</div>
+            
+							<div class="clearfix"></div>
+							<div class="contentRightBottomHeadLeft textTransformCapitalize">Doctor</div>
+							<div class="contentRightBottomHeadRight textTransformUppercase">
+								<%= f.text_field :doctor %>
+							</div>
+            
+							<div class="clearfix"></div>
+							<div class="contentRightBottomHeadLeft textTransformCapitalize">Hospital</div>
+							<div class="contentRightBottomHeadRight textTransformUppercase">
+								<%= f.text_field :hospital %>
+							</div>
+            
+							<div class="clearfix"></div>
+							<div class="contentRightBottomHeadLeft textTransformCapitalize">Reason For Visit</div>
+							<div class="contentRightBottomHeadRight textTransformUppercase">
+								<%= f.text_field :reason_for_visit %>
+							</div>
+            
+							<div class="clearfix"></div>
+							<div class="contentRightBottomHeadLeft textTransformCapitalize">Details</div>
+							<div class="contentRightBottomHeadRight textTransformUppercase">
+								<%= f.text_field :details %>
+							</div>
+            
+								<div class="clearfix"></div>
+						      <%= f.submit "SUBMIT" %>
+								<div class="clearfix"></div>
+            
+							</div><!-- contentRightBottomLeft ends here -->
+          <% end %>
+						</div><!-- contentRightBottom ends here -->
+</div><!-- contentright ends here -->
+
+

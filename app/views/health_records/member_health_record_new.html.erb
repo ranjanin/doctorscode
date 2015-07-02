@@ -1,43 +1,60 @@
 <%= render 'user_details/profile' %>
    
-  <div class="contentRight"> 
+<div class="contentRight">
+				<div class="contentRightTop">
+          You are here - <%= image_tag "homeDark.png", width: "21" %>
+				</div>
   
-      <br/><br/><br/>
-<div class="wrapper">
-  <div class="container">
-    
-    <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-5">
+				<div class="contentRightBottom">
+					<div class="contentRightBottomtextNew">
+						A family medical history is a record of health information about a person and his or her close relatives A family medical history is a record of health information about a person and his or her close relatives.
+					</div>
+          
+				<%= form_for @health_record, :url => '/health_records/member_health_record_create', :html => {:multipart => true, :"data-ajax" => "false"} do |f| %>
+          
+					<div class="contentRightBottomLeft">
+							
+              <div class="contentRightBottomHead">
+								Add Health Records forFamily Member
+							</div>					
 
-        <h3> Add Health Records </h3>
-        <br/>
-        <%= form_for @health_record, :url => '/health_records/member_health_record_create', :html => {:multipart => true, :"data-ajax" => "false"} do |f| %>
-
-          <div class="form-group">
-            <label> Family Member </label>
-            <%= f.collection_select :family_member_id, FamilyMember.where(:user_id => current_user.id), :id, :relation, {:prompt => "Select Member"}, {:class => "form-control"} %>
-          </div>
-        
-           <div class="form-group">
-            <%= f.label :record_type %>
-            <%= f.text_field :health_record_type, class: "form-control" %>
-           </div>
-        
-           <div class="form-group">
-            <%= f.label :record_date %>
-            <%= f.date_field :health_record_date, class: "form-control" %>
-           </div>
-        
-           <div class="form-group">
-            <%= f.label :record %>
-            <%= f.file_field :health_record, class: "form-control" %>
-           </div>
-        <%= f.submit "Submit", class: "btn btn-blue" %>
-        
-        <% end %>
-      </div><!-- col md ends here -->
-    </div><!-- row end shere -->
-  </div><!-- container ends here -->
-</div><!-- wrapper ends here -->
+							<div class="contentRightBottomHeadLeft textTransformCapitalize">Relationship  </div>
+							<div class="contentRightBottomHeadRight textTransformUppercase">
+							<%= f.collection_select :family_member_id, FamilyMember.where(:user_id => current_user.id), :id, :relation, {:prompt => "Select Member"} %>
+							</div>
+          
+            
+							<div class="clearfix"></div>
+							<div class="contentRightBottomHeadLeft textTransformCapitalize">Record Type</div>
+							<div class="contentRightBottomHeadRight textTransformUppercase"> 
+								<%= f.text_field :health_record_type %>
+							</div>
+            
+							<div class="clearfix"></div>
+							<div class="contentRightBottomHeadLeft textTransformCapitalize">Record Date</div>
+							<div class="contentRightBottomHeadRight textTransformUppercase">
+                <%= f.text_field :health_record_date, :id => "datepicker" %>
+							</div>
+            
+							<div class="clearfix"></div>
+            <br/>
+							<div class="contentRightBottomHeadLeft textTransformCapitalize">Choose File</div>
+							<div class="contentRightBottomHeadRight textTransformUppercase">
+								<%= f.file_field :health_record %>
+							</div>
+            
+              <div class="clearfix"></div>
+            
+             <%= f.submit "SUBMIT" %>
+            
+          </div><!--  contentRightBottomLeft ends here -->
+            <% end %>
+								<div class="clearfix"></div>
+	      </div><!-- contentRightBottom ends here -->
 </div><!-- content right ends here -->
+
+            
+							
+  
+
+
