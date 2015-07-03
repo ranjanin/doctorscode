@@ -23,19 +23,22 @@
             <div class="registerFormWrapperText">			
                Please enter your Login Credentials.
               <br/><br/>
-               <% if alert %>
+              
                 <div class="row">
                   <div class="col-md-4"></div>
-                  <div class="col-md-4">
-                  <div class="alert alert-danger"><%= alert %></div>
+                   <div class="col-md-4">
+                    <% if alert %>
+                      <div class="alert alert-danger"><%= alert %></div>
+                    <% elsif notice %>
+                      <div class="alert alert-success"><%= notice %></div>
+                    <% end %>
                   </div>
                 </div>
-               <% end %>
-			      </div>
-            <br/>
-                
+          
+                          
             <%= form_for(resource, as: resource_name, url: session_path(resource_name),  :html => {:'data-ajax' => 'false'}) do |f| %>
               <div class="registerFormWrapperInput">
+               
                       
 			           <%= f.email_field :email, autofocus: true,  placeholder: "E-Mail ID" %>    
 		             <div class="clearfix"></div>
@@ -45,8 +48,11 @@
                 <div class="registerFormWrapperInputButton">
 						      <%= f.submit "SUBMIT" %>
 					      </div>
+                <div class="clearfix"></div>
               </div><!-- registerFormWrapperInput ends here -->
             <% end %>
+          
+         
 				  
               <div class="clearfix"></div>
               <br/>

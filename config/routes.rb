@@ -1,6 +1,6 @@
  Rails.application.routes.draw do
   
-   devise_for :users, path_names:{sign_in: "login", sign_up: "new_user_registration"} , :controllers => { :registrations => 'registrations' }
+   devise_for :users, path_names:{sign_in: "login", sign_up: "new_user_registration"}, :controllers => { :registrations => 'registrations' }
    #, :controllers => { :passwords => "passwords" }
 
    
@@ -22,7 +22,7 @@
    post 'doctor_visits/member_doctor_visit_create' => 'doctor_visits#member_doctor_visit_create'
    get 'health_records/member_health_record_new' => 'health_records#member_health_record_new'
    post 'health_records/member_health_record_create' => 'health_records#member_health_record_create'
-   get 'home_page/succesful_registration' => 'home_page#successful_registration'
+   get 'homepage/succesful_registration' => 'homepage#successful_registration'
    #post 'user_details/doctor_visit_update' => 'user_details#doctor_visit_update'
    
      resources :users

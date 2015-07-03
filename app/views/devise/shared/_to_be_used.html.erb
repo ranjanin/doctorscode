@@ -1,18 +1,6 @@
-ActionMailer::Base.smtp_settings = {
-  :address => "mail.doctorscode.in",
-  :port => 25,
-  :domain => "doctorscode.in",
-  :authentication => "plain",
-  :enable_starttls_auto => "true",
-  :user_name => "support@doctorscode.in",
-  :password => "123venturedC",
-  :openssl_verify_mode => 'none'
-  }
 
-=begin
 this was displayed in sign in page, so commented
 
 <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
 <% end -%>
-=end

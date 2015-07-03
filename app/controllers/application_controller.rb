@@ -29,11 +29,11 @@ class ApplicationController < ActionController::Base
    # end
     
     def after_sign_up_path_for(user)
-      return home_page_successful_registration_path
+      return homepage_successful_registration_path
     end
        # else
         #  return root_url
-    #end
+   # end
       #end
     
  def configure_permitted_parameters

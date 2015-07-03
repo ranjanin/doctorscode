@@ -14,15 +14,21 @@
 				</div>
         
 				<div class="doctorImageHead">
+          <% if current_user.user_detail.first_name == nil %>
+            Username need to be updated
+          <% else %>
           <%= current_user.user_detail.first_name %>
+          <% end %>
 				</div>
         
 				<div class="doctorImageText">
-          <% dob = current_user.user_detail.date_of_birth.strftime("%Y").to_i %>
-          <% today = Date.today.strftime("%Y").to_i %>
-          <% age = today - dob %>
-          <%= age %> Years,  <%= current_user.user_detail.gender %>
-					<%= image_tag "doctorEdit.png" %>
+          <% if current_user.user_detail.date_of_birth != nil %>
+             <% dob = current_user.user_detail.date_of_birth.strftime("%Y").to_i %>
+             <% today = Date.today.strftime("%Y").to_i %>
+             <% age = today - dob %>
+             <%= age %> Years,  <%= current_user.user_detail.gender %>
+					   <%= image_tag "doctorEdit.png" %>
+          <% end %>
         </div>
         
 				<hr />
@@ -34,7 +40,9 @@
            </div>
           
 			  		<div class="bloodDoctorRight">
+              <% if current_user.user_detail.blood_group != nil %>
               BLOOD GROUP: <%= current_user.user_detail.blood_group %>
+              <% end %>
 					  </div>
 					 <div class="clearfix"></div>
           
@@ -47,7 +55,9 @@
            </div>
 				
            <div class="bloodDoctorRight">
-					 	HEIGHT: <%= current_user.user_detail.height %>
+             <% if current_user.user_detail.height != nil %>
+    					 	HEIGHT: <%= current_user.user_detail.height %>
+             <% end %>
 					 </div>
 					
            <div class="clearfix"></div>
@@ -60,7 +70,9 @@
            </div>
 					
            <div class="bloodDoctorRight">
-             WEIGHT: <%= current_user.user_detail.weight %>
+             <% if current_user.user_detail.weight != nil %> 
+               WEIGHT: <%= current_user.user_detail.weight %>
+             <% end %>
 					 </div>
 					
            <div class="clearfix"></div>
