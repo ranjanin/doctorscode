@@ -10,17 +10,15 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require jquery.turbolinks
-//= require turbolinks
-//= require bootstrap.min
-//= require bootstrap-datepicker/core
-//= require cloudinary
-//= require custom
 //= require jquery-1.11.0.min
 //= require jquery.easing.1.3
 //= require jquery.mobile-1.4.2.min
+//= require jquery-ui
+//= require jquery_ujs
+//= require jquery.turbolinks
+//= require turbolinks
+//= require cloudinary
+//= require custom
 //= require_tree .
 
 

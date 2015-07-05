@@ -41,7 +41,7 @@ a
 }
 .container
 {
-  width: 94%;
+  width: 100%;
   padding: 0 3% 0 3%;
   margin-left: auto;
   margin-right: auto;
@@ -58,7 +58,7 @@ a
   cursor: pointer;
   float: right;
   display: none;
-  background: #0f9f8d;
+  background: #fff;
 }
 .menuIcon
 {
@@ -71,7 +71,7 @@ a
 }
 .menuIconBG
 {
-  background: #fff;
+  background: #0db7c4;
   height: 1px;
   margin-bottom: 5px;
   width: 100%;
@@ -94,18 +94,18 @@ a
 .ActiveMenuBG1
 {
   top: 0;
-  background: #fff;
+  background: #0db7c4;
   -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);
   transform: translate3d(0, 8px, 0) rotate(45deg);
 }
 .ActiveMenuBG2 {
-  background: #fff;
+  background: #0db7c4;
   top: 8px;
   opacity: 0;
 }
 .ActiveMenuBG3
 {
-  background: #fff;
+  background: #0db7c4;
   top: 16px;
   -webkit-transform: translate3d(0, -8px, 0) rotate(-45deg);
   transform: translate3d(0, -8px, 0) rotate(-45deg);
@@ -149,7 +149,8 @@ a
 .menu ul li a
 {
   text-decoration: none;
-  color: #0f9f8d;
+  color: #fff;
+  padding-right:5px;
   border-bottom: 3px solid transparent;
   line-height: 30px;
   display: block;
@@ -462,6 +463,11 @@ hr
   text-transform: uppercase;
   line-height: 20px;
 }
+
+.bloodDoctorRightBottom a {
+  color:#666;
+}
+
 .bloodDoctorRightBottomInner
 {
   width: 100%;
@@ -968,6 +974,7 @@ hr
   margin-right: auto;
   max-width: 300px;
   height: auto;
+  line-height:24px;
 }
 .registerFormWrapperInput input
 {
@@ -1006,4 +1013,34 @@ hr
   color:  #009986;
   font-size: 14px;
   margin-left: 15px;
+}
+
+.registerFormWrapperInputButton input
+{
+  margin-bottom: 0px;
+}
+.contentRightBottomHeadRight select{
+  width: 100%;
+  padding-bottom: 4px;
+  
+}
+
+.ui-radio{
+  display:inline-block;
+  width:20px;
+  height:20px;
+  margin-right:20px;
+  vertical-align:middle;
+}
+
+.contentRightBottomHeadRight textarea{
+  background:transparent;
+  width:100%;
+  height: 100px! !important;
+  border: 1px solid #666;
+  font-size:12px;
+  font-weight:400px;
+  text-transform:uppercase;
+  color:#666;
+  font-family:'Open Sans', sans-serief
 }

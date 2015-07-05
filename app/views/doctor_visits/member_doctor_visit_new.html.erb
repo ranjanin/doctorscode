@@ -14,7 +14,7 @@
           
 					 <%= form_for @doctor_visit, :url => '/doctor_visits/member_doctor_visit_create', :html => {:"data-ajax" => "false"} do |f| %>
 						
-          <div class="contentRightBottomLeft">
+          <div>
 					
             <div class="contentRightBottomHead">
 							Add doctor visits for Family Member
@@ -28,7 +28,7 @@
 							<div class="clearfix"></div>
 							<div class="contentRightBottomHeadLeft textTransformCapitalize">Date of Visit</div>
 							<div class="contentRightBottomHeadRight textTransformUppercase"> 
-                <%= f.text_field :date_of_visit, :id => "datepicker" %>
+                <%= f.text_field :date_of_visit, :id => "datepicker1" %>
 							</div>
             
 							<div class="clearfix"></div>
@@ -56,7 +56,7 @@
 							</div>
             
 								<div class="clearfix"></div>
-						      <%= f.submit "SUBMIT" %>
+						      <%= f.submit "SUBMIT", class: "submitButton" %>
 								<div class="clearfix"></div>
             
 							</div><!-- contentRightBottomLeft ends here -->

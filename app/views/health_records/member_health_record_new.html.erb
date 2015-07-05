@@ -12,7 +12,7 @@
           
 				<%= form_for @health_record, :url => '/health_records/member_health_record_create', :html => {:multipart => true, :"data-ajax" => "false"} do |f| %>
           
-					<div class="contentRightBottomLeft">
+					<div>
 							
               <div class="contentRightBottomHead">
 								Add Health Records forFamily Member
@@ -45,7 +45,7 @@
             
               <div class="clearfix"></div>
             
-             <%= f.submit "SUBMIT" %>
+             <%= f.submit "SUBMIT", class: "submitButton" %>
             
           </div><!--  contentRightBottomLeft ends here -->
             <% end %>

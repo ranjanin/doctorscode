@@ -32,11 +32,7 @@ $(document).ready(function(){
 
 	//////////////
 
-	 $('.ui-shadow').each(function () {
-        $(this).first().text('');
-    });
-
-	 /////////////
+	 
 
 	if(screenWidth<960){		
 
@@ -89,8 +85,18 @@ $(document).ready(function(){
 	$(".bloodDoctorRightBottomInnertextAdd").css('width', bloodDoctorWidthBottom - 22 +"px");
 	
 	//////////////
+  
+  $('.ui-shadow').each(function () {
+        $(this).first().text('');
+    });
+
+	 /////////////
 
 	$( "#datepicker" ).datepicker();
+  	$( "#datepicker1" ).datepicker();
+  	$( "#datepicker2" ).datepicker();
+  	$( "#datepicker3" ).datepicker();
+  	$( "#datepicker4" ).datepicker();
 
 	/////////////
 

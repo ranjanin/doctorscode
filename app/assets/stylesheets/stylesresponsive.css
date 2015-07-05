@@ -5,22 +5,26 @@
 	}
 	.menu
 	{
-		min-width: 100px;
-		max-width: 230px;
-		width: 120px;
-		position: absolute;
+		min-width:150px;
+    width: 245px;
+    border:1px solid #0db7c4;
+    padding-right:10px;
+    position: absolute;
 		background: #fff;
 		z-index: 99;
 		right: 3%;
 		top: 0px;
 		display: none;
 		height: auto;
-		top: 70px;
+		top: 73px;
 	}
 	.menu ul li
 	{
 		display: block;
 	}
+  .menu ul li a {
+    color:#0db7c4;
+  }
 	.contentRightBottomLeft,.contentRightBottomRight
 	{
 		width: 100%;
@@ -57,7 +61,9 @@
 @media screen  and (max-width: 550px){
 	.contentLeft, .contentRight
 	{
-		width: 94%;
+		width: 100%;
+    padding-left:3%;
+    padding-right:3%;
 		margin-right: 0px;
 		float: none;
 		margin-left: auto;

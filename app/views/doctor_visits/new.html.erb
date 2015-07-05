@@ -14,7 +14,7 @@
           
 					 <%= form_for @doctor_visit, :html => {:"data-ajax" => "false"} do |f| %>
 						
-          <div class="contentRightBottomLeft">
+          <div>
 					
             <div class="contentRightBottomHead">
 							Add doctor visits for Family Member
@@ -52,7 +52,7 @@
 							</div>
             
 								<div class="clearfix"></div>
-						      <%= f.submit "SUBMIT" %>
+						      <%= f.submit "SUBMIT", class: "submitButton" %>
 								<div class="clearfix"></div>
             
 							</div><!-- contentRightBottomLeft ends here -->
