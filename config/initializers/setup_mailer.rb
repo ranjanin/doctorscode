@@ -4,8 +4,8 @@ ActionMailer::Base.smtp_settings = {
   :domain => "gmail.com",
   :authentication => "plain",
   :enable_starttls_auto => "true",
-  :user_name => "nvranjani@gmail.com",
-  :password => "Npaatrbabu16",
+  :user_name => "doctorscode1@gmail.com",
+  :password => "Just4Fun",
   :openssl_verify_mode => 'none'
   } 
 

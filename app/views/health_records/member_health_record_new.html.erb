@@ -9,7 +9,12 @@
 					<div class="contentRightBottomtextNew">
 						A family medical history is a record of health information about a person and his or her close relatives A family medical history is a record of health information about a person and his or her close relatives.
 					</div>
-          
+                     
+          <script type="text/javascript">
+  $(document).ready(function(){
+   $("#date_visit").datepicker({ dateFormat: "dd/mm/yy" }).val()
+    });
+</script>
 				<%= form_for @health_record, :url => '/health_records/member_health_record_create', :html => {:multipart => true, :"data-ajax" => "false"} do |f| %>
           
 					<div>
@@ -33,7 +38,7 @@
 							<div class="clearfix"></div>
 							<div class="contentRightBottomHeadLeft textTransformCapitalize">Record Date</div>
 							<div class="contentRightBottomHeadRight textTransformUppercase">
-                <%= f.text_field :health_record_date, :id => "datepicker" %>
+                <%= f.text_field :health_record_date, :id => "date_visit" %>
 							</div>
             
 							<div class="clearfix"></div>

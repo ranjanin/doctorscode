@@ -13,10 +13,10 @@
 //= require jquery-1.11.0.min
 //= require jquery.easing.1.3
 //= require jquery.mobile-1.4.2.min
-//= require jquery-ui
 //= require jquery_ujs
 //= require jquery.turbolinks
 //= require turbolinks
+//= require bootstrap-datepicker
 //= require cloudinary
 //= require custom
 //= require_tree .

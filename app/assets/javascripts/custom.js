@@ -91,13 +91,13 @@ $(document).ready(function(){
     });
 
 	 /////////////
-
+/* 
 	$( "#datepicker" ).datepicker();
   	$( "#datepicker1" ).datepicker();
   	$( "#datepicker2" ).datepicker();
   	$( "#datepicker3" ).datepicker();
   	$( "#datepicker4" ).datepicker();
-
+*/
 	/////////////
 
 	$(".contentRightBottomHeadBlueTable66 img").click(function(event){
