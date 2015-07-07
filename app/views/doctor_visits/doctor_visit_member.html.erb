@@ -28,14 +28,14 @@
         </tr>
         <% end %>
       </table>
-        
+    <%=  will_paginate @doctor_visits, :param_name => "doctor_page", :renderer => 'MobilePagination::LinkRenderer', :page_links => false %>   
     
       <div class="text-right">
         <%= link_to "Add Visit", doctor_visits_member_doctor_visit_new_path, class:"contentRightBottomHeadBlueLink", "data-ajax" => "false" %>
         <br/><br/>
       </div>
     
-    <br/><br/>
+    <br/>
     <h3 class="contentRightBottomHead"> Health Records </h3>
     
     
@@ -56,6 +56,9 @@
         <% end %>
       </table>
 
+    <%=  will_paginate @health_records, :param_name => "health_page", :renderer => 'MobilePagination::LinkRenderer', :page_links => false %>   
+    
+    
       <div class="text-right">
         <%= link_to "Add Record", health_records_member_health_record_new_path, class:"contentRightBottomHeadBlueLink", "data-ajax" => "false" %>
         <br/><br/>
