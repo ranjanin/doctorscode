@@ -28,7 +28,12 @@
         </tr>
         <% end %>
       </table>
-    <%=  will_paginate @doctor_visits, :param_name => "doctor_page", :renderer => 'MobilePagination::LinkRenderer', :page_links => false %>   
+    
+      
+          <%=  will_paginate @doctor_visits, :param_name => "doctor_page", :renderer => 'BootstrapPagination::Rails', :remote => false %>   
+     
+    
+    
     
       <div class="text-right">
         <%= link_to "Add Visit", doctor_visits_member_doctor_visit_new_path, class:"contentRightBottomHeadBlueLink", "data-ajax" => "false" %>

@@ -40,7 +40,7 @@ class DoctorVisitsController < ApplicationController
  
   def doctor_visit_member
     @doctor_visits = DoctorVisit.where(:family_member_id => params[:id]).paginate(:page => params[:doctor_page], :per_page => 5)
-    @health_records = HealthRecord.where(:family_member_id => params[:id]).paginate(:page => params[:_health_page], :per_page => 5)
+    @health_records = HealthRecord.where(:family_member_id => params[:id]).paginate(:page => params[:health_page], :per_page => 5)
   end
     
   def member_doctor_visit_new
