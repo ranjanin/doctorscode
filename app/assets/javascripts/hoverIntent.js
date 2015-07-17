@@ -1,4 +1,4 @@
-/**
+/*
  * hoverIntent is similar to jQuery's built-in "hover" method except that
  * instead of firing the handlerIn function immediately, hoverIntent checks
  * to see if the user's mouse has slowed down (beneath the sensitivity
@@ -27,7 +27,7 @@
  * @param  handlerOut  function OR selector for delegation OR undefined
  * @param  selector    selector OR undefined
  * @author Brian Cherne <brian(at)cherne(dot)net>
- **/
+ */
 (function($) {
     $.fn.hoverIntent = function(handlerIn,handlerOut,selector) {
 
