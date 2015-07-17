@@ -37,7 +37,7 @@ gem 'devise'
 gem 'jquery-turbolinks' # for dropdown not working
 gem 'carrierwave' # files upload
 gem 'cloudinary' # files storage
-
+gem 'bootstrap-sass', '~>3.3.1.0'
 gem 'bootstrap-datepicker-rails'
 
 gem 'will_paginate', '~>3.0'
@@ -56,4 +56,4 @@ gem 'will_paginate-bootstrap'
 # gem 'debugger', group: [:development, :test]
 gem 'rails_12factor', group: :production
 
-#ruby "2.0.0"
+ruby "2.0.0"

@@ -24,13 +24,13 @@ class ApplicationController < ActionController::Base
         return root_url
       end
   
-   # def after_inactive_sign_up_path_for(user)
-    #  return home_page_successful_registration_path
-   # end
+  # def after_inactive_sign_up_path_for(user)
+   #  return new_user_session_path
+  # end
     
-    def after_sign_up_path_for(user)
-      return homepage_successful_registration_path
-    end
+   def after_sign_up_path_for(user)
+      return root_url
+   end
        # else
         #  return root_url
    # end

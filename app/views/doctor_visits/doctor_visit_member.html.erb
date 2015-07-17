@@ -2,7 +2,7 @@
   <%= render 'user_details/profile' %>
    
   <div class="contentRight"> 
-  
+  <br/>
          
       <h3 class="contentRightBottomHead"> Doctor Visits </h3>
     
@@ -30,8 +30,8 @@
       </table>
     
       
-          <%=  will_paginate @doctor_visits, :param_name => "doctor_page", :renderer => 'BootstrapPagination::Rails', :remote => false %>   
-     
+          <%=  will_paginate @doctor_visits, :param_name => "doctor_page", :renderer => 'MobilePagination::LinkRenderer', :page_links => false %>   
+    
     
     
     
