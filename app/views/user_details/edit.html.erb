@@ -1,10 +1,9 @@
  	<div class="contentRightBottom" style="width:90%;padding-left:5px;padding-right:5px;border-top:0px;;max-width:900px;margin-left:auto;margin-right:auto;margin-top:0px">
           
-                    
-          <script type="text/javascript">
+         <script type="text/javascript">
             $(document).ready(function(){
-             $('.datepicker').datepicker();
-           });
+             $("#date_visit").datepicker({ dateFormat: "dd/mm/yy" }).val()
+            });
           </script>
     
 		<%= form_for(@user_detail, :html => {:"data-ajax" => "false"}) do |f| %>
@@ -31,7 +30,7 @@
 							<div class="clearfix"></div>
 							<div class="contentRightBottomHeadLeft textTransformCapitalize">Date Of Birth(yyyy-mm-dd)</div>
 							<div class="contentRightBottomHeadRight textTransformUppercase">
-                <%= f.text_field :date_of_birth %>
+                <%= f.text_field :date_of_birth, :id => "date_visit" %>
 							</div>
             
 							<div class="clearfix"></div>

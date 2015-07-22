@@ -11,10 +11,12 @@
 					</div>
                      
           <script type="text/javascript">
-  $(document).ready(function(){
-   $("#date_visit").datepicker({ dateFormat: "dd/mm/yy" }).val()
-    });
-</script>
+            $(document).ready(function(){
+             $("#date_visit").datepicker({ dateFormat: "dd/mm/yy" }).val()
+            });
+          </script>
+          
+          
 				<%= form_for @health_record, :url => '/health_records/member_health_record_create', :html => {:multipart => true, :"data-ajax" => "false"} do |f| %>
           
 					<div>
@@ -38,7 +40,7 @@
 							<div class="clearfix"></div>
 							<div class="contentRightBottomHeadLeft textTransformCapitalize">Record Date(yyyy-mm-dd)</div>
 							<div class="contentRightBottomHeadRight textTransformUppercase">
-                <%= f.text_field :health_record_date %>
+                <%= f.text_field :health_record_date, :id => "date_visit" %>
 							</div>
             
 							<div class="clearfix"></div>

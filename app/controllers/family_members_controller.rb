@@ -2,7 +2,7 @@ class FamilyMembersController < ApplicationController
   
   
   def index
-    @family_members = current_user.family_members
+    @family_members = current_user.family_members.paginate(:page => params[:page], :per_page => 25).order('created_at DESC')
   end
   
   def new

@@ -3,7 +3,7 @@
    
   <div class="contentRight"> 
   
-      
+      <br/>
 
       <h3 class="contentRightBottomHead"> Family Members </h3>
     
@@ -30,7 +30,7 @@
         &nbsp;&nbsp;&nbsp;
       </div>
     
-  
+    <%=  will_paginate @family_members, :renderer => 'MobilePagination::LinkRenderer', :page_links => false %>   
   
    
   </div><!-- content right ends here -->

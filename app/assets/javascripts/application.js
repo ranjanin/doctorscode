@@ -12,6 +12,7 @@
 //
 
 //= require jquery-2.1.3.min
+//= require jquery.rambling.slider
 //= require jquery.viewport.mini
 //= require jquery.easing.1.3
 //= require jquery.mobile-1.4.2.min
@@ -34,37 +35,37 @@
 //= require jquery-migrate-1.2.1
 //= require jquery.prettyPhoto
 //= require tinynav
-
-
 //= require jquery.turbolinks
 //= require turbolinks
-
 //= require cloudinary
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //= require jquery.isotope.min
-
 //= require countdown
-
 //= require custom
 //= require_tree .
+
+$(document).ready(function(){
+   $('#slider').ramblingSlider({
+     useLargerImage: true
+   });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 $(document).ready(function() {

@@ -19,7 +19,11 @@
 
   <body>
     
-    
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('#slider').ramblingSlider();
+    });
+    </script>
 
 	<div id="pm_layout_wrapper" class="pm-full-mode"><!-- Use wrapper for wide or boxed mode -->
         
@@ -203,61 +207,109 @@
                 
         <!-- SLIDER AREA -->
     
+   <!-- <div id="wrapper"> -->
+
+<%
+=begin %>
+<div class="slider-wrapper theme-default">
+  <div class="ribbon"></div>
+  <div id="slider" class="ramblingSlider" style="width: 2000px; height: 800px; position: relative; opacity: 1;">
     
-    
-    
-        
-       <!--  <div class="pm-pulse-container" id="pm-pulse-container"> -->
+    <%= image_tag "slide1.jpg" %>
+    <%= image_tag "slide2.jpg" %>
+    <%= image_tag "slide3.jpg" %>
+   </div>
+ 
+   <div id="htmlcaption" class="rambling-html-caption">
+       <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+   </div>
+</div>
+<!-- </div> -->
+<%
+=end %>
+
+    <div id="pm-slider" class="pm-slider">
                 
-          
+                <div id="pm-slider-progress-bar"></div>
             
-          <!-- <div id="pm-slider" class="pm-slider">                 -->
-                <!-- <div id="pm-slider-progress-bar"></div>            -->
-               <!--  <ul class="pm-slides-container" id="pm_slides_container"> -->
+                <ul class="pm-slides-container" id="pm_slides_container">
                     
-                    <!-- FULL WIDTH slides 
-              <li data-thumb="images/slide1a.jpg" class="pmslide_0"> -->
-                     <!-- <img src="assets/slide1.jpg" alt="img01" /> -->
-                   <!-- p class="title">We Make Billing Easier!</p> ->
-                    <!--<li data-thumb="slide1.jpg" class="pmslide_0"> -->
-                      <!-- <%= image_tag "slide1.jpg",  alt: "img01" %> -->
-   <div class="pmslide_0" style="background-image:url(assets/slide2.jpg);">
-    <!-- <%= image_tag "slide3.jpg" %> -->
-             <div class="pm-holder"> 
-                <div class="row">
-                  <div class="col-md-6"></div>
-                  <div class="col-md-4">
-                 <!--  <div class="pm-caption"> -->
-                             <!-- <h1>Your Health</h1> -->
-                                <span class="pm-caption-decription">
-                                Your Health
-                                  </span>
-                                  <span class="pm-caption-decription">
-                                     in your complete control
-                                  </span>
-                            
-                                 <p>Doctor's Code is a revolutionary way to keep track of your health as well as your loved ones'. Doctor's Code gives you complete,  co: "rol of your health by keeping you on top of everything, be it reports, prescriptions or scheduled appointments</p>
-<!--                                       </span> -->
-                  <br/><br/><br/><br/><br/><br/>
-             </div>
-               </div>
-     </div><!-- rowe ends here -->
-    </div><!-- col-md ends here-->
-                  <!-- </div>-->
+                    <!-- FULL WIDTH slides -->
+                    <li data-thumb="slide1a.jpg" class="pmslide_0">
+                      <!-- <img src="assets/slide1.jpg" alt="img01" /> -->
+                      <%= image_tag "slide1.jpg" %>
+                    
+                    	
+                            <div class="pm-holder">
+                                <div class="pm-caption">
+                                      <h1>Your Health</h1>
+                                      <span class="pm-caption-decription">
+                                        in your complete control
+                                      </span>
+                                      <span class="pm-caption-excerpt">
+                                        Doctor's Code is a revolutionary way to keep track of your health as well as your loved ones'. Doctor's Code gives you complete control of your health by keeping you on top of everything, be it reports, prescriptions or scheduled appointments.
+                                      </span>
+                                      <a href="#" class="pm-slide-btn">learn more <i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
                         
                     
-                  <!--   </li> -->
+                    </li>
                     
-                   
+                    <li data-thumb="slide2a.jpg" class="pmslide_1">
+                      <!-- <img src="assets/slide2.jpg" alt="img02" />-->
+                      <%= image_tag "slide2.jpg" %>
+                        
+                        
+                        	<div class="pm-holder">
+                                <div class="pm-caption">
+                                      <h1>Your Health</h1>
+                                      <span class="pm-caption-decription">
+                                        in your complete control
+                                      </span>
+                                      <span class="pm-caption-excerpt">
+                                        Doctor's Code is a revolutionary way to keep track of your health as well as your loved ones'. Doctor's Code gives you complete control of your health by keeping you on top of everything, be it reports, prescriptions or scheduled appointments.
+                                      </span>
+                                      <a href="#" class="pm-slide-btn">learn more <i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                                 
+                                                           
+                    </li>
+                    
+                    <li data-thumb="slide3a.jpg" class="pmslide_2">
+                      <!-- <img src="assets/slide3.jpg" alt="img02" /> -->
+                      <%= image_tag "slide3.jpg" %>
+                        
+                        
+                        	<div class="pm-holder">
+                                <div class="pm-caption">
+                                      <h1>Your Health</h1>
+                                      <span class="pm-caption-decription">
+                                        in your complete control
+                                      </span>
+                                      <span class="pm-caption-excerpt">
+                                        Doctor's Code is a revolutionary way to keep track of your health as well as your loved ones'. Doctor's Code gives you complete control of your health by keeping you on top of everything, be it reports, prescriptions or scheduled appointments.
+                                      </span>
+                                      <a href="#" class="pm-slide-btn">learn more <i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        
+                                            
+                    </li>
                                     
-                <!--</ul>-->
+                </ul>
                
-            <!-- </div> -->
+            </div>
         
-        </div> <!-- pmslide0 ends here -->
+        </div>
         
  		<!-- SLIDER AREA end -->
         
+    
+
+        
+      
         <!-- BODY CONTENT starts here -->
         
        	<!-- PANEL 1 -->

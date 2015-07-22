@@ -1,7 +1,7 @@
 class HealthRecordsController < ApplicationController
   
   def index
-    @health_records = HealthRecord.where(['user_id = ? AND family_member_id IS NULL', current_user.id])
+    @health_records = HealthRecord.where(['user_id = ? AND family_member_id IS NULL', current_user.id]).paginate(:page => params[:page], :per_page => 25).order('created_at DESC')
   end
   
   def new

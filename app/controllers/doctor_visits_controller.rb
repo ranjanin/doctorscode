@@ -1,7 +1,7 @@
 class DoctorVisitsController < ApplicationController
   
   def index
-    @doctor_visits = DoctorVisit.where(['user_id = ? AND family_member_id IS NULL', current_user.id])
+    @doctor_visits = DoctorVisit.where(['user_id = ? AND family_member_id IS NULL', current_user.id]).paginate(:page => params[:page], :per_page => 25).order('created_at DESC')
   end
   
   def new
@@ -39,8 +39,8 @@ class DoctorVisitsController < ApplicationController
   end
  
   def doctor_visit_member
-    @doctor_visits = DoctorVisit.where(:family_member_id => params[:id]).paginate(:page => params[:doctor_page], :per_page => 5)
-    @health_records = HealthRecord.where(:family_member_id => params[:id]).paginate(:page => params[:health_page], :per_page => 5)
+    @doctor_visits = DoctorVisit.where(:family_member_id => params[:id]).paginate(:page => params[:doctor_page], :per_page => 5).order('created_at DESC')
+    @health_records = HealthRecord.where(:family_member_id => params[:id]).paginate(:page => params[:health_page], :per_page => 5).order('created_at DESC')
   end
     
   def member_doctor_visit_new

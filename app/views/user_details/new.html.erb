@@ -2,10 +2,11 @@
           
                     
           <script type="text/javascript">
-  $(document).ready(function(){
-   $("#date_visit").datepicker({ dateFormat: "dd/mm/yy" }).val()
-    });
-</script>
+            $(document).ready(function(){
+             $("#date_visit").datepicker({ dateFormat: "dd/mm/yy" }).val()
+            });
+          </script>
+    
 		<%= form_for(@user_detail, :html => {:"data-ajax" => "false"}) do |f| %>
 						
           <div>
@@ -30,7 +31,7 @@
 							<div class="clearfix"></div>
 							<div class="contentRightBottomHeadLeft textTransformCapitalize">Date Of Birth(yyyy-mm-dd)</div>
 							<div class="contentRightBottomHeadRight textTransformUppercase">
-                <%= f.text_field :date_of_birth %>
+                <%= f.text_field :date_of_birth, :id => "date_visit" %>
 							</div>
             
 							<div class="clearfix"></div>
