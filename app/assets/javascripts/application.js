@@ -18,7 +18,7 @@
 //= require jquery.mobile-1.4.2.min
 //= require jquery_ujs
 //= require bootstrap.min
-//= require bootstrap-datepicker
+//= require jquery-ui/datepicker
 //= require modernizr.custom
 //= require owl.carousel
 //= require main

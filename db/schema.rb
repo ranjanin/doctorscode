@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150702124306) do
+ActiveRecord::Schema.define(version: 20150727074822) do
 
   create_table "doctor_visits", force: true do |t|
-    t.date     "date_of_visit"
+    t.date     "date_of_visit",    limit: 255
     t.string   "doctor"
     t.string   "hospital"
     t.string   "reason_for_visit"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20150702124306) do
   create_table "family_members", force: true do |t|
     t.string   "relation"
     t.string   "first_name"
-    t.string   "date_of_birth"
+    t.date     "date_of_birth",  limit: 255
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"

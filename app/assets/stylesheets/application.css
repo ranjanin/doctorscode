@@ -11,7 +11,7 @@
  * file per style scope.
  *
 
-*= require bootstrap-datepicker3
+*= require jquery-ui/datepicker
 *= require jquery.rambling.slider
 *= require_tree .
 *= require_self
