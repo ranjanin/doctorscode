@@ -15,10 +15,10 @@ class RegistrationsController < Devise::RegistrationsController
       respond_with resource, :location => after_inactive_sign_up_path_for(resource)
         flash[:notice] = "Activation Email is sent to your registered Email ID"
      end
-      else 
+    else 
       #clean_up_passwords resource
-      flash[:alert] = flash[:alert].to_a.concat resource.errors.full_messages
-      redirect_to root_url
+       redirect_to root_url
+       flash[:alert] = flash[:alert].to_a.concat resource.errors.full_messages
     end
  end
   
