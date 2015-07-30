@@ -1,9 +1,22 @@
-development:
-  cloud_name: "doctorscode"
-  api_key: "961555916123658"
-  api_secret: "g-8Sd_I3OO7DCvFd51Hw-N7Lx1Q"
 
+
+development:
+  cloud_name: "doctorscode1"
+  api_key: '544958665455441'
+  api_secret: "ueFb47P6qOE8UCrqsObaj-86kxc"
+  
 production:
-  cloud_name: "doctorscode"
-  api_key: "961555916123658"
-  api_secret: "g-8Sd_I3OO7DCvFd51Hw-N7Lx1Q"
+  cloud_name: "doctorscode1"
+  api_key: '544958665455441'
+  api_secret: "ueFb47P6qOE8UCrqsObaj-86kxc"
+  
+
+#development:
+ # cloud_name: "doctorscode"
+  #api_key: "961555916123658"
+  #api_secret: "g-8Sd_I3OO7DCvFd51Hw-N7Lx1Q"
+
+#production:
+ # cloud_name: "doctorscode"
+ # api_key: "961555916123658"
+  #api_secret: "g-8Sd_I3OO7DCvFd51Hw-N7Lx1Q"
