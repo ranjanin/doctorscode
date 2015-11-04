@@ -3,10 +3,8 @@
    
   <div class="contentRight"> 
   <br/>
-      
-      <h3 class="contentRightBottomHead"> Health Records </h3>
-    
-      <table class="table table-bordered">
+     <h3 class="contentRightBottomHead"> Health Records </h3>
+     <table class="table table-bordered">
         <tr>
           <th> RECORD TYPE </th>
           <th> RECORD DATE </th>
@@ -14,27 +12,22 @@
         </tr>
     
         <% @health_records.each do |record| %>
-       
-        <tr>
-          <td><%= record.health_record_type %></td>
-          <td><%= record.health_record_date %></td>
-          <!-- <%= link_to "Download", record.health_record_url, :target => "blank", :flags => "attachment" %> -->
-          <% if record.health_record != nil %>
-            <td><%= link_to "Download", cloudinary_url(record.health_record, :flags => :attachment) %></td>
-          <% elsif record.health_record = nil  %>
-          <td> NA </td>
-          <% end %>
-        </tr>
+           <tr>
+              <td><%= record.health_record_type %></td>
+              <td><%= record.health_record_date %></td>
+              <!-- <%= link_to "Download", record.health_record_url, :target => "blank", :flags => "attachment" %> -->
+              <% if record.health_record != nil %>
+                 <td><%= link_to "Download", cloudinary_url(record.health_record, :flags => :attachment) %></td>
+              <% elsif record.health_record = nil  %>
+                 <td> NA </td>
+              <% end %>
+           </tr>
         <% end %>
-      </table>
-
+     </table>
+     <%=  will_paginate @health_records, :renderer => 'MobilePagination::LinkRenderer', :page_links => false %> 
     
-    <%=  will_paginate @health_records, :renderer => 'MobilePagination::LinkRenderer', :page_links => false %> 
-    
-      <div class="text-right">
+     <div class="text-right">
         <%= link_to "Add Record", new_health_record_path, class:"contentRightBottomHeadBlueLink", "data-ajax" => "false" %>
         &nbsp;&nbsp;&nbsp;
-      </div>
-  
-   
+     </div>
   </div><!-- content right ends here -->

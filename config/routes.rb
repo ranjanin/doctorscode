@@ -23,6 +23,7 @@
    get 'health_records/member_health_record_new' => 'health_records#member_health_record_new'
    post 'health_records/member_health_record_create' => 'health_records#member_health_record_create'
    get 'homepage/succesful_registration' => 'homepage#successful_registration'
+   
    #post 'user_details/doctor_visit_update' => 'user_details#doctor_visit_update'
    
      resources :users
@@ -30,6 +31,7 @@
      resources :doctor_visits
      resources :health_records
      resources :family_members
+     resources :doctors
     
     
  

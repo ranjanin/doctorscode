@@ -1,14 +1,11 @@
   
-  <%= render 'user_details/profile' %>
+ <%= render 'user_details/profile' %>
    
-  <div class="contentRight"> 
-  
-      <br/>
-
-      <h3 class="contentRightBottomHead"> Family Members </h3>
-    
-    
-      <table class="table table-bordered">
+ <div class="contentRight"> 
+  <br/>
+   
+    <h3 class="contentRightBottomHead"> Family Members </h3>
+    <table class="table table-bordered">
         <tr>
           <th> Relation </th>
           <th> First Name </th>
@@ -16,21 +13,18 @@
         </tr>
     
         <% @family_members.each do |member| %>
-       
-        <tr>
-          <td><%= link_to member.relation, family_member_path(:id => member.id), "data-ajax" => "false" %></td>
-          <td><%= member.first_name %></td>
-          <td><%= member.last_name %></td>
-        </tr>
+          <tr>
+            <td><%= link_to member.relation, family_member_path(:id => member.id), "data-ajax" => "false" %></td>
+            <td><%= member.first_name %></td>
+            <td><%= member.last_name %></td>
+          </tr>
         <% end %>
-      </table>
+    </table>
 
-      <div class="text-right">
+    <div class="text-right">
         <%= link_to "Add Member", new_family_member_path, class:"contentRightBottomHeadBlueLink", "data-ajax" => "false" %>
         &nbsp;&nbsp;&nbsp;
-      </div>
+    </div>
     
     <%=  will_paginate @family_members, :renderer => 'MobilePagination::LinkRenderer', :page_links => false %>   
-  
-   
-  </div><!-- content right ends here -->
+ </div><!-- content right ends here -->

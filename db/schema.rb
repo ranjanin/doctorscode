@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150727074822) do
+ActiveRecord::Schema.define(version: 20151104051656) do
+
+  create_table "appointments", force: true do |t|
+    t.integer  "patient_id"
+    t.integer  "doctor_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "doctor_visits", force: true do |t|
-    t.date     "date_of_visit",    limit: 255
+    t.string   "date_of_visit"
     t.string   "doctor"
     t.string   "hospital"
     t.string   "reason_for_visit"
@@ -25,10 +32,23 @@ ActiveRecord::Schema.define(version: 20150727074822) do
     t.integer  "family_member_id"
   end
 
+  create_table "doctors", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "display_name"
+    t.string   "qualification"
+    t.string   "specilization"
+    t.string   "address"
+    t.string   "description"
+    t.integer  "user_id"
+  end
+
   create_table "family_members", force: true do |t|
     t.string   "relation"
     t.string   "first_name"
-    t.date     "date_of_birth",  limit: 255
+    t.string   "date_of_birth"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -47,6 +67,12 @@ ActiveRecord::Schema.define(version: 20150727074822) do
     t.datetime "updated_at"
     t.integer  "user_id"
     t.integer  "family_member_id"
+  end
+
+  create_table "patients", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "user_details", force: true do |t|
@@ -69,6 +95,7 @@ ActiveRecord::Schema.define(version: 20150727074822) do
     t.string   "height"
     t.string   "weight"
     t.string   "blood_group"
+    t.string   "role"
   end
 
   create_table "users", force: true do |t|

@@ -1,7 +1,7 @@
 
-<%= render 'user_details/profile' %>
+   <%= render 'user_details/profile' %>
    
-<div class="contentRight">
+   <div class="contentRight">
 				<div class="contentRightTop">
           You are here - <%= image_tag "homeDark.png", width: "21" %>
 				</div>
@@ -19,42 +19,38 @@
           </script>
           
           
-				<%= form_for @health_record, :html => {:multipart => true, :"data-ajax" => "false"} do |f| %>
-          
-					<div>
-							
-              <div class="contentRightBottomHead">
-								Add Health Records forFamily Member
-							</div>					
+				  <%= form_for @health_record, :html => {:multipart => true, :"data-ajax" => "false"} do |f| %>
+              <div>
+ 							   <div class="contentRightBottomHead">
+								    Add Health Records forFamily Member
+							   </div>					
 
-						  <div class="clearfix"></div>
-							<div class="contentRightBottomHeadLeft textTransformCapitalize">Record Type</div>
-							<div class="contentRightBottomHeadRight textTransformUppercase"> 
-								<%= f.text_field :health_record_type %>
-							</div>
+						     <div class="clearfix"></div>
+							   <div class="contentRightBottomHeadLeft textTransformCapitalize">Record Type</div>
+							   <div class="contentRightBottomHeadRight textTransformUppercase"> 
+								   <%= f.text_field :health_record_type %>
+							   </div>
             
-							<div class="clearfix"></div>
-							<div class="contentRightBottomHeadLeft textTransformCapitalize">Record Date</div>
-							<div class="contentRightBottomHeadRight textTransformUppercase">
-                <%= f.text_field :health_record_date, :id => "date_visit" %>
-							</div>
+							   <div class="clearfix"></div>
+							   <div class="contentRightBottomHeadLeft textTransformCapitalize">Record Date</div>
+							   <div class="contentRightBottomHeadRight textTransformUppercase">
+                   <%= f.text_field :health_record_date, :id => "date_visit" %>
+							   </div>
             
-							<div class="clearfix"></div>
-            <br/>
-							<div class="contentRightBottomHeadLeft textTransformCapitalize">Choose File</div>
-							<div class="contentRightBottomHeadRight textTransformUppercase">
-								<%= f.file_field :health_record %>
-							</div>
+							   <div class="clearfix"></div>
+                 <br/>
+							   <div class="contentRightBottomHeadLeft textTransformCapitalize">Choose File</div>
+							   <div class="contentRightBottomHeadRight textTransformUppercase">
+								    <%= f.file_field :health_record %>
+							   </div>
             
-              <div class="clearfix"></div>
-            
-             <%= f.submit "SUBMIT", class: "submitButton" %>
-            
-          </div><!--  contentRightBottomLeft ends here -->
-            <% end %>
-								<div class="clearfix"></div>
-	      </div><!-- contentRightBottom ends here -->
-</div><!-- content right ends here -->
+                 <div class="clearfix"></div>
+                    <%= f.submit "SUBMIT", class: "submitButton" %>
+              </div><!--  contentRightBottomLeft ends here -->
+          <% end %>
+					<div class="clearfix"></div>
+	     </div><!-- contentRightBottom ends here -->
+   </div><!-- content right ends here -->
 
             
 							

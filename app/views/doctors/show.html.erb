@@ -1,0 +1,58 @@
+
+  <%= render 'user_details/profile' %>
+
+      <div class="contentRight"> 
+
+        <div class="contentRightTop">
+            <a href="" data-ajax="false">You are here - <%= image_tag "homeDark.png" %></a> / <a href="" data-ajax="false">About me</a>
+        </div>
+
+        <div class="contentRightBottom">
+           <div class="contentRightBottomLeft">
+
+               <div class="contentRightBottomHead">
+                 PERSONAL DETAILS <small>( MODIFY <%= image_tag "rightEdit.png" %> )</small>
+               </div>
+
+               <div class="contentRightBottomHeadLeft">First Name:  </div>
+               <div class="contentRightBottomHeadRight"><%= current_user.user_detail.first_name %></div>
+               <div class="clearfix"></div>
+
+               <div class="contentRightBottomHeadLeft">Last Name:</div>
+               <div class="contentRightBottomHeadRight"><%= current_user.user_detail.last_name %></div>
+               <div class="clearfix"></div>
+
+               <div class="contentRightBottomHeadLeft">Display Name:</div>
+               <div class="contentRightBottomHeadRight"><%= current_user.user_detail.date_of_birth %></div>
+               <div class="clearfix"></div>
+
+               <div class="contentRightBottomHeadLeft">Qualification:</div>
+               <div class="contentRightBottomHeadRight"><%= current_user.doctors.first.qualification %></div>
+						   <div class="clearfix"></div>
+						
+               <div class="contentRightBottomHeadLeft">Specilization:</div>
+               <div class="contentRightBottomHeadRight"><%= current_user. doctors.first.specilization   %></div>
+						   <div class="clearfix"></div>
+						
+               <div class="contentRightBottomHeadLeft">Address:</div>
+               <div class="contentRightBottomHeadRight"><%= current_user.doctors.first.address %></div>
+						   <div class="clearfix"></div>
+					 </div><!-- contentRightBottomLeft ends heer -->
+					
+           <div class="contentRightBottomRight">
+						 
+             <div class="contentRightBottomHead">
+              Detailed Description <small>( MODIFY <%= image_tag "rightEdit.png" %> )</small>
+						 </div>
+						
+             <div class="contentRightBottomText">
+               <%= @doctor.description %>
+						 </div>
+					 </div><!-- contentRightBottomRight ends here -->
+					
+           <div class="clearfix"></div>
+          <%= link_to 'Edit Details', edit_doctor_path(@doctor.id), "data-ajax" => "false" %>
+				</div><!-- contentRightBottom ends here -->
+			</div><!-- contentRight ends here -->
+			<div class="clearfix"></div>
+   

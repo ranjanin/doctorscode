@@ -3,13 +3,9 @@
    
   <div class="contentRight"> 
   <br/>
-         
       <h3 class="contentRightBottomHead"> Doctor Visits </h3>
-    
-    
       <table class="table table-bordered">
-        <tr>
-          
+        <tr>          
           <th> Date </th>
           <th> Doctor </th>
           <th> Hospital </th>
@@ -17,8 +13,7 @@
           <th> Details </th>
         </tr>
     
-        <% @doctor_visits.each do |visit| %>
-       
+        <% @doctor_visits.each do |visit| %>       
         <tr>
           <td><%= visit.date_of_visit %></td>
           <td><%= visit.doctor %></td>
@@ -28,21 +23,14 @@
         </tr>
         <% end %>
       </table>
-    
+      <%=  will_paginate @doctor_visits, :param_name => "doctor_page", :renderer => 'MobilePagination::LinkRenderer', :page_links => false %>   
       
-          <%=  will_paginate @doctor_visits, :param_name => "doctor_page", :renderer => 'MobilePagination::LinkRenderer', :page_links => false %>   
-    
-    
-    
-    
       <div class="text-right">
         <%= link_to "Add Visit", doctor_visits_member_doctor_visit_new_path, class:"contentRightBottomHeadBlueLink", "data-ajax" => "false" %>
         <br/><br/>
       </div>
-    
-    <br/>
-    <h3 class="contentRightBottomHead"> Health Records </h3>
-    
+      <br/>
+      <h3 class="contentRightBottomHead"> Health Records </h3>
     
       <table class="table table-bordered">
         <tr>
@@ -50,24 +38,20 @@
           <th> Record Date </th>
           <th> Record </th>
         </tr>
-    
+        
         <% @health_records.each do |record| %>
-       
-        <tr>
-          <td><%= record.health_record_type %></td>
-          <td><%= record.health_record_date %></td>
-          <td> <%= link_to "Download", cloudinary_url(record.health_record, :flags => :attachment) %></td>
-        </tr>
+         <tr>
+           <td><%= record.health_record_type %></td>
+           <td><%= record.health_record_date %></td>
+           <td> <%= link_to "Download", cloudinary_url(record.health_record, :flags => :attachment) %></td>
+         </tr>
         <% end %>
       </table>
 
-    <%=  will_paginate @health_records, :param_name => "health_page", :renderer => 'MobilePagination::LinkRenderer', :page_links => false %>   
-    
+      <%=  will_paginate @health_records, :param_name => "health_page", :renderer => 'MobilePagination::LinkRenderer', :page_links => false %>   
     
       <div class="text-right">
         <%= link_to "Add Record", health_records_member_health_record_new_path, class:"contentRightBottomHeadBlueLink", "data-ajax" => "false" %>
         <br/><br/>
       </div>
-    
-        
   </div><!-- content right ends here -->

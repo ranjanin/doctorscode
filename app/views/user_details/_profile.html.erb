@@ -6,9 +6,9 @@
 			
         <div class="doctorImage">
           <% unless current_user.image_url.nil? %>
-          <%= image_tag current_user.image_url, width: '100%' %>
+              <%= image_tag current_user.image_url, width: '100%' %>
           <% else %>
-          <%= image_tag "profile-image.png", width: '100%' %>
+              <%= image_tag "profile-image.png", width: '100%' %>
           <% end %>
 					<!-- <img src="assets/images/doctor.png" width="100%" alt="" /> -->
 				</div>
@@ -17,7 +17,7 @@
           <% if current_user.user_detail.first_name == nil %>
             Username need to be updated
           <% else %>
-          <%= current_user.user_detail.first_name %>
+            <%= current_user.user_detail.first_name %>
           <% end %>
 				</div>
         
@@ -30,23 +30,20 @@
 					   <%= image_tag "doctorEdit.png" %>
           <% end %>
         </div>
-        
-				<hr />
+        <hr />
+				<div class="bloodDoctor">
 				
-        <div class="bloodDoctor">
-					
            <div class="bloodDoctorLeft">
              <%= image_tag "blood.png" %>
            </div>
           
-			  		<div class="bloodDoctorRight">
+			  	 <div class="bloodDoctorRight">
               <% if current_user.user_detail.blood_group != nil %>
-              BLOOD GROUP: <%= current_user.user_detail.blood_group %>
+                 BLOOD GROUP: <%= current_user.user_detail.blood_group %>
               <% end %>
-					  </div>
+					 </div>
 					 <div class="clearfix"></div>
-          
-				</div><!-- blooddoctor ends here -->
+        </div><!-- blooddoctor ends here -->
 				
         <div class="bloodDoctor">
 				
@@ -59,8 +56,7 @@
     					 	HEIGHT: <%= current_user.user_detail.height %>
              <% end %>
 					 </div>
-					
-           <div class="clearfix"></div>
+					 <div class="clearfix"></div>
 				</div><!-- blood doctor ends here -->
 				
         <div class="bloodDoctor">
@@ -74,8 +70,7 @@
                WEIGHT: <%= current_user.user_detail.weight %>
              <% end %>
 					 </div>
-					
-           <div class="clearfix"></div>
+					 <div class="clearfix"></div>
 				</div><!-- blooddoctor ends here -->
 				<hr />
 
@@ -84,80 +79,105 @@
               <%= image_tag "aboutMe.png" %>
             </div>
 					
+          <% if current_user.user_detail.role == "Member" %>
             <div class="bloodDoctorRightBottom">
               <%= link_to "ABOUT ME", user_detail_path(current_user.user_detail), "data-ajax" => "false" %>
 					  </div>
+          <% elsif current_user.user_detail.role == "Doctor" %>
+               <div class="bloodDoctorRightBottom">
+                 <%= link_to "ABOUT ME", doctor_path(current_user.doctors.first), "data-ajax" => "false" %>
+					     </div>
+          <% end %>
 					
             <div class="clearfix"></div>
 				</div><!-- blooddoctor bottom ends here -->
-				
-        <div class="bloodDoctorBottom">
-				
-           <div class="bloodDoctorLeftBottom">
-             <%= image_tag "myHealth.png" %>
-           </div>
+        <% if current_user.user_detail.role == "Member" %>
+          <div class="bloodDoctorBottom">
+				  
+             <div class="bloodDoctorLeftBottom">
+               <%= image_tag "myHealth.png" %>
+             </div>
 				
            <div class="bloodDoctorRightBottom">
-				 		MY HEALTH
+				 		   MY HEALTH
+             <div class="clearfix"></div>
+					   <div class="bloodDoctorRightBottomInner">
+					   <div class="bloodDoctorRightBottomInnerImage">+</div>
+						 <div class="bloodDoctorRightBottomInnertext">
+               <%= link_to "Doctor Visits", doctor_visits_path, "data-ajax" => "false" %>
+             </div>
+						 <div class="clearfix"></div>
+						</div><!-- bloodDoctorRightBottomInner -->
              
-              <div class="clearfix"></div>
-					   
-             <div class="bloodDoctorRightBottomInner">
-					     <div class="bloodDoctorRightBottomInnerImage">+</div>
-							 <div class="bloodDoctorRightBottomInnertext">
-                 <%= link_to "Doctor Visits", doctor_visits_path, "data-ajax" => "false" %>
-               </div>
-							 <div class="clearfix"></div>
-						 </div><!-- bloodDoctorRightBottomInner -->
-             
-             <div class="bloodDoctorRightBottomInner">
-					     <div class="bloodDoctorRightBottomInnerImage">+</div>
-							 <div class="bloodDoctorRightBottomInnertext">
+            <div class="bloodDoctorRightBottomInner">
+					    <div class="bloodDoctorRightBottomInnerImage">+</div>
+						  <div class="bloodDoctorRightBottomInnertext">
                  <%= link_to "Health Records", health_records_path, "data-ajax" => "false" %>
-               </div>
-							 <div class="clearfix"></div>
-						 </div><!-- bloodDoctorRightBottomInner -->
-             
-				   </div>
+              </div>
+							<div class="clearfix"></div>
+						</div><!-- bloodDoctorRightBottomInner -->
+           </div><!-- bloodDoctorRightBottom ends here -->
 					
            <div class="clearfix"></div>
-				</div><!-- blood doctor bottom ends here -->
+				  </div><!-- blood doctor bottom ends here -->
 				
-        <div class="bloodDoctorBottom">
+          <div class="bloodDoctorBottom">
 				
-           <div class="bloodDoctorLeftBottom">
-             <%= image_tag "myFamily.png" %>
-           </div>
+            <div class="bloodDoctorLeftBottom">
+              <%= image_tag "myFamily.png" %>
+            </div>
 				
-           <div class="bloodDoctorRightBottom">
-             <%= link_to "MY FAMILY", family_members_path(current_user.family_members), "data-ajax" => 'false' %>
-             
-             <div class="clearfix"></div>
-					   
-             <div class="bloodDoctorRightBottomInner">
-					       <% family = current_user.family_members %>
-                 <% family.each do |member| %>
+            <div class="bloodDoctorRightBottom">
+              <%= link_to "MY FAMILY", family_members_path(current_user.family_members), "data-ajax" => 'false' %>
+              <div class="clearfix"></div>
+					    <div class="bloodDoctorRightBottomInner">
+					      <% family = current_user.family_members %>
+                <% family.each do |member| %>
                    <ul style="list-style-type:none;">
                      <li><%= link_to member.relation, doctor_visits_doctor_visit_member_path(:id => member.id), "data-ajax" => "false" %></li>
                    </ul>
-                 <% end %>
-               &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <%= link_to " +  Add Member", new_family_member_path, "data-ajax" => "false" %>
-             </div>
-          
-          <div class="clearfix"></div>
-				</div><!-- blood doctor bottom ends here -->
+                <% end %>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <%= link_to " +  Add Member", new_family_member_path, "data-ajax" => "false" %>
+              </div><!--  bloodDoctorRightBottomInner ends here  ends here -->
+            </div><!-- bloodDoctorRightBottom ends here -->
+            <div class="clearfix"></div>
+				  </div><!-- blood doctor bottom ends here -->
 				
-        <div class="bloodDoctorBottom">
-					<div class="bloodDoctorLeftBottom">
-            <%= image_tag "myPhrama.png" %>
-           </div>
+          <div class="bloodDoctorBottom">
+					  <div class="bloodDoctorLeftBottom">
+              <%= image_tag "myPhrama.png" %>
+            </div>
 				
-          <div class="bloodDoctorRightBottom">
-						MY PHARMA
-					</div>
+            <div class="bloodDoctorRightBottom">
+						 MY PHARMA
+					  </div>
 					
-          <div class="clearfix"></div>
-				</div><!-- blood dctor bottom ends here -->
-			</div> <!-- content left ends here -->
-  </div><!-- content ends here -->
+            <div class="clearfix"></div>
+          </div><!-- blood doctor bottom ends here -->  
+        <% elsif current_user.user_detail.role == "Doctor" %>
+            <div class="bloodDoctorBottom">
+				
+            <div class="bloodDoctorLeftBottom">
+              <%= image_tag "myFamily.png" %>
+            </div>
+				
+            <div class="bloodDoctorRightBottom">
+              <%= link_to "APPOINTMENTS", family_members_path(current_user.family_members), "data-ajax" => 'false' %>
+              <div class="clearfix"></div>
+					    <div class="bloodDoctorRightBottomInner">
+					      <% family = current_user.family_members %>
+                <% family.each do |member| %>
+                   <ul style="list-style-type:none;">
+                     <li><%= link_to member.relation, doctor_visits_doctor_visit_member_path(:id => member.id), "data-ajax" => "false" %></li>
+                   </ul>
+                <% end %>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <%= link_to " +  Add Member", new_family_member_path, "data-ajax" => "false" %>
+              </div><!--  bloodDoctorRightBottomInner ends here  ends here -->
+            </div><!-- bloodDoctorRightBottom ends here -->
+            <div class="clearfix"></div>
+				  </div><!-- blood doctor bottom ends here -->
+	      <% end %>
+				
+	 </div> <!-- content left ends here -->
+ </div><!-- content ends here -->
 </div> <!-- wrapper ends here -->

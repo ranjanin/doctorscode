@@ -6,64 +6,60 @@
           You are here - <%= image_tag "homeDark.png", width: "21" %>
 				</div>
   
-				<div class="contentRightBottom">
+			<div class="contentRightBottom">
           
 					<div class="contentRightBottomtextNew">
 						A family medical history is a record of health information about a person and his or her close relatives A family medical history is a record of health information about a person and his or her close relatives
 					</div>
           
-        <script type="text/javascript">
+         <script type="text/javascript">
           $(document).ready(function(){
            $("#date_visit").datepicker({ dateFormat: "dd/mm/yy" }).val()
           });
-        </script>
+         </script>
           
 					 <%= form_for @doctor_visit, :html => {:"data-ajax" => "false"} do |f| %>
-						
-          <div>
-					
-            <div class="contentRightBottomHead">
-							Add doctor visits for Family Member
-						</div>					
+						<div>
+					     <div class="contentRightBottomHead">
+							    Add doctor visits for Family Member
+						   </div>					
 
-						         
-							<div class="clearfix"></div>
-							<div class="contentRightBottomHeadLeft textTransformCapitalize">Date of Visit</div>
-							<div class="contentRightBottomHeadRight textTransformUppercase"> 
-                <%= f.text_field :date_of_visit , :id => "date_visit" %>
-							</div>
+						   <div class="clearfix"></div>
+							 <div class="contentRightBottomHeadLeft textTransformCapitalize">Date of Visit</div>
+							 <div class="contentRightBottomHeadRight textTransformUppercase"> 
+                   <%= f.text_field :date_of_visit , :id => "date_visit" %>
+							 </div>
             
-							<div class="clearfix"></div>
-							<div class="contentRightBottomHeadLeft textTransformCapitalize">Doctor</div>
-							<div class="contentRightBottomHeadRight textTransformUppercase">
-								<%= f.text_field :doctor %>
-							</div>
+							 <div class="clearfix"></div>
+							 <div class="contentRightBottomHeadLeft textTransformCapitalize">Doctor</div>
+							 <div class="contentRightBottomHeadRight textTransformUppercase">
+							  	<%= f.text_field :doctor %>
+							 </div>
             
-							<div class="clearfix"></div>
-							<div class="contentRightBottomHeadLeft textTransformCapitalize">Hospital</div>
-							<div class="contentRightBottomHeadRight textTransformUppercase">
-								<%= f.text_field :hospital %>
-							</div>
+							 <div class="clearfix"></div>
+							 <div class="contentRightBottomHeadLeft textTransformCapitalize">Hospital</div>
+							 <div class="contentRightBottomHeadRight textTransformUppercase">
+							  	<%= f.text_field :hospital %>
+							 </div>
             
-							<div class="clearfix"></div>
-							<div class="contentRightBottomHeadLeft textTransformCapitalize">Reason For Visit</div>
-							<div class="contentRightBottomHeadRight textTransformUppercase">
-								<%= f.text_field :reason_for_visit %>
-							</div>
+							 <div class="clearfix"></div>
+							 <div class="contentRightBottomHeadLeft textTransformCapitalize">Reason For Visit</div>
+							 <div class="contentRightBottomHeadRight textTransformUppercase">
+							  	<%= f.text_field :reason_for_visit %>
+							 </div>
             
-							<div class="clearfix"></div>
-							<div class="contentRightBottomHeadLeft textTransformCapitalize">Details</div>
-							<div class="contentRightBottomHeadRight textTransformUppercase">
-								<%= f.text_field :details %>
-							</div>
+							 <div class="clearfix"></div>
+							 <div class="contentRightBottomHeadLeft textTransformCapitalize">Details</div>
+							 <div class="contentRightBottomHeadRight textTransformUppercase">
+							   	<%= f.text_field :details %>
+							 </div>
             
-								<div class="clearfix"></div>
+							 <div class="clearfix"></div>
 						      <%= f.submit "SUBMIT", class: "submitButton" %>
-								<div class="clearfix"></div>
-            
-							</div><!-- contentRightBottomLeft ends here -->
-          <% end %>
-						</div><!-- contentRightBottom ends here -->
+						 	 <div class="clearfix"></div>
+            </div><!-- contentRightBottomLeft ends here -->
+           <% end %>
+			</div><!-- contentRightBottom ends here -->
 </div><!-- contentright ends here -->
 
 

@@ -6,82 +6,79 @@
       You are here - <%= image_tag"homeDark.png",  width: "21" %>
 		 </div>
 		
-     <div class="contentRightBottom">
+    <div class="contentRightBottom">
 		
        <div class="contentRightBottomLeft">
-		
-         <div class="contentRightBottomHead">
+		      <div class="contentRightBottomHead">
 					 Family Member Details 
-				 </div>
+				  </div>
 						
-         <div class="contentRightBottomHeadLeft textTransformCapitalize">Relationship  </div>
-				 <div class="contentRightBottomHeadRight textTransformUppercase">
-           <%= @family_member.relation %>
-         </div>         
-				 <div class="clearfix"></div>
+          <div class="contentRightBottomHeadLeft textTransformCapitalize">Relationship  </div>
+				  <div class="contentRightBottomHeadRight textTransformUppercase">
+             <%= @family_member.relation %>
+          </div>         
+				  <div class="clearfix"></div>
          
-				 <div class="contentRightBottomHeadLeft textTransformCapitalize">Date of Birth</div>
-				 <div class="contentRightBottomHeadRight textTransformUppercase">
-           <%= @family_member.date_of_birth %>
-         </div>					
-         <div class="clearfix"></div>
+				  <div class="contentRightBottomHeadLeft textTransformCapitalize">Date of Birth</div>
+				  <div class="contentRightBottomHeadRight textTransformUppercase">
+              <%= @family_member.date_of_birth %>
+          </div>					
+          <div class="clearfix"></div>
          
-				 <div class="contentRightBottomHeadLeft textTransformCapitalize">First Name</div>
-				 <div class="contentRightBottomHeadRight textTransformUppercase">
-           <%= @family_member.first_name %>
-         </div>
-				 <div class="clearfix"></div>
+				  <div class="contentRightBottomHeadLeft textTransformCapitalize">First Name</div>
+				  <div class="contentRightBottomHeadRight textTransformUppercase">
+             <%= @family_member.first_name %>
+          </div>
+				  <div class="clearfix"></div>
          
-				 <div class="contentRightBottomHeadLeft textTransformCapitalize">Last Name</div>
-				 <div class="contentRightBottomHeadRight textTransformUppercase">
-           <%= @family_member.last_name %>
-         </div>
-				 <div class="clearfix"></div>
+				  <div class="contentRightBottomHeadLeft textTransformCapitalize">Last Name</div>
+				  <div class="contentRightBottomHeadRight textTransformUppercase">
+              <%= @family_member.last_name %>
+          </div>
+				  <div class="clearfix"></div>
 				 
-         <div class="contentRightBottomHeadLeft textTransformCapitalize">Blood Group</div>
-				 <div class="contentRightBottomHeadRight textTransformUppercase">
-           <%= @family_member.blood_group %>
-         </div>					
-         <div class="clearfix"></div>
+          <div class="contentRightBottomHeadLeft textTransformCapitalize">Blood Group</div>
+				  <div class="contentRightBottomHeadRight textTransformUppercase">
+              <%= @family_member.blood_group %>
+          </div>					
+          <div class="clearfix"></div>
          
-				 <div class="contentRightBottomHeadLeft textTransformCapitalize">Height</div>
-				 <div class="contentRightBottomHeadRight textTransformUppercase">
-           <%= @family_member.height %>
-         </div>
-				 <div class="clearfix"></div>
+				  <div class="contentRightBottomHeadLeft textTransformCapitalize">Height</div>
+				  <div class="contentRightBottomHeadRight textTransformUppercase">
+              <%= @family_member.height %>
+          </div>
+				  <div class="clearfix"></div>
 				 
-         <div class="contentRightBottomHeadLeft textTransformCapitalize">Weight</div>
-				 <div class="contentRightBottomHeadRight textTransformUppercase">
-           <%= @family_member.weight %>
-         </div>
-				 <div class="clearfix"></div>
+          <div class="contentRightBottomHeadLeft textTransformCapitalize">Weight</div>
+				  <div class="contentRightBottomHeadRight textTransformUppercase">
+              <%= @family_member.weight %>
+          </div>
+				  <div class="clearfix"></div>
 				
-         <div class="clearfix"></div>
+          <div class="clearfix"></div>
 			 </div><!-- contentRightBottomLeft ends here -->
 			
        <div class="contentRightBottomRight">
 			
-         <div class="contentRightBottomHead">
-				 </div>
-				 <div class="contentRightBottomText">
+          <div class="contentRightBottomHead"></div>
+				  <div class="contentRightBottomText">
 				
-         <div class="contentRightBottomTextLeft">
-				 		Known history of Mediacal aliments
-				 </div>
+          <div class="contentRightBottomTextLeft">
+				 	 	Known history of Mediacal aliments
+				  </div>
 					
-         <div class="contentRightBottomTextRight">
-           <%= @family_member.known_ailments %>
-         </div>
-           <br/><br/>
+          <div class="contentRightBottomTextRight">
+             <%= @family_member.known_ailments %>
+          </div>
+          <br/><br/>
            
-         <div class="contentRightBottomHeadBlueLink textLeft">
-         <%= link_to "Manage Health", edit_family_member_path(:id => @family_member.id), "data-ajax" => "false" %>
-         </div>
+          <div class="contentRightBottomHeadBlueLink textLeft">
+             <%= link_to "Manage Health", edit_family_member_path(:id => @family_member.id), "data-ajax" => "false" %>
+          </div>
 
-			   <div class="clearfix"></div>
+			    <div class="clearfix"></div>
 		   </div><!-- contentRightBottomRight ends here -->
-	   
-     </div><!-- contentRightBottom ends here -->
+	  </div><!-- contentRightBottom ends here -->
 	
      <div class="clearfix"></div>
   </div><!-- content right ends here -->

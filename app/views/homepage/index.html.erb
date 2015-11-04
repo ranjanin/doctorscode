@@ -20,200 +20,156 @@
   <body>
     
     <script type="text/javascript">
-    $(document).ready(function(){
-        $('#slider').ramblingSlider();
-    });
+        $(document).ready(function(){
+           $('#slider').ramblingSlider();
+        });
     </script>
 
-	<div id="pm_layout_wrapper" class="pm-full-mode"><!-- Use wrapper for wide or boxed mode -->
+	  <div id="pm_layout_wrapper" class="pm-full-mode"><!-- Use wrapper for wide or boxed mode -->
         
     	<!-- Sub-Menu -->
     	<div class="pm-sub-menu-container">
         
-        	<div class="container">
-            
-            	<div class="row">
-                	
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                    	
-                        <div class="pm-sub-menu-info">
-                        	
-                            <ul class="pm-micro-navigation">
-                                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                                <li><a href="#">General Questions</a></li>
-                                <li><a href="#" id="pm-appointment-form-btn">Request an appointment</a></li>
-                            </ul>
-                            
-                        </div>
-                                                
-                    </div>
+        	<div class="container">            
+            <div class="row">                	
+               
+               <div class="col-lg-6 col-md-6 col-sm-12">
+                   <div class="pm-sub-menu-info">
+                       <ul class="pm-micro-navigation">
+                          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                          <li><a href="#">General Questions</a></li>
+                          <li><a href="#" id="pm-appointment-form-btn">Request an appointment</a></li>
+                       </ul>
+                   </div><!-- pm-sub-menu-info ends here -->
+               </div><!-- col-lg-6 col-md-6 col-sm-12 end shere -->
                     
-                    
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                    
-                    	<ul class="pm-social-navigation">
-                        	<li class="pm_tip_static_bottom" title="Twitter"><a href="#" class="fa fa-twitter"></a></li>
-                            <li class="pm_tip_static_bottom" title="Facebook"><a href="#" class="fa fa-facebook"></a></li>
-                            <li class="pm_tip_static_bottom" title="Google Plus"><a href="#" class="fa fa-google-plus"></a></li>
-                            <li class="pm_tip_static_bottom" title="Linkedin"><a href="#" class="fa fa-linkedin"></a></li>
-                            <li class="pm_tip_static_bottom" title="YouTube"><a href="#" class="fa fa-youtube"></a></li>
-                        </ul>
-                        
-                    </div>
-                    
-                </div>
-            
-            </div>
-            
-        </div>
-        <!-- /Sub-header -->
+               <div class="col-lg-6 col-md-6 col-sm-12">
+                  <ul class="pm-social-navigation">
+                    	<li class="pm_tip_static_bottom" title="Twitter"><a href="#" class="fa fa-twitter"></a></li>
+                      <li class="pm_tip_static_bottom" title="Facebook"><a href="#" class="fa fa-facebook"></a></li>
+                      <li class="pm_tip_static_bottom" title="Google Plus"><a href="#" class="fa fa-google-plus"></a></li>
+                      <li class="pm_tip_static_bottom" title="Linkedin"><a href="#" class="fa fa-linkedin"></a></li>
+                      <li class="pm_tip_static_bottom" title="YouTube"><a href="#" class="fa fa-youtube"></a></li>
+                  </ul>
+               </div><!-- col-lg-6 col-md-6 col-sm-12 ends here -->
+            </div><!-- row ends here -->
+         </div><!-- container ends here -->
+      </div><!-- pm-sub-menu-container ends hee -->
+      <!-- /Sub-header -->
         
-        <!-- Request appointment form -->
-        <div class="pm-request-appointment-form" id="pm-appointment-form">
-        	
-            <div class="container">
-            	<div class="row">
-                	
-                    <form action="#" method="post">
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                        	<input name="" type="text" class="pm-request-appointment-form-textfield" placeholder="Full Name">
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                        	<input name="" type="email" class="pm-request-appointment-form-textfield" placeholder="Email Address">
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6">
-                        	<input name="" type="email" class="pm-request-appointment-form-textfield" placeholder="Phone Number">
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                        	<input name="" class="pm-request-appointment-form-textfield appointment-form-datepicker" type="text" placeholder="Date of Appointment" id="datepicker">
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                        	<input name="" class="pm-request-appointment-form-textfield appointment-form-datepicker" type="text" placeholder="Time of Appointment (ex. 10:30am)">
-                        </div>
-                        <div class="col-lg-12 pm-clear-element" style="padding-top:20px;">
-                        	<input type="submit" value="Submit Request" class="pm-square-btn appointment-form" />
-                            <p class="pm-appointment-form-notice">All fields are required.</p>                            <a href="#" class="pm-appointment-form-close" id="pm-close-appointment-form"><i class="fa fa-close"></i> Close Appointment form</a>
-                        </div>
-                        
-                    </form>
-                    
-                </div>
-            </div>
-            
-        </div>
-        <!-- Request appointment form end -->
+      <!-- Request appointment form -->
+      <div class="pm-request-appointment-form" id="pm-appointment-form">
+         <div class="container">
+             <div class="row">
+                 <form action="#" method="post">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                     	<input name="" type="text" class="pm-request-appointment-form-textfield" placeholder="Full Name">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                     	<input name="" type="email" class="pm-request-appointment-form-textfield" placeholder="Email Address">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                    	<input name="" type="email" class="pm-request-appointment-form-textfield" placeholder="Phone Number">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                     	<input name="" class="pm-request-appointment-form-textfield appointment-form-datepicker" type="text" placeholder="Date of Appointment" id="datepicker">
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-sm-12">
+                      	<input name="" class="pm-request-appointment-form-textfield appointment-form-datepicker" type="text" placeholder="Time of Appointment (ex. 10:30am)">
+                     </div>
+                     <div class="col-lg-12 pm-clear-element" style="padding-top:20px;">
+                       	<input type="submit" value="Submit Request" class="pm-square-btn appointment-form" />
+                        <p class="pm-appointment-form-notice">All fields are required.</p>                            <a href="#" class="pm-appointment-form-close" id="pm-close-appointment-form"><i class="fa fa-close"></i> Close Appointment form</a>
+                     </div>
+                 </form><!-- form ends  -->
+              </div><!-- row ends here -->
+          </div><!-- container ends here -->
+      </div><!-- pm-request-appointment-form -->
+      <!-- Request appointment form end -->
             
     	<!-- Header area -->
-        <header>
-                
-        	<div class="container">
-            
-            	<div class="row">
-                
-                	<div class="col-lg-4 col-md-4 col-sm-12">
-                    
-                    	 <div class="pm-header-logo-container">
-                         <div class="img-responsive pm-header-logo" >
-                         <%= image_tag "logo.png", width: "55%" , alt: "Medical-Link Template" %>
-                         </div>
-            <!--     <a href="index.html"><img src="logo.png" class="img-responsive pm-header-logo" alt="Medical-Link Template"></a>  -->
-                        </div>
+      <header>
+         <div class="container">
+           <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                 <div class="pm-header-logo-container">
+                     <div class="img-responsive pm-header-logo" >
+                          <%= image_tag "logo.png", width: "55%" , alt: "Medical-Link Template" %>
+                     </div>
+                     <!-- <a href="index.html"><img src="logo.png" class="img-responsive pm-header-logo" alt="Medical-Link Template"></a>  -->
+                 </div><!-- pm-header-logo-container ends here -->
+              </div><!-- col-lg-4 col-md-4 col-sm-12 ends here -->
                         
-                    
-                    </div>
-                        
-                    <div class="col-lg-8 col-md-8 col-sm-12">
-                      <% if notice %>
+              <div class="col-lg-8 col-md-8 col-sm-12">
+                  <% if notice %>
                       <div class="col-sm-6">
                         <p class="alert alert-success"><%= notice %></p>
                       </div>    
-                        <% end %>
+                  <% end %>
                       
-                        <% if alert %>
-                          <div class="col-sm-6">
-                            <p class="alert alert-danger"><%= alert %></p>
-                          </div>    
-                        <% end %>
+                  <% if alert %>
+                     <div class="col-sm-6">
+                        <p class="alert alert-danger"><%= alert %></p>
+                     </div>    
+                  <% end %>
                     	 
-                        <ul class="pm-header-info">
-                        	<li><p><i class="fa fa-mobile-phone"></i> +91 987 654 3210</p></li>
-                            <li><p> <i class="fa fa-inbox"></i> &nbsp;<a href="mailto:support@doctorscode.com">support@doctorscode.com</a></p></li>
-                        </ul>
+                  <ul class="pm-header-info">
+                   	<li><p><i class="fa fa-mobile-phone"></i> +91 987 654 3210</p></li>
+                    <li><p> <i class="fa fa-inbox"></i> &nbsp;<a href="mailto:support@doctorscode.com">support@doctorscode.com</a></p></li>
+                  </ul>
                         
-                        <ul class="pm-search-container">
-                        	<li>
-                            	<div class="pm-search-field-container">
-                                	<a href="#" class="fa fa-search"></a>
-                                	<form action="#" method="post">
-                                    	<input name="pm-search-field" class="pm-search-field" type="text" placeholder="search...">
-                                    </form>
-                                </div>
-                            </li>
-                        </ul>
-                     
-                    </div>
-                    
-                </div>
-            
-            </div>
-                    
-        </header>
-        <!-- /Header area end -->
+                  <ul class="pm-search-container">
+                   	<li>
+                     	<div class="pm-search-field-container">
+                         	<a href="#" class="fa fa-search"></a>
+                         	<form action="#" method="post">
+                            	<input name="pm-search-field" class="pm-search-field" type="text" placeholder="search...">
+                          </form>
+                      </div>
+                    </li>
+                  </ul>
+              </div><!-- col-lg-8 col-md-8 col-sm-12 ends here -->
+           </div><!-- row ends here -->
+         </div><!-- container ends here -->
+      </header>
+      <!-- /Header area end -->
         
-        <!-- Navigation area -->
-        <div class="pm-nav-container">
-        
-        	<div class="container">
-            
-                <div class="row">
+      <!-- Navigation area -->
+      <div class="pm-nav-container">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-10 col-md-10 col-sm-12">
+                  <nav class="navbar-collapse collapse" id="pm-main-navigation">
+                       <ul class="sf-menu pm-nav">
+                       		<li><a href="index.html" class="fa fa-home" id="pm-home-btn"></a></li>
+                          <li>
+                             <a href="#">Doctors</a>
+                             <ul>
+                               <li><a href="#">Surgeons</a></li>
+                               <li><a href="#">Physicians</a></li>
+                               <li><a href="#">Nurses</a></li>
+                             </ul>
+                          </li>
+                          <li><a href="#">Hospitals</a></li>
+                          <li><a href="#">Pharma</a></li>
+                          <li><a href="#">My Health</a></li>
+                       </ul>
+                  </nav> 
+               </div><!-- col-lg-10 col-md-10 col-sm-12 ends here -->
                     
-                    <div class="col-lg-10 col-md-10 col-sm-12">
-                        
-                        <nav class="navbar-collapse collapse" id="pm-main-navigation">
-                        
-                            <ul class="sf-menu pm-nav">
-                        
-                        		<li><a href="index.html" class="fa fa-home" id="pm-home-btn"></a></li>
-                                <li>
-                                	<a href="#">Doctors</a>
-                                    <ul>
-                                        <li><a href="#">Surgeons</a></li>
-                                        <li><a href="#">Physicians</a></li>
-                                        <li><a href="#">Nurses</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Hospitals</a>
-                                </li>
-                                <li>
-                                    <a href="#">Pharma</a>
-                                </li>
-                                <li><a href="#">My Health</a></li>
-                            </ul>
-                        
-                        </nav> 
-                    
-                    </div>
-                    
-                    <div class="col-lg-2 col-md-2 col-sm-12 pm-main-menu">
-                                        
-                        <ul class="pm-cart-info">
-                          <li><%= link_to "Sign Up / Login", new_user_session_path , "data-ajax" => "false" %></li>
-                        	<!-- <li><a href="http://dcd1.herokuapp.com/"><p>Sign Up / Login</p></a></li> -->
-                        </ul>
-                                              
-                    </div>
-                    
-                </div>
-            
-            </div>
-        
-        </div>
-        <!-- Navigation area end -->
+               <div class="col-lg-2 col-md-2 col-sm-12 pm-main-menu">
+                   <ul class="pm-cart-info">
+                      <li><%= link_to "Sign Up / Login", new_user_session_path , "data-ajax" => "false" %></li>
+                     	<!-- <li><a href="http://dcd1.herokuapp.com/"><p>Sign Up / Login</p></a></li> -->
+                   </ul>
+               </div><!-- col-lg-2 col-md-2 col-sm-12 pm-main-menu ends here -->
+            </div><!-- row ends here -->
+         </div><!-- container ends here -->
+      </div><!-- pm-nav-container ends here -->
+      <!-- Navigation area end -->
                 
-        <!-- SLIDER AREA -->
-    
-   <!-- <div id="wrapper"> -->
+      <!-- SLIDER AREA -->
+      <!-- <div id="wrapper"> -->
 
 <%
 =begin %>
@@ -234,810 +190,617 @@
 <%
 =end %>
 
-    <div id="pm-slider" class="pm-slider">
-                
-                <div id="pm-slider-progress-bar"></div>
-            
-                <ul class="pm-slides-container" id="pm_slides_container">
-                    
-                    <!-- FULL WIDTH slides -->
-                    <li data-thumb="slide1a.jpg" class="pmslide_0">
-                      <!-- <img src="assets/slide1.jpg" alt="img01" /> -->
-                      <%= image_tag "slide1.jpg" %>
-                    
-                    	
-                            <div class="pm-holder">
-                                <div class="pm-caption">
-                                      <h1>Your Health</h1>
-                                      <span class="pm-caption-decription">
-                                        in your complete control
-                                      </span>
-                                      <span class="pm-caption-excerpt">
-                                        Doctor's Code is a revolutionary way to keep track of your health as well as your loved ones'. Doctor's Code gives you complete control of your health by keeping you on top of everything, be it reports, prescriptions or scheduled appointments.
-                                      </span>
-                                      <a href="#" class="pm-slide-btn">learn more <i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        
-                    
-                    </li>
-                    
-                    <li data-thumb="slide2a.jpg" class="pmslide_1">
-                      <!-- <img src="assets/slide2.jpg" alt="img02" />-->
-                      <%= image_tag "slide2.jpg" %>
-                        
-                        
-                        	<div class="pm-holder">
-                                <div class="pm-caption">
-                                      <h1>Your Health</h1>
-                                      <span class="pm-caption-decription">
-                                        in your complete control
-                                      </span>
-                                      <span class="pm-caption-excerpt">
-                                        Doctor's Code is a revolutionary way to keep track of your health as well as your loved ones'. Doctor's Code gives you complete control of your health by keeping you on top of everything, be it reports, prescriptions or scheduled appointments.
-                                      </span>
-                                      <a href="#" class="pm-slide-btn">learn more <i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                                 
-                                                           
-                    </li>
-                    
-                    <li data-thumb="slide3a.jpg" class="pmslide_2">
-                      <!-- <img src="assets/slide3.jpg" alt="img02" /> -->
-                      <%= image_tag "slide3.jpg" %>
-                        
-                        
-                        	<div class="pm-holder">
-                                <div class="pm-caption">
-                                      <h1>Your Health</h1>
-                                      <span class="pm-caption-decription">
-                                        in your complete control
-                                      </span>
-                                      <span class="pm-caption-excerpt">
-                                        Doctor's Code is a revolutionary way to keep track of your health as well as your loved ones'. Doctor's Code gives you complete control of your health by keeping you on top of everything, be it reports, prescriptions or scheduled appointments.
-                                      </span>
-                                      <a href="#" class="pm-slide-btn">learn more <i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        
-                                            
-                    </li>
-                                    
-                </ul>
-               
-            </div>
-        
-        </div>
-        
- 		<!-- SLIDER AREA end -->
-        
-    
-
-        
+      <div id="pm-slider" class="pm-slider">
+         <div id="pm-slider-progress-bar"></div>
+            <ul class="pm-slides-container" id="pm_slides_container">
+               <!-- FULL WIDTH slides -->
+               <li data-thumb="slide1a.jpg" class="pmslide_0">
+                  <!-- <img src="assets/slide1.jpg" alt="img01" /> -->
+                  <%= image_tag "slide1.jpg" %>
+                  <div class="pm-holder">
+                     <div class="pm-caption">
+                         <h1>Your Health</h1>
+                         <span class="pm-caption-decription">
+                            in your complete control
+                         </span>
+                         <span class="pm-caption-excerpt">
+                            Doctor's Code is a revolutionary way to keep track of your health as well as your loved ones'. Doctor's Code gives you complete control of your health by keeping you on top of everything, be it reports, prescriptions or scheduled appointments.
+                         </span>
+                         <a href="#" class="pm-slide-btn">learn more <i class="fa fa-plus"></i></a>
+                     </div><!-- pm-caption ends here  -->
+                  </div><!--pm-holder ends here  -->
+               </li>
+               <li data-thumb="slide2a.jpg" class="pmslide_1">
+                 <!-- <img src="assets/slide2.jpg" alt="img02" />-->
+                 <%= image_tag "slide2.jpg" %>
+                 <div class="pm-holder">
+                    <div class="pm-caption">
+                        <h1>Your Health</h1>
+                        <span class="pm-caption-decription">
+                           in your complete control
+                        </span>
+                        <span class="pm-caption-excerpt">
+                            Doctor's Code is a revolutionary way to keep track of your health as well as your loved ones'. Doctor's Code gives you complete control of your health by keeping you on top of everything, be it reports, prescriptions or scheduled appointments.
+                        </span>
+                        <a href="#" class="pm-slide-btn">learn more <i class="fa fa-plus"></i></a>
+                    </div><!-- pm caption ends here -->
+                 </div><!-- pm holder ends here -->
+               </li>
+               <li data-thumb="slide3a.jpg" class="pmslide_2">
+                  <!-- <img src="assets/slide3.jpg" alt="img02" /> -->
+                  <%= image_tag "slide3.jpg" %>
+                  <div class="pm-holder">
+                      <div class="pm-caption">
+                         <h1>Your Health</h1>
+                         <span class="pm-caption-decription">
+                             in your complete control
+                         </span>
+                         <span class="pm-caption-excerpt">
+                            Doctor's Code is a revolutionary way to keep track of your health as well as your loved ones'. Doctor's Code gives you complete control of your health by keeping you on top of everything, be it reports, prescriptions or scheduled appointments.
+                         </span>
+                         <a href="#" class="pm-slide-btn">learn more <i class="fa fa-plus"></i></a>
+                      </div><!-- pm caption ends here -->
+                  </div><!-- pm holder ends here -->
+               </li>
+            </ul>
+         </div><!-- pm-slider-progress-bar ends here -->
+      </div><!-- pm-slider ends here -->
+      <!-- SLIDER AREA end -->
       
-        <!-- BODY CONTENT starts here -->
-        
-       	<!-- PANEL 1 -->
-    <br/>
-        <div class="container pm-containerPadding-top-120 pm-containerPadding-bottom-90">
-        	<div class="row">
-            
-            	<!-- Column 1 -->
-                <div class="col-lg-4 col-md-4 col-sm-12 pm-center pm-columnPadding-30 pm-column-spacing wow fadeInUp animated" data-wow-delay="0.3s" data-wow-offset="50" data-wow-duration="1s">
+      <!-- BODY CONTENT starts here -->
+      <!-- PANEL 1 -->
+      <br/>
+      <div class="container pm-containerPadding-top-120 pm-containerPadding-bottom-90">
+      	<div class="row">
+           <!-- Column 1 -->
+           <div class="col-lg-4 col-md-4 col-sm-12 pm-center pm-columnPadding-30 pm-column-spacing wow fadeInUp animated" data-wow-delay="0.3s" data-wow-offset="50" data-wow-duration="1s">
+            	<a href="#" class="fa fa-plus-square pm-icon-btn"></a>
+              <h6 class="pm-column-title">Premium Healthcare</h6>
+              <div class="pm-title-divider"></div>
+                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                 <a href="#" class="pm-standard-link">view our services <i class="fa fa-plus"></i></a>
+              </div>
+              <!-- Column 1 end -->
                 
-                	<a href="#" class="fa fa-plus-square pm-icon-btn"></a>
-                                        
-                    <h6 class="pm-column-title">Premium Healthcare</h6>
-                    
-                    <div class="pm-title-divider"></div>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    
-                    <a href="#" class="pm-standard-link">view our services <i class="fa fa-plus"></i></a>
-                    
-                </div>
-                <!-- Column 1 end -->
-                
-                <!-- Column 2 -->
-                <div class="col-lg-4 col-md-4 col-sm-12 pm-center pm-columnPadding-30 pm-column-spacing wow fadeInUp animated
+              <!-- Column 2 -->
+              <div class="col-lg-4 col-md-4 col-sm-12 pm-center pm-columnPadding-30 pm-column-spacing wow fadeInUp animated
 " data-wow-delay="0.6s" data-wow-offset="50" data-wow-duration="1s">
-                    
-                    <a href="#" class="fa fa-medkit pm-icon-btn"></a>
-                    
-                    <h6 class="pm-column-title">Medical Counseling</h6>
-                    
-                    <div class="pm-title-divider"></div>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    
-                    <a href="#" class="pm-standard-link">Learn More <i class="fa fa-plus"></i></a>
-                    
+                <a href="#" class="fa fa-medkit pm-icon-btn"></a>
+                <h6 class="pm-column-title">Medical Counseling</h6>
+                <div class="pm-title-divider"></div>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                  <a href="#" class="pm-standard-link">Learn More <i class="fa fa-plus"></i></a>
                 </div>
                 <!-- Column 2 end -->
                 
                 <!-- Column 3 -->
                 <div class="col-lg-4 col-md-4 col-sm-12 pm-center pm-columnPadding-30 wow fadeInUp animated
 " data-wow-delay="0.9s" data-wow-offset="50" data-wow-duration="1s">
-                	
-                    <a href="#" class="fa fa-ambulance pm-icon-btn"></a>
-                    
-                    <h6 class="pm-column-title">Emergency Services</h6>
-                    
-                    <div class="pm-title-divider"></div>
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    
-                    <a href="#" class="pm-standard-link">Learn More <i class="fa fa-plus"></i></a>
-                    
-                </div>
+                   <a href="#" class="fa fa-ambulance pm-icon-btn"></a>
+                   <h6 class="pm-column-title">Emergency Services</h6>
+                   <div class="pm-title-divider"></div>
+                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                   <a href="#" class="pm-standard-link">Learn More <i class="fa fa-plus"></i></a>
+                </div><!-- col-lg-4 col-md-4 col-sm-12 pm-center pm-columnPadding-30 wow fadeInUp animated ends here -->
                 <!-- Column 3 end -->
-                
-            </div>
-        </div>
-        <!-- PANEL 1 end -->
+        </div><!-- row ends here -->
+      </div><!-- container pm-containerPadding-top-120 pm-containerPadding-bottom-90 ends here -->
+      <!-- PANEL 1 end -->
         
-        <!-- PANEL 2 -->
-        <div class="pm-column-container pm-parallax-panel" style="background-color:#20bac7; background-image:url(assets/video-panel-bg.jpg);" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="100">
-          <br/>
-        
-        	<!-- Column message -->
-        	<div class="pm-column-container-message">
-            	<p><strong>Did you know?</strong>  Managing your complete family's health is easier now</p>
-            </div>
-            <!-- Column message end -->
+      <!-- PANEL 2 -->
+      <div class="pm-column-container pm-parallax-panel" style="background-color:#20bac7; background-image:url(assets/video-panel-bg.jpg);" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="100">
+      <br/>
+      <!-- Column message -->
+         	<div class="pm-column-container-message">
+             <p><strong>Did you know?</strong>  Managing your complete family's health is easier now</p>
+          </div>
+          <!-- Column message end -->
         
         	<div class="container pm-containerPadding-top-50 pm-containerPadding-bottom-80">
-            
-            	<div class="row">
-                	<div class="col-lg-6 col-md-6 col-sm-12 pm-column-spacing">
+             <div class="row">
+              	
+                <div class="col-lg-6 col-md-6 col-sm-12 pm-column-spacing">
+                    <h4>Take a tour of our medical facility</h4>
+                    <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <div class="pm-video-container" style="background-image:url(/assets/video.jpg);">
+                      <div class="pm-video-overlay">
+                           <a href="https://www.youtube.com/watch?v=5ZxQ7UHjPXA" data-rel="prettyPhoto" class="pm-video-activator-btn fa fa-play expand lightbox"></a>
+                      </div>
+                    </div><!-- pm-video-container end shere -->
+                </div><!-- col-lg-6 col-md-6 col-sm-12 pm-column-spacing ends here-->
                     
-                        <h4>Take a tour of our medical facility</h4>
-                        <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        
-                        <div class="pm-video-container" style="background-image:url(/assets/video.jpg);">
-                        
-                        	<div class="pm-video-overlay">
-                                <a href="https://www.youtube.com/watch?v=5ZxQ7UHjPXA" data-rel="prettyPhoto" class="pm-video-activator-btn fa fa-play expand lightbox"></a>
-                            </div>
-                        	
-                        </div>
-                        
-                        
-                    </div>
-                    
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                    	
-                        <h4>Our Departments</h4>
-                        <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        
-                        <!-- Bootstrap accordion system -->
-                        <div id="accordion" class="panel-group">
-                        
-                            <!-- accordion item 1 -->
-                            <div class="panel panel-default">
-                            
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="fa fa-plus"></i><a class="pm-accordion-link collapsed" href="#collapse0" data-parent="#accordion" data-toggle="collapse">Primary health care</a></h4>
-                                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h4>Our Departments</h4>
+                    <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                     <!-- Bootstrap accordion system -->
+                     <div id="accordion" class="panel-group">
+                       <!-- accordion item 1 -->
+                       <div class="panel panel-default">
+                          
+                          <div class="panel-heading">
+                             <h4 class="panel-title"><i class="fa fa-plus"></i><a class="pm-accordion-link collapsed" href="#collapse0" data-parent="#accordion" data-toggle="collapse">Primary health care</a></h4>
+                          </div>
                                 
-                                <div class="panel-collapse collapse" id="collapse0" style="height: 0px;">
-                                    <div class="panel-body">
-                                    	<p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos.</p>
-                                        <a href="#" class="pm-standard-link pm-no-margin">Learn more <i class="fa fa-angle-right"></i></a>
-                                    </div>
-                                </div>
+                          <div class="panel-collapse collapse" id="collapse0" style="height: 0px;">
+                             <div class="panel-body">
+                               	<p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos.</p>
+                                <a href="#" class="pm-standard-link pm-no-margin">Learn more <i class="fa fa-angle-right"></i></a>
+                             </div>
+                          </div>
+                       </div><!-- panel panel-default ends here -->
+                       <!-- accordion item 1 end -->
+                            
+                       <!-- accordion item 2 -->
+                       <div class="panel panel-default">
+                          <div class="panel-heading">
+                             <h4 class="panel-title"><i class="fa fa-plus"></i><a class="pm-accordion-link collapsed" href="#collapse1" data-parent="#accordion" data-toggle="collapse">Pediactric Clinic</a></h4>
+                          </div>
                                 
-                            </div>
-                            <!-- accordion item 1 end -->
+                          <div class="panel-collapse collapse" id="collapse1">
+                            <div class="panel-body">
+                               <img src="img/home/accordion-baby.jpg" width="99" height="99" class="pull-left" style="margin-right:20px;" alt="baby"> 
+                               <p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos. </p>
+                               <p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos. </p>
+                               <a href="#" class="pm-standard-link pm-no-margin">Learn more <i class="fa fa-angle-right"></i></a>
+                            </div><!-- panel body ends here -->
+                          </div><!-- panel-collapse collapse ends here -->
+                       </div><!-- panel panel-default ends here -->
+                       <!-- accordion item 2 end -->
                             
-                            <!-- accordion item 2 -->
-                            <div class="panel panel-default">
-                            
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="fa fa-plus"></i><a class="pm-accordion-link collapsed" href="#collapse1" data-parent="#accordion" data-toggle="collapse">Pediactric Clinic</a></h4>
-                                </div>
+                       <!-- accordion item 3 -->
+                       <div class="panel panel-default">
+                          <div class="panel-heading">
+                             <h4 class="panel-title"><i class="fa fa-plus"></i><a class="pm-accordion-link collapsed" href="#collapse2" data-parent="#accordion" data-toggle="collapse">Dental Clinic</a></h4>
+                          </div>
                                 
-                                <div class="panel-collapse collapse" id="collapse1">
-                                    <div class="panel-body">
-                                        <img src="img/home/accordion-baby.jpg" width="99" height="99" class="pull-left" style="margin-right:20px;" alt="baby"> <p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos. </p>
-                                        
-                                        <p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos. </p>
-                                        <a href="#" class="pm-standard-link pm-no-margin">Learn more <i class="fa fa-angle-right"></i></a>
-                                    </div>
-                                </div>
+                          <div class="panel-collapse collapse" id="collapse2">
+                              <div class="panel-body">
+                                	<p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos.</p>
+                                  <a href="#" class="pm-standard-link pm-no-margin">Learn more <i class="fa fa-angle-right"></i></a>
+                              </div>
+                          </div>
+                       </div><!-- panel panel-default ends here -->
+                       <!-- accordion item 3 end -->
                             
-                            </div>
-                            <!-- accordion item 2 end -->
-                            
-                            <!-- accordion item 3 -->
-                            <div class="panel panel-default">
-                            
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="fa fa-plus"></i><a class="pm-accordion-link collapsed" href="#collapse2" data-parent="#accordion" data-toggle="collapse">Dental Clinic</a></h4>
-                                </div>
+                       <!-- accordion item 4 -->
+                       <div class="panel panel-default">
+                          <div class="panel-heading">
+                               <h4 class="panel-title"><i class="fa fa-plus"></i><a class="pm-accordion-link collapsed" href="#collapse3" data-parent="#accordion" data-toggle="collapse">Physiotherapy</a></h4>
+                          </div>
                                 
-                                <div class="panel-collapse collapse" id="collapse2">
-                                    <div class="panel-body">
-                                    	<p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos.</p>
-                                        <a href="#" class="pm-standard-link pm-no-margin">Learn more <i class="fa fa-angle-right"></i></a>
-                                    </div>
-                                </div>
+                          <div class="panel-collapse collapse" id="collapse3">
+                             <div class="panel-body">
+                               	<p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos.</p>
+                             </div>
+                          </div><!-- panel-collapse collapse ends here -->
+                       </div><!-- panel panel-default ends here -->
+                       <!-- accordion item 4 end -->
                             
-                            </div>
-                            <!-- accordion item 3 end -->
-                            
-                            <!-- accordion item 4 -->
-                            <div class="panel panel-default">
-                            
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="fa fa-plus"></i><a class="pm-accordion-link collapsed" href="#collapse3" data-parent="#accordion" data-toggle="collapse">Physiotherapy</a></h4>
-                                </div>
+                       <!-- accordion item 5 -->
+                       <div class="panel panel-default">
+                          <div class="panel-heading">
+                             <h4 class="panel-title"><i class="fa fa-plus"></i><a class="pm-accordion-link collapsed" href="#collapse4" data-parent="#accordion" data-toggle="collapse">Outpatient Rehabilitation</a></h4>
+                          </div>
                                 
-                                <div class="panel-collapse collapse" id="collapse3">
-                                    <div class="panel-body">
-                                    	<p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos.</p>
-                                    </div>
-                                </div>
+                          <div class="panel-collapse collapse" id="collapse4">
+                             <div class="panel-body">
+                               	<p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos.</p>
+                             </div>
+                          </div>
+                       </div><!-- panel panel-default ends here -->
+                       <!-- accordion item 5 end -->
                             
-                            </div>
-                            <!-- accordion item 4 end -->
-                            
-                            <!-- accordion item 5 -->
-                            <div class="panel panel-default">
-                            
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="fa fa-plus"></i><a class="pm-accordion-link collapsed" href="#collapse4" data-parent="#accordion" data-toggle="collapse">Outpatient Rehabilitation</a></h4>
-                                </div>
+                       <!-- accordion item 6 -->
+                       <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <h4 class="panel-title"><i class="fa fa-plus"></i><a class="pm-accordion-link collapsed" href="#collapse5" data-parent="#accordion" data-toggle="collapse">Allergic Diseases</a></h4>
+                          </div>
                                 
-                                <div class="panel-collapse collapse" id="collapse4">
-                                    <div class="panel-body">
-                                    	<p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos.</p>
-                                    </div>
-                                </div>
+                          <div class="panel-collapse collapse" id="collapse5">
+                             <div class="panel-body">
+                               	<p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos.</p>
+                                <a href="#" class="pm-standard-link pm-no-margin">Learn more <i class="fa fa-angle-right"></i></a>
+                             </div>
+                          </div>
+                       </div><!-- panel panel-default ends here -->
+                       <!-- accordion item 6 end -->
                             
-                            </div>
-                            <!-- accordion item 5 end -->
-                            
-                            <!-- accordion item 6 -->
-                            <div class="panel panel-default">
-                            
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="fa fa-plus"></i><a class="pm-accordion-link collapsed" href="#collapse5" data-parent="#accordion" data-toggle="collapse">Allergic Diseases</a></h4>
-                                </div>
+                       <!-- accordion item 7 -->
+                       <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title"><i class="fa fa-plus"></i><a class="pm-accordion-link collapsed" href="#collapse6" data-parent="#accordion" data-toggle="collapse">Cancer Center</a></h4>
+                          </div>
                                 
-                                <div class="panel-collapse collapse" id="collapse5">
-                                    <div class="panel-body">
-                                    	<p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos.</p>
-                                        <a href="#" class="pm-standard-link pm-no-margin">Learn more <i class="fa fa-angle-right"></i></a>
-                                    </div>
-                                </div>
-                            
-                            </div>
-                            <!-- accordion item 6 end -->
-                            
-                            <!-- accordion item 7 -->
-                            <div class="panel panel-default">
-                            
-                                <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="fa fa-plus"></i><a class="pm-accordion-link collapsed" href="#collapse6" data-parent="#accordion" data-toggle="collapse">Cancer Center</a></h4>
-                                </div>
-                                
-                                <div class="panel-collapse collapse" id="collapse6">
-                                    <div class="panel-body">
-                                    	<p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos.</p>
-                                    </div>
-                                </div>
-                            
-                            </div>
-                            <!-- accordion item 7 end -->
-                            
-                        </div>
-                        <!-- Bootstrap accordion system end -->
-                        
-                    </div>
-                    
-                </div>
-            
-            </div>
+                          <div class="panel-collapse collapse" id="collapse6">
+                              <div class="panel-body">
+                                	<p>Mauris adisciping fringila turpis intend tellus ornare etos pelim. Pulvunar est cardio neque vitae elit. Lorem vulputat paentra nunc gravida. Mauris adisciping fringila turpis intend tellus ornare etos.</p>
+                              </div>
+                          </div>
+                       </div><!-- panel panel-default ends here -->
+                       <!-- accordion item 7 end -->
+                     </div><!-- accordion ends here -->
+                     <!-- Bootstrap accordion system end -->
+                </div><!-- col-lg-6 col-md-6 col-sm-12 ends here -->
+              </div>
+           </div>
+      </div><!-- pm-column-container pm-parallax-panel ends here -->
+      <!-- PANEL 2 end -->
         
-        </div>
-        <!-- PANEL 2 end -->
-        
-        <!-- PANEL 3 -->
-        <div class="container pm-containerPadding-top-100 pm-containerPadding-bottom-100">
-        
-        	<div class="row">
-            	<div class="col-lg-12 pm-columnPadding30 pm-center">
-                	
-                    <h5>Latest News from Health and Medical</h5>
-                    <div class="pm-column-title-divider">
-                      <%= image_tag "divider-icon.png", width: 29, height: 29 %>
-               	    	<!-- <img src="img/divider-icon.png" width="29" height="29" alt="icon"> -->
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt<br>
+      <!-- PANEL 3 -->
+      <div class="container pm-containerPadding-top-100 pm-containerPadding-bottom-100">
+        <div class="row">
+         	<div class="col-lg-12 pm-columnPadding30 pm-center">
+           	 <h5>Latest News from Health and Medical</h5>
+              <div class="pm-column-title-divider">
+                 <%= image_tag "divider-icon.png", width: 29, height: 29 %>
+                 <!-- <img src="img/divider-icon.png" width="29" height="29" alt="icon"> -->
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt<br>
  ut laoreet dolore magna aliquam erat volutpat.</p>
-                    
-                </div>
-            </div>
+          </div><!-- col-lg-12 pm-columnPadding30 pm-center ends here -->
+        </div><!-- row ends here -->
         
-        	<div class="row">
-            
-            	<div class="col-lg-4 col-md-4 col-sm-12">
-                	
-                    <!-- Blog post 1 -->
-                    <article class="pm-column-spacing wow fadeInUp animated" data-wow-delay="0.3s" data-wow-offset="50" data-wow-duration="1s">
-                    
-                    	<p class="pm-standalone-news-post-category"><a href="#"><span>general information</span></a></p>
-                    
-                    	<div class="pm-standalone-news-post" style="background-image:url(assets/news-post1.jpg);">
-                        
-                        	<div class="pm-standalone-news-post-overlay">
-                            	
-                                <div class="pm-standalone-news-post-icon">
-                                  <%= image_tag "post-icon.jpg", width: 33, height: 41 %>
-                           	    	<!--<img src="img/home/post-icon.jpg" width="33" height="41" alt="icon"> -->
-                                </div>
-                                
-                                <h6 class="pm-standalone-news-post-title"><a href="news-post.html">asking the right questions when meeting your family doctor</a></h6>
-                                
-                                <p class="pm-standalone-news-post-date">January 21, 2015 by Dr. John Stanton</p>
-                                
-                            </div>
-                        
+        <div class="row">
+           <div class="col-lg-4 col-md-4 col-sm-12">
+              <!-- Blog post 1 -->
+              <article class="pm-column-spacing wow fadeInUp animated" data-wow-delay="0.3s" data-wow-offset="50" data-wow-duration="1s">
+                  <p class="pm-standalone-news-post-category"><a href="#"><span>general information</span></a></p>
+                  <div class="pm-standalone-news-post" style="background-image:url(assets/news-post1.jpg);">
+                   	<div class="pm-standalone-news-post-overlay">
+                        <div class="pm-standalone-news-post-icon">
+                           <%= image_tag "post-icon.jpg", width: 33, height: 41 %>
+                           <!--<img src="img/home/post-icon.jpg" width="33" height="41" alt="icon"> -->
                         </div>
+                                
+                        <h6 class="pm-standalone-news-post-title"><a href="news-post.html">asking the right questions when meeting your family doctor</a></h6>
+                        <p class="pm-standalone-news-post-date">January 21, 2015 by Dr. John Stanton</p>
+                                
+                    </div><!-- pm-standalone-news-post-overlay ends here -->
+                  </div><!-- pm-standalone-news-post ends here -->
                     	                        
-                        <div class="pm-standalone-news-post-excerpt">
-                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id bibendum massa, vulputate consectetur dui. Ut ut eros congue, condimentum massa <a href="#">[...]</a> </p>
-                            
-                            <a href="#" class="pm-rounded-btn pm-center-align">view post  <i class="fa fa-plus"></i></a>
-                            
-                        </div>
-                        
-                    </article>
-                    <!-- Blog post 1 end -->
-                    
-                </div>
+                  <div class="pm-standalone-news-post-excerpt">
+                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id bibendum massa, vulputate consectetur dui. Ut ut eros congue, condimentum massa <a href="#">[...]</a> </p>
+                      <a href="#" class="pm-rounded-btn pm-center-align">view post  <i class="fa fa-plus"></i></a>
+                  </div>
+              </article>
+              <!-- Blog post 1 end -->
+           </div><!-- col-lg-4 col-md-4 col-sm-12 ends here -->
                 
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                	
-                    <!-- Blog post 2 -->
-                    <article class="pm-column-spacing wow fadeInUp animated" data-wow-delay="0.6s" data-wow-offset="50" data-wow-duration="1s">
-                    
-                    	<p class="pm-standalone-news-post-category"><a href="#"><span>physician</span></a></p>
-                    
+           <div class="col-lg-4 col-md-4 col-sm-12">
+             <!-- Blog post 2 -->
+             <article class="pm-column-spacing wow fadeInUp animated" data-wow-delay="0.6s" data-wow-offset="50" data-wow-duration="1s">
+                	<p class="pm-standalone-news-post-category"><a href="#"><span>physician</span></a></p>
                     	<div class="pm-standalone-news-post" style="background-image:url(assets/news-post2.jpg);">
-                        
-                        	<div class="pm-standalone-news-post-overlay">
-                            	
-                                <div class="pm-standalone-news-post-icon">
+                         	<div class="pm-standalone-news-post-overlay">
+                              <div class="pm-standalone-news-post-icon">
                            	     <%= image_tag "post-icon.jpg", width: 33, height: 41 %>
-                                </div>
+                              </div>
                                 
-                                <h6 class="pm-standalone-news-post-title"><a href="news-post.html">The difficulty of coordinating primary care</a></h6>
-                                
-                                <p class="pm-standalone-news-post-date">January 15, 2015 by Dr. Jane Williams</p>
-                                
-                            </div>
-                        
-                        </div>
+                              <h6 class="pm-standalone-news-post-title"><a href="news-post.html">The difficulty of coordinating primary care</a></h6>
+                              <p class="pm-standalone-news-post-date">January 15, 2015 by Dr. Jane Williams</p>
+                          </div><!--pm-standalone-news-post-overlay ends her -->
+                      </div><!-- pm-standalone-news-post ends here -->
                     	                        
-                        <div class="pm-standalone-news-post-excerpt">
-                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id bibendum massa, vulputate consectetur dui. Ut ut eros congue, condimentum massa <a href="#">[...]</a> </p>
-                            
-                            <a href="#" class="pm-rounded-btn pm-center-align">view post  <i class="fa fa-plus"></i></a>
-                            
-                        </div>
-                        
-                    </article>
-                    <!-- Blog post 2 end -->
-                    
-                </div>
+                      <div class="pm-standalone-news-post-excerpt">
+                      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id bibendum massa, vulputate consectetur dui. Ut ut eros congue, condimentum massa <a href="#">[...]</a> </p>
+                        <a href="#" class="pm-rounded-btn pm-center-align">view post  <i class="fa fa-plus"></i></a>
+                      </div><!-- pm-standalone-news-post-excerpt ends here -->
+             </article>
+             <!-- Blog post 2 end -->
+           </div><!-- col-lg-4 col-md-4 col-sm-12 ends here -->
                 
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                	
-                    <!-- Blog post 3 -->
-                    <article class="pm-column-spacing wow fadeInUp animated" data-wow-delay="0.9s" data-wow-offset="50" data-wow-duration="1s">
-                    
-                    	<p class="pm-standalone-news-post-category"><a href="#"><span>education</span></a></p>
-                    
-                    	<div class="pm-standalone-news-post" style="background-image:url(assets/news-post3.jpg);">
-                        
-                        	<div class="pm-standalone-news-post-overlay">
-                            	
-                                <div class="pm-standalone-news-post-icon">
-                           	    	 <%= image_tag "post-icon.jpg", width: 33, height: 41 %>
-                                </div>
-                                
-                                <h6 class="pm-standalone-news-post-title"><a href="news-post.html">what i learned from the next generation of doctors</a></h6>
-                                
-                                <p class="pm-standalone-news-post-date">January 8, 2015 by Dr. John Stanton</p>
-                                
-                            </div>
-                        
-                        </div>
+           <div class="col-lg-4 col-md-4 col-sm-12">
+              <!-- Blog post 3 -->
+              <article class="pm-column-spacing wow fadeInUp animated" data-wow-delay="0.9s" data-wow-offset="50" data-wow-duration="1s">
+               	<p class="pm-standalone-news-post-category"><a href="#"><span>education</span></a></p>
+                  	<div class="pm-standalone-news-post" style="background-image:url(assets/news-post3.jpg);">
+                       <div class="pm-standalone-news-post-overlay">
+                          <div class="pm-standalone-news-post-icon">
+                           	 <%= image_tag "post-icon.jpg", width: 33, height: 41 %>
+                          </div>
+                          
+                          <h6 class="pm-standalone-news-post-title"><a href="news-post.html">what i learned from the next generation of doctors</a></h6>
+                          <p class="pm-standalone-news-post-date">January 8, 2015 by Dr. John Stanton</p>
+                       </div><!-- pm-standalone-news-post-overlay ends here -->
+                    </div><!-- pm-standalone-news-post ends here -->
                     	                        
-                        <div class="pm-standalone-news-post-excerpt">
-                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id bibendum massa, vulputate consectetur dui. Ut ut eros congue, condimentum massa <a href="#">[...]</a> </p>
-                            
-                            <a href="#" class="pm-rounded-btn pm-center-align">view post  <i class="fa fa-plus"></i></a>
-                            
-                        </div>
-                        
-                    </article>
-                    <!-- Blog post 3 end -->
-                    
-                </div>
-            
-            </div>
-        
-        </div>
-        <!-- PANEL 3 end -->
-        
-        <!-- PANEL 4 -->
-        <div class="pm-column-container testimonials pm-parallax-panel" style="background-color:#20bac7; background-image:url(assets/newsletter-bg.jpg); background-repeat:repeat-y;" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="-50">
-        
-        	<div class="container pm-containerPadding110">
-            	<div class="row">
-                
-                	<div class="col-lg-12 pm-center">
-                    
-                    	<h5 class="light">Sign up for our Newsletter</h5>
-                        
-                        <p class="light">Follow us and stay up to date on the latest news in the medical industry</p>
-                    	
-                        
-                        <div class="pm-newsletter-form-container">
-                        	<form novalidate target="_blank" class="validate" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post" action="http://pulsarmedia.us4.list-manage.com/subscribe/post?u=2aa9334fc1bc18c8d05500b41&amp;id=dbcb577c4d">  
-                                <input type="text" placeholder="Name" id="MERGE1" name="MERGE1" class="placeholder">
-                                <input type="text" placeholder="Email Address" id="MERGE0" name="MERGE0" class="placeholder">
-                                <input type="submit" class="pm-newsletter-submit-btn" value="subscribe &plus;" id="mc-embedded-subscribe" name="subscribe">
-                            </form>
-                        </div>
-                        
+                    <div class="pm-standalone-news-post-excerpt">
+                    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id bibendum massa, vulputate consectetur dui. Ut ut eros congue, condimentum massa <a href="#">[...]</a> </p>
+                      <a href="#" class="pm-rounded-btn pm-center-align">view post  <i class="fa fa-plus"></i></a>
                     </div>
-                
-                </div><!-- /.row -->
-            </div><!-- /.container -->
+              </article>
+              <!-- Blog post 3 end -->
+           </div><!-- col-lg-4 col-md-4 col-sm-12 ends here -->
+        </div><!-- row ends here -->
+      </div><!-- container pm-containerPadding-top-100 pm-containerPadding-bottom-100 ends here -->
+      <!-- PANEL 3 end -->
         
-        </div>
-        <!-- PANEL 4 end -->
-        
-        <!-- PANEL 5 -->
-        <div class="container pm-containerPadding-top-120 pm-containerPadding-bottom-80">
-        	
-            <div class="row">
-            	<div class="col-lg-12 pm-center pm-column-spacing">
-                	<h5>Meet our Medical Specialists</h5>
-                    <div class="pm-column-title-divider">
-                      <%= image_tag "divider-icon.png",  width: 29,  height: 29 %>
-<!-- <img src="img/divider-icon.png" width="29" height="29" alt="icon"> -->
-                    </div>
-                </div>
-            </div>
-        
-        	<div class="row">
-            	<div class="col-lg-4 col-md-4 col-sm-12 pm-column-spacing">
-                	
-                    <!-- Staff profile -->
-                    <div class="pm-staff-profile-parent-container wow fadeInUp animated" data-wow-delay="0.3s" data-wow-offset="50" data-wow-duration="1s">
-                    
-                    	<div class="pm-staff-profile-container" style="background-image:url(assets/staff-profile1.jpg);">
-                    
-                            <div class="pm-staff-profile-overlay-container">
-                            
-                                <ul class="pm-staff-profile-icons">
-                                    <li><a href="#" class="fa fa-twitter"></a></li>
-                                    <li><a href="#" class="fa fa-facebook"></a></li>
-                                    <li><a href="#" class="fa fa-google-plus"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin"></a></li>
-                                </ul>
-                                
-                                <div class="pm-staff-profile-quote">
-                                    <p>"We should be concerned not only about the health of individual patients, but also the health of our entire society."</p>
-                                    <a href="#" class="pm-square-btn pm-center-align">View profile</a>
-                                </div>
-                            
-                            </div>
-                                                    
-                            <a href="#" class="pm-staff-profile-expander fa fa-plus"></a>
-                                                
-                        </div>
-                        
-                        <div class="pm-staff-profile-info">
-                            <p class="pm-staff-profile-name">dr. john stanton</p>
-                            <p class="pm-staff-profile-title">family physician</p>
-                        </div>
-                    
-                    </div>
-                    
-                    
-                    <!-- Staff profile end -->
-                    
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 pm-column-spacing">
-                	
-                    <!-- Staff profile -->
-                    <div class="pm-staff-profile-parent-container wow fadeInUp animated" data-wow-delay="0.6s" data-wow-offset="50" data-wow-duration="1s">
-                    
-                    	<div class="pm-staff-profile-container" style="background-image:url(assets/staff-profile2.jpg);">
-                    
-                            <div class="pm-staff-profile-overlay-container">
-                            
-                                <ul class="pm-staff-profile-icons">
-                                    <li><a href="#" class="fa fa-twitter"></a></li>
-                                    <li><a href="#" class="fa fa-facebook"></a></li>
-                                    <li><a href="#" class="fa fa-google-plus"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin"></a></li>
-                                </ul>
-                                
-                                <div class="pm-staff-profile-quote">
-                                    <p>"Never go to a doctor whose office plants have died."</p>
-                                    <a href="#" class="pm-square-btn pm-center-align">View profile</a>
-                                </div>
-                            
-                            </div>
-                                                    
-                            <a href="#" class="pm-staff-profile-expander fa fa-plus"></a>
-                                                
-                        </div>
-                        
-                        <div class="pm-staff-profile-info">
-                            <p class="pm-staff-profile-name">mellisa dale</p>
-                            <p class="pm-staff-profile-title">nutrionist</p>
-                        </div>
-                    
-                    </div>                    
-                    <!-- Staff profile end -->
-                    
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                	
-                    <!-- Staff profile -->
-                    <div class="pm-staff-profile-parent-container wow fadeInUp animated" data-wow-delay="0.9s" data-wow-offset="50" data-wow-duration="1s">
-                    
-                    	<div class="pm-staff-profile-container" style="background-image:url(assets/staff-profile3.jpg);">
-                    
-                            <div class="pm-staff-profile-overlay-container">
-                            
-                                <ul class="pm-staff-profile-icons">
-                                    <li><a href="#" class="fa fa-twitter"></a></li>
-                                    <li><a href="#" class="fa fa-facebook"></a></li>
-                                    <li><a href="#" class="fa fa-google-plus"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin"></a></li>
-                                </ul>
-                                
-                                <div class="pm-staff-profile-quote">
-                                    <p>"The good physician treats the disease; the great physician treats the patient who has the disease."</p>
-                                    <a href="#" class="pm-square-btn pm-center-align">View profile</a>
-                                </div>
-                            
-                            </div>
-                                                    
-                            <a href="#" class="pm-staff-profile-expander fa fa-plus"></a>
-                                                
-                        </div>
-                        
-                        <div class="pm-staff-profile-info">
-                            <p class="pm-staff-profile-name">dr. peter michaels</p>
-                            <p class="pm-staff-profile-title">pediatrician</p>
-                        </div>
-                        
-                    </div>                    
-                    <!-- Staff profile end -->
-                    
-                </div>
+      <!-- PANEL 4 -->
+      <div class="pm-column-container testimonials pm-parallax-panel" style="background-color:#20bac7; background-image:url(assets/newsletter-bg.jpg); background-repeat:repeat-y;" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="-50">
+         <div class="container pm-containerPadding110">
+          	<div class="row">
+             	<div class="col-lg-12 pm-center">
+              	<h5 class="light">Sign up for our Newsletter</h5>
+                <p class="light">Follow us and stay up to date on the latest news in the medical industry</p>
+                <div class="pm-newsletter-form-container">
+                	<form novalidate target="_blank" class="validate" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" method="post" action="http://pulsarmedia.us4.list-manage.com/subscribe/post?u=2aa9334fc1bc18c8d05500b41&amp;id=dbcb577c4d">  
+                       <input type="text" placeholder="Name" id="MERGE1" name="MERGE1" class="placeholder">
+                       <input type="text" placeholder="Email Address" id="MERGE0" name="MERGE0" class="placeholder">
+                       <input type="submit" class="pm-newsletter-submit-btn" value="subscribe &plus;" id="mc-embedded-subscribe" name="subscribe">
+                  </form>
+                </div><!-- pm-newsletter-form-container ends here -->
+              </div><!-- col-lg-12 pm-center ends here -->
             </div><!-- /.row -->
-        </div><!-- /.container -->
-        <!-- PANEL 5 end -->
+         </div><!-- /.container -->
+      </div><!-- pm-column-container ends here -->
+      <!-- PANEL 4 end -->
         
-        <!-- PANEL 6 -->
-        <div class="pm-column-container testimonials pm-parallax-panel" style="background-color:#20bac7; background-image:url(assets/testimonials-bg.jpg); background-repeat:repeat-y;" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
-        	
-            <div class="container pm-containerPadding100">
-            	<div class="row">
-                
-                	<div class="col-lg-12 pm-center">
+      <!-- PANEL 5 -->
+      <div class="container pm-containerPadding-top-120 pm-containerPadding-bottom-80">
+        <div class="row">
+          <div class="col-lg-12 pm-center pm-column-spacing">
+           	<h5>Meet our Medical Specialists</h5>
+            <div class="pm-column-title-divider">
+               <%= image_tag "divider-icon.png",  width: 29,  height: 29 %>
+               <!-- <img src="img/divider-icon.png" width="29" height="29" alt="icon"> -->
+            </div>
+          </div><!-- col-lg-12 pm-center pm-column-spacing ends here -->
+        </div><!-- row ends here -->
+        
+        <div class="row">
+         	<div class="col-lg-4 col-md-4 col-sm-12 pm-column-spacing">
+             <!-- Staff profile -->
+             <div class="pm-staff-profile-parent-container wow fadeInUp animated" data-wow-delay="0.3s" data-wow-offset="50" data-wow-duration="1s">
+                 <div class="pm-staff-profile-container" style="background-image:url(assets/staff-profile1.jpg);">
+                    <div class="pm-staff-profile-overlay-container">
+                        <ul class="pm-staff-profile-icons">
+                           <li><a href="#" class="fa fa-twitter"></a></li>
+                           <li><a href="#" class="fa fa-facebook"></a></li>
+                           <li><a href="#" class="fa fa-google-plus"></a></li>
+                           <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                                
+                        <div class="pm-staff-profile-quote">
+                           <p>"We should be concerned not only about the health of individual patients, but also the health of our entire society."</p>
+                           <a href="#" class="pm-square-btn pm-center-align">View profile</a>
+                        </div>
+                    </div><!-- pm-staff-profile-overlay-container ends here -->
+                                                    
+                    <a href="#" class="pm-staff-profile-expander fa fa-plus"></a>
+                 </div><!-- pm-staff-profile-container ends here -->
+                        
+                 <div class="pm-staff-profile-info">
+                     <p class="pm-staff-profile-name">dr. john stanton</p>
+                     <p class="pm-staff-profile-title">family physician</p>
+                 </div>
+             </div><!-- pm-staff-profile-parent-container ends here -->
+             <!-- Staff profile end -->
+          </div><!-- col-lg-4 col-md-4 col-sm-12 pm-column-spacing ends here -->
+          
+          <div class="col-lg-4 col-md-4 col-sm-12 pm-column-spacing">
+             <!-- Staff profile -->
+             <div class="pm-staff-profile-parent-container wow fadeInUp animated" data-wow-delay="0.6s" data-wow-offset="50" data-wow-duration="1s">
+               	<div class="pm-staff-profile-container" style="background-image:url(assets/staff-profile2.jpg);">
+                    <div class="pm-staff-profile-overlay-container">
+                        <ul class="pm-staff-profile-icons">
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                            <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                        
+                        <div class="pm-staff-profile-quote">
+                            <p>"Never go to a doctor whose office plants have died."</p>
+                            <a href="#" class="pm-square-btn pm-center-align">View profile</a>
+                        </div>
+                    </div><!-- pm-staff-profile-overlay-container ends here -->
+                                                    
+                    <a href="#" class="pm-staff-profile-expander fa fa-plus"></a>
+                </div><!-- pm-staff-profile-container ends here -->
+                        
+                <div class="pm-staff-profile-info">
+                    <p class="pm-staff-profile-name">mellisa dale</p>
+                    <p class="pm-staff-profile-title">nutrionist</p>
+                </div>
+             </div><!-- pm-staff-profile-parent-container ends here -->
+             <!-- Staff profile end -->
+          </div><!-- col-lg-4 col-md-4 col-sm-12 pm-column-spacing ends here -->
+          
+          <div class="col-lg-4 col-md-4 col-sm-12">
+          <!-- Staff profile -->
+              <div class="pm-staff-profile-parent-container wow fadeInUp animated" data-wow-delay="0.9s" data-wow-offset="50" data-wow-duration="1s">
+                 	<div class="pm-staff-profile-container" style="background-image:url(assets/staff-profile3.jpg);">
+                      <div class="pm-staff-profile-overlay-container">
+                          <ul class="pm-staff-profile-icons">
+                             <li><a href="#" class="fa fa-twitter"></a></li>
+                             <li><a href="#" class="fa fa-facebook"></a></li>
+                             <li><a href="#" class="fa fa-google-plus"></a></li>
+                             <li><a href="#" class="fa fa-linkedin"></a></li>
+                          </ul>
+                                
+                          <div class="pm-staff-profile-quote">
+                              <p>"The good physician treats the disease; the great physician treats the patient who has the disease."</p>
+                              <a href="#" class="pm-square-btn pm-center-align">View profile</a>
+                          </div>
+                      </div><!-- pm-staff-profile-overlay-container ends here -->
+                                                    
+                      <a href="#" class="pm-staff-profile-expander fa fa-plus"></a>
+                  </div><!-- pm-staff-profile-container ends here -->
+                        
+                  <div class="pm-staff-profile-info">
+                     <p class="pm-staff-profile-name">dr. peter michaels</p>
+                     <p class="pm-staff-profile-title">pediatrician</p>
+                  </div>
+              </div><!-- pm-staff-profile-parent-container ends heer -->
+              <!-- Staff profile end -->
+          </div><!-- col-lg-4 col-md-4 col-sm-12 ends here -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+      <!-- PANEL 5 end -->
+        
+      <!-- PANEL 6 -->
+      <div class="pm-column-container testimonials pm-parallax-panel" style="background-color:#20bac7; background-image:url(assets/testimonials-bg.jpg); background-repeat:repeat-y;" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+         <div class="container pm-containerPadding100">
+             	<div class="row">
+                 	<div class="col-lg-12 pm-center">
                     	<h5 class="light">What people are saying about Doctor's Code</h5>
-                    </div>
+                  </div>
                                 
                 	<div class="pm-testimonials-carousel" id="pm-testimonials-carousel">
-                    
-                    	<ul class="pm-testimonial-items">
-                        	<li>
-                                <div class="pm-testimonial-img" style="background-image:url(assets/testimonial-1.jpg);">
-                                	<div class="pm-testimonial-img-icon">
+                   	 <ul class="pm-testimonial-items">
+                       	<li>
+                            <div class="pm-testimonial-img" style="background-image:url(assets/testimonial-1.jpg);">
+                              	<div class="pm-testimonial-img-icon">
                                     <%= image_tag "post-icon.jpg", class: "img-responsive pm-center-align" %>
-                                    	<!-- <img src="images/post-icon.jpg" class="img-responsive pm-center-align" alt="icon"> -->
-                                    </div>
+                                   	<!-- <img src="images/post-icon.jpg" class="img-responsive pm-center-align" alt="icon"> -->
                                 </div>
-                                <p class="pm-testimonial-name">Selena Gomez</p>
-                                <p class="pm-testimonial-title">Artist</p>
-                                <div class="pm-testimonial-divider"></div>
-                                <p class="pm-testimonial-quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam quis nostrud exerci tation.</p>
-                            </li>
-                            <li>                                
-                                <div class="pm-testimonial-img" style="background-image:url(assets/testimonial-2.jpg);">
-                                	<div class="pm-testimonial-img-icon">
-                                    	<img src="images/post-icon.jpg" class="img-responsive pm-center-align" alt="icon">
-                                    </div>
-                                </div>
-                                <p class="pm-testimonial-name">dave johnson</p>
-                                <p class="pm-testimonial-title">HR Specialist</p>
-                                <div class="pm-testimonial-divider"></div>
-                                <p class="pm-testimonial-quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam quis nostrud exerci tation.</p>
-                            </li>
-                            <li>
-                                <div class="pm-testimonial-img" style="background-image:url(assets/testimonial-3.jpg);">
-                                	<div class="pm-testimonial-img-icon">
-                                    	<img src="images/post-icon.jpg" class="img-responsive pm-center-align" alt="icon">
-                                    </div>
-                                </div>
-                                <p class="pm-testimonial-name">Michael smith</p>
-                                <p class="pm-testimonial-title">Mechanical Engineer</p>
-                                <div class="pm-testimonial-divider"></div>
-                                <p class="pm-testimonial-quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam quis nostrud exerci tation.</p>
-                            </li>
-                        </ul>
-                    
-                    </div>
-                
-                </div>
-            </div>
-            
-        </div>
-        <!-- PANEL 6 end -->
+                            </div>
+                            <p class="pm-testimonial-name">Selena Gomez</p>
+                            <p class="pm-testimonial-title">Artist</p>
+                            <div class="pm-testimonial-divider"></div>
+                              <p class="pm-testimonial-quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam quis nostrud exerci tation.</p>
+                        </li>
+                        <li>                                
+                           <div class="pm-testimonial-img" style="background-image:url(assets/testimonial-2.jpg);">
+                             	<div class="pm-testimonial-img-icon">
+                                	<img src="images/post-icon.jpg" class="img-responsive pm-center-align" alt="icon">
+                              </div>
+                           </div>
+                           <p class="pm-testimonial-name">dave johnson</p>
+                           <p class="pm-testimonial-title">HR Specialist</p>
+                           <div class="pm-testimonial-divider"></div>
+                              <p class="pm-testimonial-quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam quis nostrud exerci tation.</p>
+                        </li>
+                        <li>
+                          <div class="pm-testimonial-img" style="background-image:url(assets/testimonial-3.jpg);">
+                           	<div class="pm-testimonial-img-icon">
+                              	<img src="images/post-icon.jpg" class="img-responsive pm-center-align" alt="icon">
+                            </div>
+                          </div>
+                          <p class="pm-testimonial-name">Michael smith</p>
+                          <p class="pm-testimonial-title">Mechanical Engineer</p>
+                          <div class="pm-testimonial-divider"></div>
+                             <p class="pm-testimonial-quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam quis nostrud exerci tation.</p>
+                        </li>
+                     </ul>
+                  </div><!-- pm-testimonials-carousel ends here -->
+              </div><!-- row ends here -->
+           </div><!-- container ends here -->
+      </div><!-- pm-column-container ends here -->
+      <!-- PANEL 6 end -->
+      <!-- PANEL 7 -->
+      <!-- PANEL 7 end -->
         
-        
-        <!-- PANEL 7 -->
-        
-        <!-- PANEL 7 end -->
-        
-        
-        <!-- BODY CONTENT end -->
-        
-        <div class="pm-fat-footer pm-parallax-panel" data-stellar-background-ratio="0.5">
-        	
-            <div class="container">
-                <div class="row">
-                
-                    <div class="col-lg-3 col-md-3 col-sm-12 pm-widget-footer">
+      <!-- BODY CONTENT end -->
+      <div class="pm-fat-footer pm-parallax-panel" data-stellar-background-ratio="0.5">
+         <div class="container">
+            <div class="row">
+               
+               <div class="col-lg-3 col-md-3 col-sm-12 pm-widget-footer">
+                  	<h6 class="pm-fat-footer-title"><span>About</span> Doctor's Code</h6>
+                    <div class="pm-fat-footer-title-divider"></div>
+                    <p>Doctor's Code is a revolutionary way to keep track of your health as well as your loved ones'. Doctor's Code gives you complete control of your health by keeping you on top of everything, be it reports, prescriptions or scheduled appointments.</p>
+                    <p>With Doctor's Code, your complete family's health is in your control.</p>
+               </div><!-- col-lg-3 col-md-3 col-sm-12 pm-widget-footer ends here -->
                     
-                    	<h6 class="pm-fat-footer-title"><span>About</span> Doctor's Code</h6>
-                        <div class="pm-fat-footer-title-divider"></div>
-                                                
-                        <p>Doctor's Code is a revolutionary way to keep track of your health as well as your loved ones'. Doctor's Code gives you complete control of your health by keeping you on top of everything, be it reports, prescriptions or scheduled appointments.</p>
-                        
-                        <p>With Doctor's Code, your complete family's health is in your control.</p>
-                        
-                    </div>
-                    
-                    
-                    <div class="col-lg-3 col-md-3 col-sm-12 pm-widget-footer">
-                    
-                       <h6 class="pm-fat-footer-title"> <span>Request</span> an appointment</h6>
-                       <div class="pm-fat-footer-title-divider"></div>
-                       
-                       <ul class="pm-general-icon-list">
-                       	  <li>
-                          	<span class="fa fa-mobile-phone pm-general-icon"></span>
-                       		<p>+91 987 654 3210</p>
-                          </li>
-                          <li>
-                          	<span class="fa fa-inbox pm-general-icon"></span>
-                       		<p><a href="info@doctorscode.com">info@doctorscode.com</a></p>
-                          </li>
-                       </ul>
-                        
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-3 col-sm-12 pm-widget-footer">
-                    
-                        <h6 class="pm-fat-footer-title"><span>Latest</span> Tweets</h6>
-                        <div class="pm-fat-footer-title-divider"></div>
-                        
-                        <ul class="tweet_list">
-                        
-                            <li class="tweet_first">
-                                <div class="tweet_container">
-                                    <span class="tweet_time"><a title="view tweet on twitter" href="#">about 14 days ago</a></span>
-                                    <span class="tweet_join"></span>
-                                    <span class="tweet_text"><a href="#">#Propranolol</a> is used in thyrotoxicosis due to it's antithyroid activity in addition the B blocker activity.  <a href="#">bit.ly/1szLobl</a></span>
-                                </div>
-                            </li>
+               <div class="col-lg-3 col-md-3 col-sm-12 pm-widget-footer">
+                  <h6 class="pm-fat-footer-title"> <span>Request</span> an appointment</h6>
+                  <div class="pm-fat-footer-title-divider"></div>
+                  <ul class="pm-general-icon-list">
+                     <li>
+                  	     <span class="fa fa-mobile-phone pm-general-icon"></span>
+                 	       <p>+91 987 654 3210</p>
+                     </li>
+                     <li>
+                       <span class="fa fa-inbox pm-general-icon"></span>
+                       <p><a href="info@doctorscode.com">info@doctorscode.com</a></p>
+                     </li>
+                  </ul>
+               </div><!-- col-lg-3 col-md-3 col-sm-12 pm-widget-footer ends here -->
+                         
+               <div class="col-lg-3 col-md-3 col-sm-12 pm-widget-footer">
+                 <h6 class="pm-fat-footer-title"><span>Latest</span> Tweets</h6>
+                 <div class="pm-fat-footer-title-divider"></div>
+                 <ul class="tweet_list">
+                   <li class="tweet_first">
+                      <div class="tweet_container">
+                        <span class="tweet_time"><a title="view tweet on twitter" href="#">about 14 days ago</a></span>
+                        <span class="tweet_join"></span>
+                        <span class="tweet_text"><a href="#">#Propranolol</a> is used in thyrotoxicosis due to it's antithyroid activity in addition the B blocker activity.  <a href="#">bit.ly/1szLobl</a></span>
+                      </div>
+                   </li>
+                           
+                   <li class="tweet_first">
+                     <div class="tweet_container">
+                         <span class="tweet_time"><a title="view tweet on twitter" href="#">about 21 days ago</a></span>
+                         <span class="tweet_join"></span>
+                         <span class="tweet_text">Insulin is an anabolic hormone, promotes fuel storage. <a href="#">bit.ly/1szLobl</a></span>
+                     </div>
+                   </li>
                             
-                            <li class="tweet_first">
-                                <div class="tweet_container">
-                                    <span class="tweet_time"><a title="view tweet on twitter" href="#">about 21 days ago</a></span>
-                                    <span class="tweet_join"></span>
-                                    <span class="tweet_text">Insulin is an anabolic hormone, promotes fuel storage. <a href="#">bit.ly/1szLobl</a></span>
-                                </div>
-                            </li>
-                            
-                            <li class="tweet_first">
-                                <div class="tweet_container">
-                                    <span class="tweet_time"><a title="view tweet on twitter" href="#">about 26 days ago</a></span>
-                                    <span class="tweet_join"></span>
-                                    <span class="tweet_text">CO2 diffuses 1st before O2 in respiration (alveolar gas exchange), due to higher solubility. <a href="#">bit.ly/1szLobl</a></span>
-                                </div>
-                            </li>
-                            
-                        </ul>
-                        
-                    </div>
+                   <li class="tweet_first">
+                      <div class="tweet_container">
+                          <span class="tweet_time"><a title="view tweet on twitter" href="#">about 26 days ago</a></span>
+                          <span class="tweet_join"></span>
+                          <span class="tweet_text">CO2 diffuses 1st before O2 in respiration (alveolar gas exchange), due to higher solubility. <a href="#">bit.ly/1szLobl</a></span>
+                      </div>
+                   </li>
+                    </ul><!-- tweet list ends here -->
+               </div><!-- col-lg-3 col-md-3 col-sm-12 pm-widget-footer ends here -->
                     
-                    <div class="col-lg-3 col-md-3 col-sm-12 pm-widget-footer">
+               <div class="col-lg-3 col-md-3 col-sm-12 pm-widget-footer">
+                   <h6 class="pm-fat-footer-title"><span>Popular</span> Posts</h6>
+                   <div class="pm-fat-footer-title-divider"></div>
+                   <ul class="pm-recent-blog-posts">
+                   <!-- Post -->
+                     <li>
+                        <div style="background-image:url(assets/p1.jpg);" class="pm-recent-blog-post-thumb"></div>
+                        <div class="pm-recent-blog-post-details">
+                           <a href="#">Severe stroke patients recover better with prompt stent action</a>
+                           <p class="pm-date">Jan 29, 2015</p>
+                           <div class="pm-recent-blog-post-divider"></div>
+                        </div>
+                     </li>
+                     <!-- Post end -->
+                     <!-- Post -->
+                     <li>
+                        <div style="background-image:url(assets/p2.jpg);" class="pm-recent-blog-post-thumb"></div>
+                        <div class="pm-recent-blog-post-details">
+                             <a href="#">High fitness levels reduce hypertension risk</a>
+                             <p class="pm-date">Jan 25, 2015</p>
+                             <div class="pm-recent-blog-post-divider"></div>
+                        </div>
+                     </li>
+                     <!-- Post end -->
+                   </ul><!-- pm-recent-blog-posts ends here -->
+               </div><!-- col-lg-3 col-md-3 col-sm-12 pm-widget-footer ends here -->
+           </div><!-- row ends here -->
+        </div><!-- container ends here -->
+      </div><!-- col-lg-3 col-md-3 col-sm-12 pm-widget-footer ends here -->        
+      
+      <footer>
+         <div class="container pm-containerPadding20">
+            <div class="row">
+               <br/>
+               <div class="col-lg-4 col-md-4 col-sm-12 pm-center-mobile">
+                  <div class="img-responsive pm-inline">
+                     <%= image_tag "logo.png", width: 200 %>
+                  </div>
+               	  <!-- <img src="img/logo.png" width="264" height="81" class="img-responsive pm-inline" alt="Medical-Link"> -->
+               </div>
                     
-                        <h6 class="pm-fat-footer-title"><span>Popular</span> Posts</h6>
-                        <div class="pm-fat-footer-title-divider"></div>
-                        
-                        <ul class="pm-recent-blog-posts">
-                            <!-- Post -->
-                            <li>
-                                <div style="background-image:url(assets/p1.jpg);" class="pm-recent-blog-post-thumb"></div>
-                                <div class="pm-recent-blog-post-details">
-                                    <a href="#">Severe stroke patients recover better with prompt stent action</a>
-                                    <p class="pm-date">Jan 29, 2015</p>
-                                    <div class="pm-recent-blog-post-divider"></div>
-                                </div>
-                            </li>
-                            <!-- Post end -->
-                            <!-- Post -->
-                            <li>
-                                <div style="background-image:url(assets/p2.jpg);" class="pm-recent-blog-post-thumb"></div>
-                                <div class="pm-recent-blog-post-details">
-                                    <a href="#">High fitness levels reduce hypertension risk</a>
-                                    <p class="pm-date">Jan 25, 2015</p>
-                                    <div class="pm-recent-blog-post-divider"></div>
-                                </div>
-                            </li>
-                            <!-- Post end -->
-                        </ul>
-                        
-                    </div>
-                    
-                </div>	
-            </div>
-            
-        </div>
-        
-        <footer>
-
-            
-            <div class="container pm-containerPadding20">
-            	<div class="row">
-                <br/>
-                	<div class="col-lg-4 col-md-4 col-sm-12 pm-center-mobile">
-                    <div class="img-responsive pm-inline">
-                    <%= image_tag "logo.png", width: 200 %>
-                    </div>
-               	    	<!-- <img src="img/logo.png" width="264" height="81" class="img-responsive pm-inline" alt="Medical-Link"> -->
-                    </div>
-                    
-                    <div class="col-lg-8 col-md-8 col-sm-12">
-                    	<ul class="pm-footer-navigation">
-                                <li>
-                                	<a href="#">Doctors</a>
-                                </li>
-                                <li>
-                                    <a href="#">My Pharma</a>
-                                </li>
-                                <li><a href="#">My Health</a></li>
-                        </ul>
-                    </div>
-                
-                </div>
-            </div>
-
-                <br/>
-        </footer>
-                
-       
-    
-    </div><!-- /pm_layout-wrapper -->
-    
-        
-    <p id="back-top" class="visible-lg visible-md visible-sm"></p>
-    
-  </body>
+               <div class="col-lg-8 col-md-8 col-sm-12">
+                	<ul class="pm-footer-navigation">
+                      <li><a href="#">Doctors</a></li>
+                      <li><a href="#">My Pharma</a></li>
+                      <li><a href="#">My Health</a></li>
+                  </ul>
+               </div>
+            </div><!-- row ends here -->
+         </div><!-- container pm-containerPadding20 ends here --> 
+         <br/>
+      </footer>
+ <!--    </div><!-- /pm_layout-wrapper -->
+ <p id="back-top" class="visible-lg visible-md visible-sm"></p>
+   </body>
 </html>
