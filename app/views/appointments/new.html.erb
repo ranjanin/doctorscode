@@ -1,0 +1,43 @@
+<%= render "user_details/profile" %>
+   <div class="contentRight"> 
+     
+     <script type="text/javascript">
+         $(document).ready(function(){
+           $("#appointment-date").datepicker({ dateFormat: "dd/mm/yy" }).val()
+           $("#appointment-hour").timepicker({ 'scrollDefault': 'now'})
+         });
+     </script>
+   
+     <div class="contentRightTop">
+      You are here - <%= image_tag "homeDark.png",  width: "21" %>
+		 </div>
+		
+     <div class="contentRightBottom">
+        <%= form_for @appointment, :html => {:"data-ajax" => "false"} do |f| %>
+          <div class="contentRightBottomLeft">
+           
+					   <div class="contentRightBottomHead">
+                Book Appointment
+						 </div>					
+         
+             <div class="clearfix"></div>
+						 <div class="contentRightBottomHeadLeft textTransformCapitalize">Appointment Date</div>
+						 <div class="contentRightBottomHeadRight textTransformUppercase"> 
+               <%= f.text_field :appointment_date, :id => "appointment-date" %>
+  					 </div>
+         
+             <div class="clearfix"></div>
+						 <div class="contentRightBottomHeadLeft textTransformCapitalize">Appointment Time</div>
+						 <div class="contentRightBottomHeadRight textTransformUppercase"> 
+               <%= f.text_field :appointment_hour, :id => "appointment-hour" %>
+						 </div>
+         
+             <div class="clearfix"></div>
+						   <%= f.submit "Submit" , class: "submitButton"  %>
+						 <div class="clearfix"></div>
+          </div><!-- contentRightBottomLeftends here -->
+      <% end %>
+     </div><!-- contentRightBottom ends here -->
+    
+   <br/><br/>
+   </div><!-- contentRight ends here -->

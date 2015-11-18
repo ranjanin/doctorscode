@@ -32,6 +32,7 @@
      resources :health_records
      resources :family_members
      resources :doctors
+     resources :appointments
     
     
  

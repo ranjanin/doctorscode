@@ -13,6 +13,7 @@
 
 *= require jquery-ui/datepicker
 *= require jquery.rambling.slider
+*= require jquery.timepicker.css
 *= require_tree .
 *= require_self
  */

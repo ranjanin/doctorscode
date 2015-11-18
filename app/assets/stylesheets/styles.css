@@ -41,7 +41,7 @@ a
 }
 .container
 {
-  width: 100%;
+  width: 94%;
   padding: 0 3% 0 3%;
   margin-left: auto;
   margin-right: auto;
@@ -58,7 +58,7 @@ a
   cursor: pointer;
   float: right;
   display: none;
-  background: #fff;
+  background: #0f9f8d;
 }
 .menuIcon
 {
@@ -71,7 +71,7 @@ a
 }
 .menuIconBG
 {
-  background: #0db7c4;
+  background: #fff;
   height: 1px;
   margin-bottom: 5px;
   width: 100%;
@@ -94,18 +94,18 @@ a
 .ActiveMenuBG1
 {
   top: 0;
-  background: #0db7c4;
+  background: #fff;
   -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);
   transform: translate3d(0, 8px, 0) rotate(45deg);
 }
 .ActiveMenuBG2 {
-  background: #0db7c4;
+  background: #fff;
   top: 8px;
   opacity: 0;
 }
 .ActiveMenuBG3
 {
-  background: #0db7c4;
+  background: #fff;
   top: 16px;
   -webkit-transform: translate3d(0, -8px, 0) rotate(-45deg);
   transform: translate3d(0, -8px, 0) rotate(-45deg);
@@ -149,8 +149,7 @@ a
 .menu ul li a
 {
   text-decoration: none;
-  color: #fff;
-  padding-right:5px;
+  color: #0f9f8d;
   border-bottom: 3px solid transparent;
   line-height: 30px;
   display: block;
@@ -240,7 +239,7 @@ a
 }
 .contentHomeRegisterLoginWrapperheadActive
 {
-  background: url('blueOpacity.png');
+  background: url('../images/blueOpacity.png');
   border-bottom:3px solid #fff;
   cursor: inherit;
 }
@@ -249,7 +248,7 @@ a
   width: 90%;
   height: 190px;
   padding: 5%;
-  background: url('blueOpacity.png');
+  background: url('../images/blueOpacity.png');
 }
 .contentHomeRegisterLoginWrapperBottomInput
 {
@@ -463,11 +462,6 @@ hr
   text-transform: uppercase;
   line-height: 20px;
 }
-
-.bloodDoctorRightBottom a {
-  color:#666;
-}
-
 .bloodDoctorRightBottomInner
 {
   width: 100%;
@@ -791,7 +785,7 @@ hr
   width: 96%;
   padding: 5px 2% 5px 2%;
   height: 280px !important;
-  border:1px solid #666666;
+  border:1px solid ##666666;
   outline: none;
   background: #fff;
   font-size: 12px; 
@@ -974,7 +968,6 @@ hr
   margin-right: auto;
   max-width: 300px;
   height: auto;
-  line-height:24px;
 }
 .registerFormWrapperInput input
 {
@@ -1015,33 +1008,317 @@ hr
   margin-left: 15px;
 }
 
-.registerFormWrapperInputButton input
+.doc-image-img {
+    width: 100px;
+    height: auto;
+    float: left;
+}
+
+.doc-listing-item
 {
-  margin-bottom: 0px;
-}
-.contentRightBottomHeadRight select{
-  width: 100%;
-  padding-bottom: 4px;
-  
+  width: 40%;
+  margin-right: 5%;
+  margin-left: 5%;
+  float: left;
 }
 
-.ui-radio{
-  display:inline-block;
-  width:20px;
-  height:20px;
-  margin-right:20px;
-  vertical-align:middle;
+.doc-name {
+    margin-left: 120px;
+    padding-top: 5px;
+    color: #0DB7C4;
 }
 
-.contentRightBottomHeadRight textarea{
-  background:transparent;
-  width:100%;
-  height: 100px !important;
-  border: 1px solid #666;
-  font-size:12px;
-  font-weight:400px;
-  text-transform:uppercase;
-  color:#666;
-  font-family:'Open Sans', sans-serief
+.doc-degree {
+    margin-left: 120px;
+    margin-top: -20px;
+    color: #666666;
 }
 
+.doc-exp {
+    margin-left: 120px;
+    margin-top: -20px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.like-icon {
+    width: 24px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: -12px;
+    float: left;
+}
+
+.doc-recommendations {
+    margin-left: 150px;
+    margin-top: -12px;
+}
+
+.view-more {
+    float: right;
+    margin-top: -12px;
+    color: #0DB7C4;
+    font-size: 16px;
+}
+
+.doc-detail-img {
+    width: 150px;
+    height: auto;
+    float: left;
+}
+
+.about-doc {
+    font-size: 16px;
+    color: #666666;
+    margin-left: 170px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.doc-details {
+    width: 30%;
+    float: left;
+}
+
+.appointment-patient-img {
+    width: 80px;
+    height: auto;
+    float: left;
+}
+
+.appointment-text {
+    font-size: 16px;
+    color: #666666;
+    padding-left: 20px;
+}
+
+.appointment-list-detail {
+    width: 70%;
+    float: left;
+    margin-top: -20px;
+}
+
+.appointment-time {
+    color: #666;
+    text-align: right;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.appointment-icons-group {
+    float: right;
+    margin-top: -20px;
+}
+
+.appointment-icon {
+    width: 18px;
+    height: auto;
+    margin: 10px;
+}
+
+.learn-more {
+    color: #0DB7C4;
+    float: right;
+}
+
+.doctor-name {
+    color: #0DB7C4;
+}
+
+.doctor-degree {
+    margin-top: -18px;
+    color: #666666;
+}
+
+.doctor-exp {
+    margin-top: -18px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.doctor-like-icon {
+    width: 24px;
+    height: auto;
+    margin-top: -12px;
+    float: left;
+}
+
+.doctor-recommendations {
+    margin-top: -12px;
+    margin-left: 35px;
+}
+
+.know-more {
+    float: right;
+    margin-top: -40px;
+    color: #0DB7C4;
+    font-size: 14px;
+}
+
+.doc-address {
+    width: 40%;
+    float: left;
+}
+
+.doctor-address-icon {
+    width: 24px;
+    height: auto;
+    margin-top: 20px;
+    float: left;
+}
+
+.doctor-address-heading {
+    margin-top: 18px;
+    font-size: 16px;
+    color: #0DB7C4;
+    margin-left: 30px;
+}
+
+.doctor-address {
+    font-size: 14px;
+    color: #666666;
+    margin-left: 30px;
+    margin-top: -18px;
+}
+
+.doc-connect {
+    width: 30%;
+    float: left;
+}
+
+.doctor-calender-icon {
+    width: 24px;
+    height: auto;
+    margin-top: 20px;
+    float: left;
+}
+
+.doctor-notes-icon {
+    width: 24px;
+    height: auto;
+    float: left;
+}
+
+.doctor-connect-text {
+    font-size: 14px;
+    color: #666666;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.doctor-notes-text {
+    font-size: 14px;
+    color: #666666;
+    margin-left: 30px;
+    margin-top: -4px;
+}
+
+.modal-link {
+    text-decoration: none;
+}
+
+.doc-testimonials {
+    width: 90%;
+    margin-top: 200px;
+}
+
+.testimonial-heading {
+    color: #666666;
+    border-bottom: 1px solid #CCC;
+}
+
+.testimonial-text {
+    font-size: 14px;
+    color: #666666;
+}
+
+.testimonial-by {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    float: right;
+}
+
+.testimonial-item {
+    border-bottom: 1px solid #CCC;
+}
+
+.appointment-listing {
+    border-bottom: 1px solid #CCC;
+}
+
+<!-- MODAL STARTS -->
+.box {
+  width: 20%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #000;
+  border: 2px solid orange;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: orange;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: orange;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+<!-- MODAL ENDS -->

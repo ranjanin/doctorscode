@@ -19,6 +19,7 @@
 //= require jquery_ujs
 //= require bootstrap.min
 //= require jquery-ui/datepicker
+//= require jquery.timepicker.js
 //= require modernizr.custom
 //= require owl.carousel
 //= require main
@@ -49,25 +50,8 @@ $(document).ready(function(){
    });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
 });
+
+

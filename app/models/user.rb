@@ -8,8 +8,7 @@ class User < ActiveRecord::Base
   has_many :doctor_visits
   has_many :health_records
   has_many :family_members
-  
-  #has_many :appointments
+  has_many :appointments
  # has_many :doctors, through: :appointments
   has_many :doctors
   has_many :patients

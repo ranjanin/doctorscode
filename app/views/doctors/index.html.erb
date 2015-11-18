@@ -1,0 +1,53 @@
+
+
+  <%= render "user_details/profile" %>
+    <div class="contentRight">
+      <% @doctors.each do |doctor| %>
+         <div class="doc-listing-item">
+          <div class="doctor-listing-content"> 
+			     <% if doctor.user.image.present? %>
+             <%= image_tag doctor.user.image %>
+           <% else %>
+             <%= image_tag "profile-image.png" %>
+           <% end %>
+           
+            <h1 class="doc-name"><%= link_to doctor.first_name %></h1>
+            <p class="doc-degree"><%= doctor.qualification %></p>
+            <p class="doc-exp"><%= doctor.specilization %>&nbsp;&nbsp;&nbsp;
+              <%= link_to "Book Appoinment", new_appointment_path, "data-ajax" => "false" %>
+              <!--,&nbsp;&nbsp;&nbsp;<span class="years-exp">37 years Experience</span></p> 
+            <img class="like-icon" src="images/like46.png" /><p class="doc-recommendations">2853 Recommendations</p>
+            <p class="view-more">MORE</p>-->
+        
+       
+			  
+            <!-- <img class="doc-image-img" src="images/doctor-img.jpg" /> -->
+            <h1 class="doc-name"><%= doctor.first_name %></h1>
+            <p class="doc-degree"><%= doctor.qualification %></p>
+            <p class="doc-exp"><%= doctor.specilization %><!--,&nbsp;&nbsp;&nbsp;<span class="years-exp">37 years Experience</span></p> 
+            <img class="like-icon" src="images/like46.png" /><p class="doc-recommendations">2853 Recommendations</p>
+            <p class="view-more">MORE</p>-->
+         
+			  <div class="clearfix"></div>
+        
+            <!-- <img class="doc-image-img" src="images/doctor-img.jpg" /> -->
+            <h1 class="doc-name"><%= doctor.first_name %></h1>
+            <p class="doc-degree"><%= doctor.qualification %></p>
+            <p class="doc-exp"><%= doctor.specilization %><!--,&nbsp;&nbsp;&nbsp;<span class="years-exp">37 years Experience</span></p> 
+            <img class="like-icon" src="images/like46.png" /><p class="doc-recommendations">2853 Recommendations</p>
+            <p class="view-more">MORE</p>-->
+         <!-- </div>
+		    </div> -->
+			<!-- <div class="doc-listing-item">
+         <div class="doctor-listing-content"> 
+            <img class="doc-image-img" src="imges/doctor-img.jpg" />-->
+            <h1 class="doc-name"><%= doctor.first_name %></h1>
+            <p class="doc-degree"><%= doctor.qualification %></p>
+            <p class="doc-exp"><%= doctor.specilization %><!--,&nbsp;&nbsp;&nbsp;<span class="years-exp">37 years Experience</span></p> 
+            <img class="like-icon" src="images/like46.png" /><p class="doc-recommendations">2853 Recommendations</p>
+            <p class="view-more">MORE</p>-->
+         <!-- </div>
+		    </div> -->
+      <% end %>
+		</div><!-- doctor bottom ends here -->
+

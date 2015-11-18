@@ -153,7 +153,29 @@
 					  </div>
 					
             <div class="clearfix"></div>
-          </div><!-- blood doctor bottom ends here -->  
+          </div><!-- blood doctor bottom ends here -->
+     
+          <div class="bloodDoctorBottom">
+				
+            <div class="bloodDoctorLeftBottom">
+              <%= image_tag "myFamily.png" %>
+            </div>
+				
+            <div class="bloodDoctorRightBottom">
+              <%= link_to "MY DOCTORS", doctors_path, "data-ajax" => 'false' %>
+              <div class="clearfix"></div>
+					    <div class="bloodDoctorRightBottomInner">
+					      <% family = current_user.family_members %>
+                <% family.each do |member| %>
+                   <ul style="list-style-type:none;">
+                     <li><%= link_to member.relation, doctor_visits_doctor_visit_member_path(:id => member.id), "data-ajax" => "false" %></li>
+                   </ul>
+                <% end %>
+                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <%= link_to " +  Add Member", new_family_member_path, "data-ajax" => "false" %>
+              </div><!--  bloodDoctorRightBottomInner ends here  ends here -->
+            </div><!-- bloodDoctorRightBottom ends here -->
+            <div class="clearfix"></div>
+				  </div><!-- blood doctor bottom ends here -->
         <% elsif current_user.user_detail.role == "Doctor" %>
             <div class="bloodDoctorBottom">
 				
